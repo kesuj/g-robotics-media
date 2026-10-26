@@ -17,6 +17,7 @@ from pathlib import Path
 import beats_v2
 import beats_v3
 import mascot
+import presenter
 import styles
 from beats_v2 import theme
 
@@ -145,6 +146,7 @@ def eq_box(svg_path, aspect, max_w, max_h):
 THEME = beats_v2.THEMES["explain"]
 STYLE = "classic"
 MASCOT = False
+PRESENTER = None
 
 
 def scene(cid, dur, body_css, body_html, script):
@@ -172,14 +174,14 @@ def words_html(text, cls):
 
 
 def beat_hook(cid, b, dur, ep):
-    num = ep["id"].replace("ep", "#")
+    num = ep["id"].replace("ep", "#") if CONFIG.get("show_id", True) else ep.get("series", "")
     css = '''    #hk-num { position: absolute; left: 80px; top: 300px; font-family: "Archivo Black"; font-size: 46px; color: #b45309; }
     #hk-title { position: absolute; left: 80px; right: 80px; top: 380px; font-size: 112px; }
     #hk-title .w { display: inline-block; }
     #hk-mark { position: absolute; left: 70px; top: 0; height: 0; background: #ffd400; }
     #hk-line { position: absolute; left: 80px; right: 270px; top: 930px; font-size: 54px; }
     #hk-bolt { position: absolute; right: 70px; top: 760px; width: 160px; height: 220px; }'''
-    body = f'''    <div id="hk-num">{esc(num)} · {esc(ep.get("category", ""))}</div>
+    body = f'''    <div id="hk-num">{esc(" · ".join(x for x in (num, ep.get("category", "")) if x))}</div>
     <div id="hk-title" class="k-h">{words_html(ep["title"], "w")}</div>
     <div id="hk-line" class="k-b">{esc(b.get("text", ""))}</div>
     <svg id="hk-bolt" viewBox="0 0 80 110"><path d="M48 2 L8 62 H36 L28 108 L72 42 H44 Z" fill="#ffd400" stroke="#111827" stroke-width="4" stroke-linejoin="round"/></svg>'''
@@ -324,7 +326,7 @@ def beat_outro(cid, b, dur, ep):
     body = f'''    <svg id="ot-bolt" viewBox="0 0 80 110"><path d="M48 2 L8 62 H36 L28 108 L72 42 H44 Z" fill="#ffd400" stroke="#111827" stroke-width="4" stroke-linejoin="round"/></svg>
     <div id="ot-name" class="k-h">{esc(CONFIG["channel"])}</div>
     <div id="ot-sub" class="k-b">{esc(CONFIG["lane_taglines"].get(ep.get("format"), CONFIG["tagline"]))}</div>
-    <div id="ot-sub-btn">SUBSCRIBE</div>
+    <div id="ot-sub-btn">{esc(CONFIG.get("cta", "SUBSCRIBE"))}</div>
     <div id="ot-brand"><img src="assets/img/logo.png" alt="" />{esc(CONFIG["brand"])}</div>'''
     js = '''      tl.fromTo("#ot-bolt", { scale: 0, rotation: -25 }, { scale: 1, rotation: 0, duration: 0.45, ease: "back.out(2.2)" }, 0.05);
       tl.fromTo("#ot-name", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power4.out" }, 0.25);
@@ -345,7 +347,7 @@ def chrome(total, ep):
     #ch-bar {{ position: absolute; left: 80px; right: 80px; top: 1338px; height: 10px; background: {th["grid"]}; border-radius: 5px; overflow: hidden; }}
     #ch-fill {{ position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background: {th["rule"]}; transform-origin: 0 50%; }}'''
     body = f'''    <div id="ch-grid"></div>
-    <div id="ch-top"><div>⚡ {esc(CONFIG["channel"].upper())} · {esc(th["label"])}</div><span>{esc(ep["id"].replace("ep", "#"))}</span></div>
+    <div id="ch-top"><div>⚡ {esc(CONFIG["channel"].upper())} · {esc(th["label"])}</div><span>{esc(ep["id"].replace("ep", "#") if CONFIG.get("show_id", True) else ep.get("date", ""))}</span></div>
     <div id="ch-bar"><div id="ch-fill"></div></div>'''
     js = f'''      tl.fromTo("#ch-fill", {{ scaleX: 0 }}, {{ scaleX: 1, duration: {total:.2f}, ease: "none" }}, 0);
       tl.fromTo("#ch-grid", {{ backgroundPositionY: 0 }}, {{ backgroundPositionY: 120, duration: {total:.2f}, ease: "none" }}, 0);''' if STYLE in ("classic", "blueprint", "neon") else f'''      tl.fromTo("#ch-fill", {{ scaleX: 0 }}, {{ scaleX: 1, duration: {total:.2f}, ease: "none" }}, 0);'''
@@ -378,7 +380,12 @@ def captions(beats, starts, voices):
             js.append(f'      tl.fromTo("#cp{gi}w{k}", {{ backgroundColor: "rgba(255,212,0,0)" }}, {{ backgroundColor: "rgba(255,212,0,1)", color: "@ONHI@", duration: 0.06, immediateRender: false }}, {w["s"]:.3f});')
             js.append(f'      tl.to("#cp{gi}w{k}", {{ backgroundColor: "rgba(255,212,0,0)", color: "#111827", duration: 0.06 }}, {max(w["e"], w["s"] + 0.12):.3f});')
     total = starts[-1] + voices[-1]["dur"] + 1
-    if MASCOT:
+    if PRESENTER:
+        mcss, mhtml, mjs = presenter.parts([w for g in groups for w in g], total, PRESENTER)
+        css += "\n" + mcss
+        rows.append(mhtml)
+        js.append(mjs)
+    elif MASCOT:
         mcss, mhtml, mjs = mascot.parts([w for g in groups for w in g], total)
         css += "\n" + mcss
         rows.append(mhtml)
@@ -390,11 +397,12 @@ def captions(beats, starts, voices):
 
 def build(ep_path, render=True):
     ep = json.loads(Path(ep_path).read_text(encoding="utf8"))
-    global THEME, STYLE, MASCOT
+    global THEME, STYLE, MASCOT, PRESENTER
     THEME = theme(ep)
     STYLE = styles.pick(ep)
     MASCOT = ep.get("mascot", int(re.sub(r"\D", "", ep["id"]) or 0) % 2 == 1)
-    print("style:", STYLE, "· mascot" if MASCOT else "")
+    PRESENTER = ep.get("presenter")
+    print("style:", STYLE, f"· presenter {PRESENTER}" if PRESENTER else ("· mascot" if MASCOT else ""))
     beats_v2.EMOJI_DIR = ROOT / "build" / ep["id"] / "assets" / "emoji"
     proj = ROOT / "build" / ep["id"]
     if proj.exists():

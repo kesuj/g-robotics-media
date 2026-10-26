@@ -12,10 +12,12 @@
   "tech news"
  ],
  "description_footer": "G. Robotics — drones, robotics, AI and engineering from Nepal. Course updates: https://whatsapp.com/channel/0029VbCtOgT8V0tiMmgYfA22",
- "lane_footer": "Daily EE — electrical & electronics engineering, tech news, the people behind it, and NEC license-exam prep from Nepal. New Shorts every day.\n#electricalengineering #technews #engineering #Nepal #shorts",
+ "lane_footer": "G. Robotics — drones, robotics, AI and world tech news from Nepal. Follow for daily Reels.",
  "lane_taglines": {
-  "news": "Tech & power news, every day.",
-  "people": "Meet the minds behind the tech.",
+  "news": "World tech news, every day.",
+  "people": "Meet the minds behind the machines.",
   "clip": "A daily dose of engineering."
- }
+ },
+ "cta": "FOLLOW",
+ "show_id": false
 }
