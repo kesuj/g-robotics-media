@@ -9,14 +9,15 @@
  "_slots_note": "Initial hypothesis from the brief; analytics will move them. Slot 4 (21:00) is optional — skipped when the approved queue is short rather than filled with weak content.",
  "min_backlog": 8,
  "category_mix": {
-  "drones": 0.3,
-  "ai": 0.25,
-  "robotics": 0.2,
-  "news_and_experts": 0.15,
-  "nepal": 0.1
+  "ai": 0.22,
+  "gadgets_and_apps": 0.15,
+  "robotics": 0.15,
+  "drones": 0.13,
+  "space_and_science": 0.12,
+  "nepal_tech_and_people": 0.13,
+  "chips_ev_cyber_other": 0.1
  },
  "series": [
-  "World Tech News",
   "Drone Engineering in 30 Seconds",
   "AI Breakthrough of the Day",
   "Robots Doing Incredible Things",
@@ -119,5 +120,13 @@
    "kind": "news",
    "notes": "one Reel a day: the most important verified tech story(ies) from around the world in the last 24-48 h; 2–3 stories max, each with source + date on screen; skip sensitive items"
   }
+ },
+ "_scope": "Instagram covers ALL technology for a general tech audience. Electrical-power / EE exam content belongs to the YouTube EE channel, not here: max 1 power/energy item per 10 Reels.",
+ "daily_news": {
+  "series": "Tech News with G. Dai",
+  "workflow": ".github/workflows/news.yml",
+  "slot": "18:00",
+  "presenter": "G. Dai (AI, labelled)",
+  "voice": "OmniVoice clone of assets/voice/gdai_ref.wav (male, middle-aged, low pitch, Indian accent)"
  }
 }

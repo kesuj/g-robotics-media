@@ -40,6 +40,19 @@ def render(brief):
     return outs[-1]
 
 
+def render_news(brief):
+    """Tech News with G. Dai episodes use the newsroom template (gr/produce/newsroom)."""
+    r = subprocess.run([sys.executable, "-m", "gr.produce.newsroom.build_news", str(brief)], cwd=ROOT, capture_output=True,
+                       text=True, env=dict(os.environ, GR_WORK=str(WORK)))
+    if r.returncode != 0:
+        raise RuntimeError((r.stdout + r.stderr)[-1500:])
+    ep = json.loads(Path(brief).read_text(encoding="utf8"))
+    mp4 = WORK / "out" / f"{ep['id']}.mp4"
+    if not mp4.exists():
+        raise RuntimeError("news render produced no mp4")
+    return mp4
+
+
 def normalize(src, dest, target=-14.0):
     """Loudness-normalise to Instagram-friendly -14 LUFS / -1.5 dBTP (two-pass loudnorm), video copied untouched."""
     probe = subprocess.run([shutil.which("ffmpeg") or "ffmpeg", "-hide_banner", "-i", str(src), "-af",
@@ -56,7 +69,8 @@ def main(limit=4):
     RENDERS.mkdir(exist_ok=True)
     made = 0
     with queue() as q:
-        for brief in sorted((ROOT / "briefs").glob("*.json")):
+        news = sorted((ROOT / "briefs" / "news").glob("news-*.json"), reverse=True)[:2]   # newest episodes first
+        for brief in news + sorted((ROOT / "briefs").glob("*.json")):
             if made >= limit:
                 break
             ep = json.loads(brief.read_text(encoding="utf8"))
@@ -65,12 +79,17 @@ def main(limit=4):
             if it and it["status"] not in ("briefed",):
                 continue
             if not it:
-                q["items"][iid] = it = {"id": iid, "title": ep["title"], "kind": ep.get("format", "explain"), "brief": brief.relative_to(ROOT).as_posix(),
-                                        "created": now().isoformat(), "news_date": ep.get("date"), "status": "briefed", "retries": 0,
-                                        "format": ep.get("format"), "style": ep.get("style"), "series": ep.get("series")}
+                is_news = brief.parent.name == "news"
+                q["items"][iid] = it = {"id": iid, "title": ep["title"], "kind": "news" if is_news else ep.get("format", "explain"),
+                                        "brief": brief.relative_to(ROOT).as_posix(), "created": now().isoformat(), "news_date": ep.get("date"),
+                                        "status": "briefed", "retries": 0, "format": "gdai_news" if is_news else ep.get("format"),
+                                        "style": ep.get("style"), "series": "Tech News with G. Dai" if is_news else ep.get("series")}
+                if is_news:   # hold for the evening news slot (18:00 NPT); priority over everything else that day
+                    it["not_before"] = f"{ep['date']}T17:30:00+05:45"
+                    it["priority"] = 1
                 set_status(q, iid, "briefed")
             try:
-                mp4 = render(brief)
+                mp4 = render_news(brief) if it.get("kind") == "news" else render(brief)
                 dest = RENDERS / f"{iid}.mp4"
                 normalize(mp4, dest)
                 set_status(q, iid, "rendered", video_file=dest.relative_to(ROOT).as_posix())

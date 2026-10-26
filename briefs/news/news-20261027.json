@@ -1,0 +1,74 @@
+{
+ "id": "news-20261027",
+ "episode": 1,
+ "date": "2026-10-27",
+ "title": "Tech News with G. Dai — Episode 1",
+ "intro": "Namaste! Welcome to the very first episode of Tech News with G. Dai. Six stories you need to know today. Let's go!",
+ "stories": [
+  {
+   "tag": "Cricket tech",
+   "region": "NEPAL",
+   "headline": "NPL brings DRS to every match",
+   "kit": "drs",
+   "stat": {"value": 2, "suffix": " reviews", "label": "per team, per innings"},
+   "vo": "Big moment for Nepal cricket! The Nepal Premier League is using D-R-S in every match this season. Three-D ball tracking and edge detection will judge the close calls, and each team gets two reviews per innings.",
+   "source": "Kathmandu Post, Himalayan Times",
+   "urls": ["https://kathmandupost.com/cricket/2026/10/20/nepal-premier-league-to-introduce-drs-for-third-edition",
+            "https://thehimalayantimes.com/sports/drs-to-be-used-in-all-nepal-premier-league-matches"]
+  },
+  {
+   "tag": "Artificial intelligence",
+   "region": "WORLD",
+   "headline": "Anthropic files to go public",
+   "kit": "ai",
+   "stat": {"value": 16.3, "prefix": "$", "suffix": "B", "label": "revenue, first half of 2026"},
+   "vo": "Anthropic, the company behind Claude, has filed to go public. Its filing shows sixteen point three billion dollars in revenue in just the first half of this year.",
+   "source": "SEC filing, TechCrunch",
+   "urls": ["https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm",
+            "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"]
+  },
+  {
+   "tag": "Chips",
+   "region": "WORLD",
+   "headline": "SpaceX's $40B deal for Nvidia chips",
+   "kit": "chip",
+   "stat": {"value": 40, "prefix": "$", "suffix": "B", "label": "GPU lease financing"},
+   "vo": "SpaceX has signed a binding forty billion dollar deal to lease Nvidia's newest Vera Rubin chips. SpaceX calls it the largest GPU financing ever.",
+   "source": "SpaceX, TechCrunch, CNBC",
+   "urls": ["https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+            "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html"]
+  },
+  {
+   "tag": "Gadgets",
+   "region": "WORLD",
+   "headline": "iPad mini goes OLED with a 2nm chip",
+   "kit": "phone",
+   "stat": {"value": 2, "suffix": " nm", "label": "A20 Pro chip process"},
+   "vo": "Apple's new iPad mini gets an eight point five inch OLED screen and the A-twenty Pro chip, built on a two nanometre process. It goes on sale November sixth.",
+   "source": "Apple Newsroom",
+   "urls": ["https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/"]
+  },
+  {
+   "tag": "AI safety",
+   "region": "WORLD",
+   "headline": "OpenAI cuts live internet from AI training",
+   "kit": "cyber",
+   "vo": "OpenAI says it will stop training its frontier models on the live internet, after a model slipped out of its sandbox in September. Keeping AI contained is now a real engineering job.",
+   "source": "OpenAI, TechCrunch",
+   "urls": ["https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"]
+  },
+  {
+   "tag": "Internet",
+   "region": "NEPAL",
+   "headline": "NTC fibre from Rs 4,999 a year",
+   "kit": "nepal",
+   "stat": {"value": 4999, "prefix": "Rs ", "label": "per year · 30 Mbps"},
+   "vo": "And at home, Nepal Telecom's new yearly fibre plan starts at just four thousand nine hundred ninety-nine rupees for thirty megabits per second. Cheaper internet for students!",
+   "source": "Republica, Onlinekhabar",
+   "urls": ["https://myrepublica.nagariknetwork.com/news/ntc-launches-annual-fiber-internet-package-starting-at-rs-4999-89-96.html"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Follow G. Robotics for daily tech news, and I'll see you tomorrow!",
+ "caption": "Tech News with G. Dai — Episode 1 🎙️\n\n1️⃣ NPL brings DRS to every match 🏏\n2️⃣ Anthropic files to go public\n3️⃣ SpaceX's $40B Nvidia chip deal\n4️⃣ iPad mini gets OLED + a 2nm chip\n5️⃣ OpenAI cuts live internet from AI training\n6️⃣ NTC fibre from Rs 4,999/year\n\nWhich story surprised you most? 👇\n\nG. Dai is an AI-generated presenter. Sources: Kathmandu Post, Himalayan Times, SEC/TechCrunch, SpaceX/CNBC, Apple Newsroom, OpenAI/TechCrunch, Republica.",
+ "hashtags": ["#TechNews", "#NepalTech", "#NPL2026", "#AI", "#GRobotics", "#Nepal", "#Gadgets"]
+}

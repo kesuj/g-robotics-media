@@ -21,9 +21,11 @@ def pick(q):
     # "submitted" = a container exists but publishing hasn't been confirmed (transient error) → resume it first
     ready = [i for i in q["items"].values() if i["status"] in ("qa_passed", "submitted") and i.get("retries", 0) < MAX_RETRIES
              and (not i.get("not_before") or dt.datetime.fromisoformat(i["not_before"]) <= now())]
+    today = dt.datetime.now(NPT).date().isoformat()
+    yesterday = (dt.datetime.now(NPT).date() - dt.timedelta(days=1)).isoformat()
+    ready = [i for i in ready if not (i.get("kind") == "news" and i.get("news_date") and i["news_date"] < yesterday)]  # stale news never airs
     if not ready:
         return None
-    today = dt.datetime.now(NPT).date().isoformat()
     ready.sort(key=lambda i: (0 if i["status"] == "submitted" else 1, 0 if (i.get("kind") == "news" and i.get("news_date") == today) else 1, i.get("priority", 5), i["created"]))
     return ready[0]
 
