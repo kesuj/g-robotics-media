@@ -34,9 +34,9 @@ def drs(p, t0, d):
 <circle id="{p}-impact" cx="468" cy="210" r="20" fill="none" stroke="{C2}" stroke-width="6"/>
 <circle id="{p}-ball" cx="470" cy="130" r="14" fill="{RED}"/>
 <g id="{p}-tags" font-family="Outfit" font-weight="800" font-size="26" letter-spacing="2">
-<g id="{p}-t1"><rect x="560" y="280" width="250" height="52" rx="10" fill="#0b1328" stroke="{C1}" stroke-width="2"/><text x="580" y="315" fill="{C1}">PITCHING · IN LINE</text></g>
-<g id="{p}-t2"><rect x="560" y="190" width="250" height="52" rx="10" fill="#0b1328" stroke="{C2}" stroke-width="2"/><text x="580" y="225" fill="{C2}">IMPACT · IN LINE</text></g>
-<g id="{p}-t3"><rect x="560" y="100" width="250" height="52" rx="10" fill="{RED}"/><text x="580" y="135" fill="#fff">WICKETS · HITTING</text></g></g>
+<g id="{p}-t1"><rect x="560" y="280" width="300" height="52" rx="10" fill="#0b1328" stroke="{C1}" stroke-width="2"/><text x="580" y="315" fill="{C1}">PITCHING · IN LINE</text></g>
+<g id="{p}-t2"><rect x="560" y="190" width="300" height="52" rx="10" fill="#0b1328" stroke="{C2}" stroke-width="2"/><text x="580" y="225" fill="{C2}">IMPACT · IN LINE</text></g>
+<g id="{p}-t3"><rect x="560" y="100" width="300" height="52" rx="10" fill="{RED}"/><text x="580" y="135" fill="#fff">WICKETS · HITTING</text></g></g>
 <text x="70" y="250" font-family="Space Mono" font-weight="700" font-size="22" fill="{C1}">3D BALL</text><text x="70" y="282" font-family="Space Mono" font-weight="700" font-size="22" fill="{C1}">TRACKING</text>
 <text x="70" y="350" font-family="Space Mono" font-weight="700" font-size="22" fill="{C2}">EDGE</text><text x="70" y="382" font-family="Space Mono" font-weight="700" font-size="22" fill="{C2}">DETECTION</text>'''
     js = [_draw(f"#{p}-path", t0 + 0.4, 1.4, "power1.in"),
