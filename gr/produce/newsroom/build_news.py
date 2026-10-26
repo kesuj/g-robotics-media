@@ -20,7 +20,7 @@ from gr.produce.newsroom import gdai, music, visuals
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[2]
-WORK = Path(os.environ.get("GR_WORK", REPO / "work"))
+WORK = Path(os.environ.get("GR_WORK", REPO / "work")).resolve()
 HF = "hyperframes@0.8.198"
 W, H = 1080, 1920
 GAP_AFTER = 0.55          # air after each segment's voice
