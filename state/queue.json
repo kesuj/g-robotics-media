@@ -60,7 +60,7 @@
    "created": "2026-10-26T20:35:10.965525+00:00",
    "news_date": "2026-10-27",
    "status": "briefed",
-   "retries": 0,
+   "retries": 1,
    "format": "gdai_news",
    "style": null,
    "series": "Tech News with G. Dai",
@@ -75,6 +75,11 @@
      "at": "2026-10-26T20:36:17.446015+00:00",
      "status": "briefed",
      "note": "ages/torchaudio/_backend/soundfile_backend.py\", line 427, in save\n    raise ValueError(f\"Expected 2D Tensor, got {src.ndim}D.\")\nValueError: Expected 2D Tensor, got 1D.\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.p"
+    },
+    {
+     "at": "2026-10-26T20:51:09.807674+00:00",
+     "status": "briefed",
+     "note": "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"av/container/core.py\", line 479, in av.container.core.open\nTypeError: open() got an unexpected keyword argument 'metadata_errors'\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.p"
     }
    ]
   }
