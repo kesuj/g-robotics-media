@@ -51,6 +51,32 @@
    "media_id": "18131247064699762",
    "permalink": "https://www.instagram.com/reel/De99lb7gc04/",
    "published_at": "2026-10-26T18:49:24.958524+00:00"
+  },
+  "news-20261027": {
+   "id": "news-20261027",
+   "title": "Tech News with G. Dai — Episode 1",
+   "kind": "news",
+   "brief": "briefs/news/news-20261027.json",
+   "created": "2026-10-26T20:35:10.965525+00:00",
+   "news_date": "2026-10-27",
+   "status": "briefed",
+   "retries": 1,
+   "format": "gdai_news",
+   "style": null,
+   "series": "Tech News with G. Dai",
+   "not_before": "2026-10-27T17:30:00+05:45",
+   "priority": 1,
+   "history": [
+    {
+     "at": "2026-10-26T20:35:10.965538+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-26T20:36:17.446015+00:00",
+     "status": "briefed",
+     "note": "ages/torchaudio/_backend/soundfile_backend.py\", line 427, in save\n    raise ValueError(f\"Expected 2D Tensor, got {src.ndim}D.\")\nValueError: Expected 2D Tensor, got 1D.\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.p"
+    }
+   ]
   }
  }
 }
