@@ -1,0 +1,93 @@
+{
+  "id": "ep036",
+  "slug": "routh-stability-range-mcq",
+  "format": "mcq",
+  "title": "Routh test in ten seconds: find K",
+  "category": "Control",
+  "syllabus": "AEEE0506 — Stability analysis",
+  "beats": [
+    {
+      "type": "hook",
+      "vo": "A third order system, one unknown gain K. There's a ten second shortcut for this exam question.",
+      "text": "Find K in ten seconds"
+    },
+    {
+      "type": "question",
+      "vo": "For the characteristic equation s cubed plus four s squared plus two s plus K, which range of K keeps the system stable?",
+      "question": "For s³ + 4s² + 2s + K = 0 to be stable, K must be:",
+      "options": [
+        "K > 8",
+        "0 < K < 2",
+        "K < 0",
+        "0 < K < 8"
+      ],
+      "correct": "D",
+      "tag": "NEC STYLE · 2 MARKS"
+    },
+    {
+      "type": "countdown",
+      "vo": "Pause and lock your answer. Three. Two. One.",
+      "text": "Lock your answer",
+      "sub": "Answer before the reveal"
+    },
+    {
+      "type": "reveal",
+      "vo": "The answer is D. K must be more than zero but less than eight.",
+      "question": "For s³ + 4s² + 2s + K = 0 to be stable, K must be:",
+      "options": [
+        "K > 8",
+        "0 < K < 2",
+        "K < 0",
+        "0 < K < 8"
+      ],
+      "correct": "D"
+    },
+    {
+      "type": "analogy",
+      "vo": "Think of a table with three legs. All legs must stand up, positive coefficients, and the middle pair must out-balance the end one. Too much K tips it over.",
+      "text": "Middle terms must out-balance the end",
+      "pairs": [
+        {
+          "icon": "🪑",
+          "thing": "all legs on the floor",
+          "maps": "coefficients positive"
+        },
+        {
+          "icon": "⚖",
+          "thing": "balance beats tipping",
+          "maps": "ab > c"
+        }
+      ]
+    },
+    {
+      "type": "formula",
+      "vo": "For s cubed plus a s squared plus b s plus c, it's stable when all are positive and a times b is greater than c.",
+      "latex": "s^3 + a s^2 + b s + c:\\ \\ a, b, c > 0,\\ \\ ab > c",
+      "terms": [
+        {
+          "sym": "a, b, c",
+          "meaning": "polynomial coefficients"
+        },
+        {
+          "sym": "ab > c",
+          "meaning": "Routh condition"
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "vo": "Here a times b is four times two, eight. So K must stay below eight, and above zero.",
+      "latex": "ab = 4 \\times 2 = 8 > K \\Rightarrow 0 < K < 8"
+    },
+    {
+      "type": "tip",
+      "vo": "At K equal to eight, a Routh row becomes zero: marginally stable, the system keeps oscillating.",
+      "text": "K = 8 gives a zero Routh row: marginally stable, sustained oscillation."
+    },
+    {
+      "type": "outro",
+      "vo": "Follow for one license-exam concept every day.",
+      "text": "Daily EE"
+    }
+  ]
+}

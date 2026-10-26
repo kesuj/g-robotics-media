@@ -1,0 +1,49 @@
+name: maintenance
+# Daily analytics; weekly Instagram token refresh (Instagram Login tokens last ~60 days).
+on:
+  schedule:
+    - cron: "0 18 * * *"      # 23:45 NPT: insights for everything published
+    - cron: "0 3 * * 1"       # Monday 08:45 NPT: refresh the Instagram token
+  workflow_dispatch:
+
+concurrency: {group: state-writer, cancel-in-progress: false}
+permissions: {contents: write}
+
+jobs:
+  analytics:
+    if: github.event.schedule != '0 3 * * 1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - env: {IG_USER_ID: "${{ secrets.IG_USER_ID }}", IG_ACCESS_TOKEN: "${{ secrets.IG_ACCESS_TOKEN }}", IG_LOGIN: "${{ vars.IG_LOGIN || 'instagram' }}"}
+        run: python -m gr.analytics.pull
+      - run: |
+          git config user.name "g-robotics-bot"; git config user.email "bot@users.noreply.github.com"
+          git add state; git commit -m "analytics: $(date -u +%F)" || exit 0
+          git pull --rebase && git push
+
+  refresh-token:
+    if: github.event.schedule == '0 3 * * 1' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - name: Refresh and store (needs secret GH_SECRETS_PAT with "Secrets: write" on this repo)
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_LOGIN: ${{ vars.IG_LOGIN || 'instagram' }}
+          GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
+        run: |
+          NEW=$(python -c "from gr.publish.instagram import Instagram; t,_=Instagram().refresh_token(); print(t or '')")
+          if [ -z "$NEW" ]; then echo "nothing to refresh (Facebook Login path)"; exit 0; fi
+          echo "::add-mask::$NEW"
+          if [ -n "$GH_TOKEN" ]; then gh secret set IG_ACCESS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY" && echo "token refreshed and stored";
+          else echo "::error::Token refreshed but GH_SECRETS_PAT is missing — update IG_ACCESS_TOKEN manually within 60 days"; exit 1; fi

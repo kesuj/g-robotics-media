@@ -1,0 +1,229 @@
+{
+ "_note": "Feeds polled by gr/research/collect.py. tier: 1 = primary/official, 2 = reputable press, 3 = aggregator/discussion (never sole source for a claim).",
+ "feeds": [
+  {
+   "name": "arXiv cs.RO (Robotics)",
+   "url": "https://rss.arxiv.org/rss/cs.RO",
+   "tier": 1,
+   "topics": [
+    "robotics"
+   ]
+  },
+  {
+   "name": "arXiv cs.AI",
+   "url": "https://rss.arxiv.org/rss/cs.AI",
+   "tier": 1,
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "name": "arXiv cs.CV",
+   "url": "https://rss.arxiv.org/rss/cs.CV",
+   "tier": 1,
+   "topics": [
+    "ai",
+    "vision"
+   ]
+  },
+  {
+   "name": "NASA news releases",
+   "url": "https://www.nasa.gov/news-release/feed/",
+   "tier": 1,
+   "topics": [
+    "aerospace"
+   ]
+  },
+  {
+   "name": "NVIDIA blog",
+   "url": "https://blogs.nvidia.com/feed/",
+   "tier": 1,
+   "topics": [
+    "ai",
+    "robotics"
+   ]
+  },
+  {
+   "name": "Google DeepMind blog",
+   "url": "https://deepmind.google/blog/rss.xml",
+   "tier": 1,
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "name": "IEEE Spectrum robotics",
+   "url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+   "tier": 2,
+   "topics": [
+    "robotics"
+   ]
+  },
+  {
+   "name": "IEEE Spectrum AI",
+   "url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss",
+   "tier": 2,
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "name": "IEEE Spectrum aerospace",
+   "url": "https://spectrum.ieee.org/feeds/topic/aerospace.rss",
+   "tier": 2,
+   "topics": [
+    "aerospace",
+    "drones"
+   ]
+  },
+  {
+   "name": "The Robot Report",
+   "url": "https://www.therobotreport.com/feed/",
+   "tier": 2,
+   "topics": [
+    "robotics"
+   ]
+  },
+  {
+   "name": "DroneLife",
+   "url": "https://dronelife.com/feed/",
+   "tier": 2,
+   "topics": [
+    "drones"
+   ]
+  },
+  {
+   "name": "DroneDJ",
+   "url": "https://dronedj.com/feed/",
+   "tier": 2,
+   "topics": [
+    "drones"
+   ]
+  },
+  {
+   "name": "sUAS News",
+   "url": "https://www.suasnews.com/feed/",
+   "tier": 2,
+   "topics": [
+    "drones"
+   ]
+  },
+  {
+   "name": "Google News: Nepal drone",
+   "url": "https://news.google.com/rss/search?q=Nepal+drone&hl=en-US&gl=US&ceid=US:en",
+   "tier": 3,
+   "topics": [
+    "nepal",
+    "drones"
+   ]
+  },
+  {
+   "name": "Google News: Nepal robotics OR AI",
+   "url": "https://news.google.com/rss/search?q=Nepal+(robotics+OR+%22artificial+intelligence%22)&hl=en-US&gl=US&ceid=US:en",
+   "tier": 3,
+   "topics": [
+    "nepal",
+    "ai",
+    "robotics"
+   ]
+  },
+  {
+   "name": "Google News: humanoid robot",
+   "url": "https://news.google.com/rss/search?q=humanoid+robot&hl=en-US&gl=US&ceid=US:en",
+   "tier": 3,
+   "topics": [
+    "robotics"
+   ]
+  },
+  {
+   "name": "Google News: drone technology",
+   "url": "https://news.google.com/rss/search?q=drone+technology&hl=en-US&gl=US&ceid=US:en",
+   "tier": 3,
+   "topics": [
+    "drones"
+   ]
+  },
+  {
+   "name": "The Verge",
+   "url": "https://www.theverge.com/rss/index.xml",
+   "tier": 2,
+   "topics": [
+    "tech_news"
+   ]
+  },
+  {
+   "name": "TechCrunch",
+   "url": "https://techcrunch.com/feed/",
+   "tier": 2,
+   "topics": [
+    "tech_news"
+   ]
+  },
+  {
+   "name": "Ars Technica",
+   "url": "https://feeds.arstechnica.com/arstechnica/index",
+   "tier": 2,
+   "topics": [
+    "tech_news"
+   ]
+  },
+  {
+   "name": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/feed/",
+   "tier": 2,
+   "topics": [
+    "tech_news",
+    "ai"
+   ]
+  },
+  {
+   "name": "Wired",
+   "url": "https://www.wired.com/feed/rss",
+   "tier": 2,
+   "topics": [
+    "tech_news"
+   ]
+  },
+  {
+   "name": "Engadget",
+   "url": "https://www.engadget.com/rss.xml",
+   "tier": 2,
+   "topics": [
+    "tech_news"
+   ]
+  },
+  {
+   "name": "BBC Technology",
+   "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+   "tier": 2,
+   "topics": [
+    "tech_news"
+   ]
+  },
+  {
+   "name": "Google News: Technology",
+   "url": "https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=en-US&gl=US&ceid=US:en",
+   "tier": 3,
+   "topics": [
+    "tech_news"
+   ]
+  },
+  {
+   "name": "Hacker News front page",
+   "url": "https://hnrss.org/frontpage?points=200",
+   "tier": 3,
+   "topics": [
+    "tech_news"
+   ]
+  },
+  {
+   "name": "Google News: Nepal technology",
+   "url": "https://news.google.com/rss/search?q=Nepal+technology&hl=en-US&gl=US&ceid=US:en",
+   "tier": 3,
+   "topics": [
+    "nepal",
+    "tech_news"
+   ]
+  }
+ ]
+}

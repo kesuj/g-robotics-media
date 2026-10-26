@@ -1,0 +1,117 @@
+{
+ "timezone": "Asia/Kathmandu",
+ "slots_npt": [
+  "08:00",
+  "12:30",
+  "18:00",
+  "21:00"
+ ],
+ "_slots_note": "Initial hypothesis from the brief; analytics will move them. Slot 4 (21:00) is optional — skipped when the approved queue is short rather than filled with weak content.",
+ "min_backlog": 8,
+ "category_mix": {
+  "drones": 0.3,
+  "ai": 0.25,
+  "robotics": 0.2,
+  "news_and_experts": 0.15,
+  "nepal": 0.1
+ },
+ "series": [
+  "World Tech News",
+  "Drone Engineering in 30 Seconds",
+  "AI Breakthrough of the Day",
+  "Robots Doing Incredible Things",
+  "Nepal Builds the Future",
+  "One Engineering Concept",
+  "Inside Autonomous Systems",
+  "The Science Behind the Machine",
+  "Robotics Research Explained",
+  "This Week in Drones and AI",
+  "Build It, Test It, Understand It",
+  "Engineering Myths Busted"
+ ],
+ "formats": {
+  "whiteboard_explainer": {
+   "renderer": "eedaily-engine",
+   "cost": "free",
+   "notes": "graph-paper explainer: hook, analogy, diagram, formula, steps, answer"
+  },
+  "exam_mcq": {
+   "renderer": "eedaily-engine",
+   "cost": "free"
+  },
+  "myth_vs_fact": {
+   "renderer": "eedaily-engine",
+   "cost": "free"
+  },
+  "eli5_analogy": {
+   "renderer": "eedaily-engine",
+   "cost": "free"
+  },
+  "common_mistake": {
+   "renderer": "eedaily-engine",
+   "cost": "free"
+  },
+  "news_explainer": {
+   "renderer": "hyperframes-news",
+   "cost": "free",
+   "notes": "source card + licensed stock/official media + kinetic type; must show source and date"
+  },
+  "madhubani_story": {
+   "renderer": "madhubani-anime",
+   "cost": "free",
+   "notes": "Mithila folk-art animation for Nepal stories"
+  },
+  "hairline_mechanism": {
+   "renderer": "hairline",
+   "cost": "free",
+   "notes": "isometric line figure of a mechanism"
+  },
+  "manim_concept": {
+   "renderer": "manim",
+   "cost": "free",
+   "notes": "waveforms, phasors, control loops, graphs"
+  },
+  "code_anime": {
+   "renderer": "html-anime",
+   "cost": "free"
+  },
+  "cinematic_stock": {
+   "renderer": "hyperframes-cinematic",
+   "cost": "free",
+   "notes": "Pexels/Pixabay footage + grade + VO"
+  },
+  "ai_video_cinematic": {
+   "renderer": "paid-video-model",
+   "cost": "paid",
+   "enabled": false,
+   "notes": "needs owner authorization + budget"
+  },
+  "avatar_presenter": {
+   "renderer": "paid-avatar",
+   "cost": "paid",
+   "enabled": false,
+   "notes": "licensed avatar only; needs owner authorization + budget"
+  }
+ },
+ "no_repeat_window": {
+  "format": 2,
+  "series": 3,
+  "music": 5,
+  "voice": 0
+ },
+ "never_auto_publish": [
+  "sensitive=true candidates",
+  "breaking claims with a single tier-3 source",
+  "political content",
+  "allegations or disputes",
+  "synthetic depictions of real people",
+  "unsafe flying or battery handling"
+ ],
+ "daily_fixed": {
+  "World Tech News": {
+   "slot": "18:00",
+   "kind": "news",
+   "notes": "one Reel a day: the most important verified tech story(ies) from around the world in the last 24-48 h; 2–3 stories max, each with source + date on screen; skip sensitive items"
+  }
+ }
+}

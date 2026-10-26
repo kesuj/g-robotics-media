@@ -1,0 +1,19 @@
+{
+ "_note": "Instagram Reels limits used by gr/qa/check.py. Values marked 'verify' must be confirmed against the current Meta docs (see docs/PLATFORM.md) and updated here.",
+ "instagram_reels": {
+  "resolution": [1080, 1920],
+  "video_codecs": ["h264", "hevc"],
+  "pix_fmts": ["yuv420p"],
+  "audio_codecs": ["aac"],
+  "fps_min": 23,
+  "fps_max": 60,
+  "duration_min_s": 3,
+  "duration_max_s": 900,
+  "max_size_mb": 300,
+  "max_silence_s": 2.5,
+  "lufs_min": -18,
+  "lufs_max": -12,
+  "caption_max_chars": 2200,
+  "hashtags_max": 30
+ }
+}

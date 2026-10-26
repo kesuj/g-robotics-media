@@ -1,0 +1,44 @@
+{
+ "items": {
+  "g20261027-01": {
+   "id": "g20261027-01",
+   "title": "A Flood Cut Nepal's Power to Bangladesh. Now It's Back",
+   "kind": "news",
+   "brief": "briefs\\g20261027-01-nepal-power.json",
+   "created": "2026-10-26T16:19:07.261069+00:00",
+   "news_date": "2026-10-26",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "news",
+   "style": null,
+   "series": null,
+   "history": [
+    {
+     "at": "2026-10-26T16:19:07.261088+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-26T16:23:05.761712+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-26T16:23:07.096678+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders\\g20261027-01.mp4",
+   "caption_file": "state\\captions\\g20261027-01.txt",
+   "qa": {
+    "duration": 70.2,
+    "size_mb": 11.1,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.3
+   },
+   "video_url": null
+  }
+ }
+}

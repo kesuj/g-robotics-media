@@ -1,0 +1,10 @@
+.env
+*.env
+secrets/
+renders/
+build/
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+state/*.tmp

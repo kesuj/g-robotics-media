@@ -1,0 +1,41 @@
+name: publish-slot
+# Publishes the next approved Reel at each Nepal-time slot. GitHub cron is UTC and can start late;
+# NPT = UTC+5:45 → 08:00 NPT = 02:15 UTC, 12:30 = 06:45, 18:00 = 12:15, 21:00 = 15:15.
+on:
+  schedule:
+    - cron: "15 2 * * *"
+    - cron: "45 6 * * *"
+    - cron: "15 12 * * *"
+    - cron: "15 15 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run: {description: "Dry run (no publish)", type: boolean, default: true}
+
+concurrency: {group: state-writer, cancel-in-progress: false}   # one state-writing job at a time
+permissions: {contents: write}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - name: Fetch rendered files for the queue (release assets)
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: gh release download reel-queue --dir renders --pattern '*.mp4' --clobber || true
+      - name: Publish
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_LOGIN: ${{ vars.IG_LOGIN || 'instagram' }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python -m gr.publish.slot ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "g-robotics-bot"; git config user.email "bot@users.noreply.github.com"
+          git add state; git commit -m "publish: state $(date -u +%FT%TZ)" || exit 0
+          git pull --rebase && git push

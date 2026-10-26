@@ -1,0 +1,69 @@
+{
+ "id": "n001",
+ "slug": "nepal-power-back-to-bangladesh",
+ "format": "news",
+ "title": "A Flood Cut Nepal's Power to Bangladesh. Now It's Back",
+ "category": "Nepal Power",
+ "date": "2026-10-26",
+ "description": "On Friday, 23 October 2026, Nepal resumed exporting 40 MW of hydropower to Bangladesh through India's grid. The supply had stopped after the 26 August Bhotekoshi flood damaged the Trishuli and Chilime plants, so the Solu Khola and Kabeli B-1 plants now supply it instead, with approval from India's Central Electricity Authority. NEA also earned Rs 5.925 billion from 634 million units exported to India between mid-September and mid-October, up Rs 962 million on the same period last year.",
+ "sources": [
+  "https://kathmandupost.com/money/2026/10/25/nepal-resumes-power-exports-to-bangladesh-after-flood-disruption",
+  "https://www.ajkerpatrika.com/en/amp/national/ajp84m8d04b57",
+  "https://english.nepalnews.com/s/business/electricity-worth-rs-5-92-billion-exported-to-india-from-mid-september-to-mid-october/"
+ ],
+ "tags": ["nepal electricity", "nepal bangladesh power trade", "hydropower", "nea", "cross border electricity", "bhotekoshi flood", "power export", "south asia grid"],
+ "mascot": true,
+ "beats": [
+  {
+   "type": "hook",
+   "text": "A flood cut this power line",
+   "vo": "In August, a flash flood cut Nepal's power exports to Bangladesh. On Friday, the electricity started flowing again."
+  },
+  {
+   "type": "headline",
+   "text": "Nepal resumes 40 MW power exports to Bangladesh",
+   "source": "Source: Kathmandu Post, Ajker Patrika, Nepal News",
+   "date": "23 OCT 2026",
+   "tag": "BACK ONLINE",
+   "ticker": "Supply routed through India's grid after the Bhotekoshi flood",
+   "vo": "Nepal is once again sending forty megawatts to Bangladesh, carried across India's transmission grid."
+  },
+  {
+   "type": "stat",
+   "number": 5.925,
+   "prefix": "Rs ",
+   "unit": "billion",
+   "text": "Earned from power exports to India in one month",
+   "tag": "MID SEP TO MID OCT",
+   "vo": "And India is buying too. From mid September to mid October, the N E A earned nearly six billion rupees from about six hundred thirty four million units. That's almost a billion more than a year ago."
+  },
+  {
+   "type": "concept",
+   "text": "How Nepal rerouted around the damage",
+   "points": ["Trishuli and Chilime knocked out", "Solu Khola, Kabeli B-1 step in", "India's regulator approved the swap"],
+   "tag": "WHAT HAPPENED",
+   "vo": "The flood damaged Trishuli and Chilime, the two plants approved to supply Bangladesh. So Nepal named new ones, Solu Khola and Kabeli B one, and India's Central Electricity Authority signed off."
+  },
+  {
+   "type": "timeline",
+   "tag": "THE DEAL",
+   "events": [
+    {"year": "2024", "text": "Five-year seasonal deal with Bangladesh signed"},
+    {"year": "Aug 2026", "text": "Bhotekoshi flood halts the supply"},
+    {"year": "Oct 2026", "text": "New plants restart the exports"}
+   ],
+   "vo": "The five year deal, signed in twenty twenty four, sends power every year from mid June to mid November."
+  },
+  {
+   "type": "tip",
+   "text": "A grid with backup plants turns surplus monsoon power into income",
+   "tag": "WHY IT MATTERS",
+   "vo": "For engineers in Nepal, this is the takeaway. Monsoon surplus is only worth money if the grid can reroute it. Having backup plants kept the deal alive."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for tech and power news every day."
+  }
+ ]
+}
