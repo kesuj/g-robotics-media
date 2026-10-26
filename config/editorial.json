@@ -87,10 +87,16 @@
    "notes": "needs owner authorization + budget"
   },
   "avatar_presenter": {
-   "renderer": "paid-avatar",
+   "renderer": "engine presenter (gr/produce/engine/presenter.py)",
+   "cost": "free",
+   "enabled": true,
+   "notes": "code-drawn original characters aarav / maya / dai with viseme lip-sync; always labelled AI PRESENTER. Set \"presenter\" in a brief."
+  },
+  "avatar_presenter_realistic": {
+   "renderer": "HeyGen API (heygen CLI on the Linux runner)",
    "cost": "paid",
    "enabled": false,
-   "notes": "licensed avatar only; needs owner authorization + budget"
+   "notes": "≈$3–6 per minute of Avatar IV via API (third-party figures, verify); free plan = 3 watermarked 720p videos/month. Needs HEYGEN_API_KEY secret + MONTHLY_PAID_LIMIT_USD > 0 + owner approval."
   }
  },
  "no_repeat_window": {

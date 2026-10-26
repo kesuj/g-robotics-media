@@ -23,6 +23,7 @@ Read first: `config/editorial.json`, `docs/EPISODE-SCHEMA.md`, two recent files 
 - Add: `"caption"` (≤ 600 chars, hook first line, plain English; Nepali line when the story is Nepal-related),
   `"hashtags"` (5–8, specific), `"sources"` (URLs you actually opened), `"date"` (event date),
   `"series"`, `"style"` (pick a style from `gr/produce/engine/styles.py` not used in the last 3 items).
+- About one in three Reels gets a presenter: set `"presenter"` to `aarav`, `maya` or `dai` (rotate; never the same twice in a row; news and explainers suit it best). They are original synthetic characters — never describe them as real people.
 - Hook in the first line of VO (1–2 s), concrete, no "Today we will…". 15–45 s total VO (≈ 40–120 words).
 - Numbers spelled out in `vo`; units in words; no digits in `vo`.
 - Label simulations, estimates and concepts as such. Never fabricate quotes, interviews or endorsements.
