@@ -5,3 +5,5 @@
 {"at": "2026-10-26T16:23:05.762058+00:00", "action": "status", "id": "g20261027-01", "status": "rendered"}
 {"at": "2026-10-26T16:23:07.097061+00:00", "action": "status", "id": "g20261027-01", "status": "qa_passed"}
 {"at": "2026-10-26T16:23:07.100921+00:00", "action": "produce.run", "made": 1}
+{"at": "2026-10-26T18:48:16.920785+00:00", "action": "status", "id": "g20261027-01", "status": "submitted"}
+{"at": "2026-10-26T18:49:24.958639+00:00", "action": "status", "id": "g20261027-01", "status": "published", "media_id": "18131247064699762", "permalink": "https://www.instagram.com/reel/De99lb7gc04/"}
