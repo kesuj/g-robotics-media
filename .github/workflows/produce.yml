@@ -20,8 +20,12 @@ jobs:
         with: {python-version: "3.12"}
       - uses: actions/setup-node@v4
         with: {node-version: "22"}
+      - name: ffmpeg (static build; avoids slow apt mirrors)
+        timeout-minutes: 10
+        uses: FedericoCarboni/setup-ffmpeg@v3
       - name: System packages
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-color-emoji espeak-ng
+        timeout-minutes: 15
+        run: sudo apt-get install -y --no-install-recommends fonts-noto-color-emoji espeak-ng || (sudo apt-get update && sudo apt-get install -y --no-install-recommends fonts-noto-color-emoji espeak-ng)
       - run: pip install -r requirements.txt -r requirements-render.txt
       - run: npm install --prefix gr/produce/engine
       - uses: actions/cache@v4
