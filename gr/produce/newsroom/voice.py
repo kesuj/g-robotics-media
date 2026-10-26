@@ -89,7 +89,9 @@ def main(job_path):
     wm = WhisperModel(os.environ.get("WHISPER_MODEL", "base.en"), device="cpu", compute_type="int8")
     words = {}
     for seg in job["segments"]:
-        parts, _ = wm.transcribe(seg["out"], word_timestamps=True, language="en", beam_size=1)
+        wav, sr = torchaudio.load(seg["out"])   # decode here (16 kHz mono numpy) so faster-whisper never touches PyAV
+        wav = torchaudio.functional.resample(wav.mean(0), sr, 16000).numpy().astype("float32")
+        parts, _ = wm.transcribe(wav, word_timestamps=True, language="en", beam_size=1)
         rec = [(w.word.strip(), w.start, w.end) for p in parts for w in (p.words or [])]
         words[seg["id"]] = align(seg["text"].split(), rec)
     Path(job["words_out"]).write_text(json.dumps(words, indent=1), encoding="utf8")
