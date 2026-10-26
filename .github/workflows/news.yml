@@ -47,6 +47,9 @@ jobs:
           WHISPER_MODEL: base.en
           GDAI_STEPS: "16"
         run: python -m gr.produce.run --limit 1
+      - name: Did today's episode make it to the queue?
+        run: |
+          python -c "import json,sys; it=json.load(open('state/queue.json'))['items'].get('news-${{ steps.d.outputs.stamp }}'); print(it and {k: it.get(k) for k in ('status','note')}); sys.exit(0 if it and it['status'] in ('qa_passed','published','submitted') else 1)"
       - name: Save state
         if: always()
         run: |
