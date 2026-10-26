@@ -48,7 +48,7 @@ def main(dry=False):
             used, total = ig.quota()
             if total and used >= total:
                 raise PublishError(f"publishing quota used up ({used}/{total})")
-            caption = Path(ROOT / it["caption_file"]).read_text(encoding="utf8")
+            caption = Path(ROOT / it["caption_file"].replace("\\", "/")).read_text(encoding="utf8")
             # lost-commit guard: was this caption already published in the last few posts?
             for m in ig.recent_captions():
                 if (m.get("caption") or "").strip() == caption.strip():
@@ -58,10 +58,10 @@ def main(dry=False):
             if not cid:
                 if ig.login == "facebook":
                     cid = ig.create_container(caption)
-                    ig.upload_bytes(cid, ROOT / it["video_file"])
+                    ig.upload_bytes(cid, ROOT / it["video_file"].replace("\\", "/"))
                 else:
                     from gr.publish import hosting
-                    url = it.get("video_url") or hosting.upload(ROOT / it["video_file"], f"{iid}.mp4")
+                    url = it.get("video_url") or hosting.upload(ROOT / it["video_file"].replace("\\", "/"), f"{iid}.mp4")
                     cid = ig.create_container(caption, video_url=url)
                 set_status(q, iid, "submitted", container_id=cid)
             ig.wait_ready(cid)

@@ -65,7 +65,7 @@ def main(limit=4):
             if it and it["status"] not in ("briefed",):
                 continue
             if not it:
-                q["items"][iid] = it = {"id": iid, "title": ep["title"], "kind": ep.get("format", "explain"), "brief": str(brief.relative_to(ROOT)),
+                q["items"][iid] = it = {"id": iid, "title": ep["title"], "kind": ep.get("format", "explain"), "brief": brief.relative_to(ROOT).as_posix(),
                                         "created": now().isoformat(), "news_date": ep.get("date"), "status": "briefed", "retries": 0,
                                         "format": ep.get("format"), "style": ep.get("style"), "series": ep.get("series")}
                 set_status(q, iid, "briefed")
@@ -73,7 +73,7 @@ def main(limit=4):
                 mp4 = render(brief)
                 dest = RENDERS / f"{iid}.mp4"
                 normalize(mp4, dest)
-                set_status(q, iid, "rendered", video_file=str(dest.relative_to(ROOT)))
+                set_status(q, iid, "rendered", video_file=dest.relative_to(ROOT).as_posix())
                 cap = caption_text(ep)
                 cap_file = ROOT / "state" / "captions" / f"{iid}.txt"   # committed, so the publish job has it
                 cap_file.parent.mkdir(parents=True, exist_ok=True)
@@ -86,7 +86,7 @@ def main(limit=4):
                 if os.environ.get("GITHUB_TOKEN") and os.environ.get("GITHUB_REPOSITORY"):
                     from gr.publish import hosting     # cloud: keep the file in the release so later jobs can fetch it
                     url = hosting.upload(dest, f"{iid}.mp4")
-                set_status(q, iid, "qa_passed", caption_file=str(cap_file.relative_to(ROOT)), qa=facts, video_url=url)
+                set_status(q, iid, "qa_passed", caption_file=cap_file.relative_to(ROOT).as_posix(), qa=facts, video_url=url)
                 made += 1
             except Exception as e:  # noqa: BLE001 — any failure keeps the item out of the publish queue
                 it["retries"] = it.get("retries", 0) + 1
