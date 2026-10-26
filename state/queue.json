@@ -59,7 +59,7 @@
    "brief": "briefs/news/news-20261027.json",
    "created": "2026-10-26T20:35:10.965525+00:00",
    "news_date": "2026-10-27",
-   "status": "briefed",
+   "status": "qa_passed",
    "retries": 0,
    "format": "gdai_news",
    "style": null,
@@ -80,8 +80,29 @@
      "at": "2026-10-26T20:51:09.807674+00:00",
      "status": "briefed",
      "note": "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"av/container/core.py\", line 479, in av.container.core.open\nTypeError: open() got an unexpected keyword argument 'metadata_errors'\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.p"
+    },
+    {
+     "at": "2026-10-26T21:15:53.661224+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-26T21:15:56.637447+00:00",
+     "status": "qa_passed"
     }
-   ]
+   ],
+   "video_file": "renders/news-20261027.mp4",
+   "caption_file": "state/captions/news-20261027.txt",
+   "qa": {
+    "duration": 70.9,
+    "size_mb": 27.5,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.1
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/news-20261027.mp4"
   }
  }
 }

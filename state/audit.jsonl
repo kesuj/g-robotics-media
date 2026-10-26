@@ -12,3 +12,6 @@
 {"at": "2026-10-26T20:36:17.447022+00:00", "action": "produce.run", "made": 0}
 {"at": "2026-10-26T20:51:09.807784+00:00", "action": "status", "id": "news-20261027", "status": "briefed", "note": "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"av/container/core.py\", line 479, in av.container.core.open\nTypeError: open() got an unexpected keyword argument 'metadata_errors'\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.p"}
 {"at": "2026-10-26T20:51:09.808511+00:00", "action": "produce.run", "made": 0}
+{"at": "2026-10-26T21:15:53.661328+00:00", "action": "status", "id": "news-20261027", "status": "rendered"}
+{"at": "2026-10-26T21:15:56.637523+00:00", "action": "status", "id": "news-20261027", "status": "qa_passed"}
+{"at": "2026-10-26T21:15:56.638184+00:00", "action": "produce.run", "made": 1}
