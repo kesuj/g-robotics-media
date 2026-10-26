@@ -36,6 +36,7 @@ jobs:
         env: {NEWS_DATE: "${{ steps.d.outputs.date }}"}
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ github.token }}   # repo token; no Claude GitHub App needed (the editor only edits files)
           prompt: "Today's Nepal date is ${{ steps.d.outputs.date }}. Follow docs/prompts/news-editor.md exactly and write briefs/news/news-${{ steps.d.outputs.stamp }}.json."
           claude_args: >-
             --max-turns 120
@@ -55,4 +56,4 @@ jobs:
         run: |
           git config user.name "g-robotics-bot"; git config user.email "bot@users.noreply.github.com"
           git add briefs state; git commit -m "news: $(date -u +%FT%TZ)" || exit 0
-          git pull --rebase && git push
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done

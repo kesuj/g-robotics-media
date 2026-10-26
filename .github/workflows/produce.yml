@@ -40,6 +40,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ github.token }}   # repo token; no Claude GitHub App needed (the editor only edits files)
           prompt: "Follow docs/prompts/editor.md exactly."
           claude_args: >-
             --max-turns 80
@@ -54,4 +55,4 @@ jobs:
         run: |
           git config user.name "g-robotics-bot"; git config user.email "bot@users.noreply.github.com"
           git add briefs state; git commit -m "produce: $(date -u +%FT%TZ)" || exit 0
-          git pull --rebase && git push
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
