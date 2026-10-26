@@ -25,6 +25,17 @@ import torch
 import torchaudio
 
 
+def save_wav(path, audio, sr):
+    """OmniVoice builds differ: a list of [1, n] tensors (VoiceStudio) or of 1-D arrays (PyPI). Normalise to [1, n]."""
+    a = audio[0] if isinstance(audio, (list, tuple)) else audio
+    a = torch.as_tensor(a, dtype=torch.float32)
+    while a.ndim > 2:
+        a = a.squeeze(0)
+    if a.ndim == 1:
+        a = a.unsqueeze(0)
+    torchaudio.save(path, a.cpu(), sr)
+
+
 def norm(w):
     return re.sub(r"[^a-z0-9]", "", w.lower())
 
@@ -71,7 +82,7 @@ def main(job_path):
         torch.manual_seed(11)
         audio = model.generate(text=seg["text"], ref_audio=job["ref_wav"], ref_text=job["ref_text"], num_step=steps,
                                speed=float(os.environ.get("GDAI_SPEED", "1.04")))
-        torchaudio.save(seg["out"], audio[0], model.sampling_rate)
+        save_wav(seg["out"], audio, model.sampling_rate)
         print(f"{seg['id']}: {time.time() - t:.0f}s", flush=True)
     del model
 
