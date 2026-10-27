@@ -287,6 +287,78 @@
     "lufs": -14.4
    },
    "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-05.mp4"
+  },
+  "g20261027-06": {
+   "id": "g20261027-06",
+   "title": "Robots Can Now Practise Inside an AI-Made World",
+   "kind": "clip",
+   "brief": "briefs/g20261027-06-nvidia-cosmos-world-models.json",
+   "created": "2026-10-27T15:32:47.700080+00:00",
+   "news_date": "2026-10-21",
+   "status": "briefed",
+   "retries": 1,
+   "format": "clip",
+   "style": "chalkboard",
+   "series": "AI Breakthrough of the Day",
+   "history": [
+    {
+     "at": "2026-10-27T15:32:47.700097+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-27T15:32:47.848804+00:00",
+     "status": "briefed",
+     "note": "l/modules/esm/loader:747:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)\n    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v22.23.4\nTraceback (most recent call last):\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/"
+    }
+   ]
+  },
+  "g20261027-07": {
+   "id": "g20261027-07",
+   "title": "Why Cheaper iPad Minis May Get a Weaker A20 Pro",
+   "kind": "clip",
+   "brief": "briefs/g20261027-07-ipad-mini-chip-binning.json",
+   "created": "2026-10-27T15:32:47.849196+00:00",
+   "news_date": "2026-10-26",
+   "status": "briefed",
+   "retries": 1,
+   "format": "clip",
+   "style": "sunset",
+   "series": "One Engineering Concept",
+   "history": [
+    {
+     "at": "2026-10-27T15:32:47.849203+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-27T15:32:47.978510+00:00",
+     "status": "briefed",
+     "note": "l/modules/esm/loader:747:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)\n    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v22.23.4\nTraceback (most recent call last):\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/"
+    }
+   ]
+  },
+  "g20261027-08": {
+   "id": "g20261027-08",
+   "title": "Myth: Space Makes Perfect Optical Fibre",
+   "kind": "clip",
+   "brief": "briefs/g20261027-08-zblan-fiber-space-myth.json",
+   "created": "2026-10-27T15:32:47.979053+00:00",
+   "news_date": "2026-10-26",
+   "status": "briefed",
+   "retries": 1,
+   "format": "clip",
+   "style": "classic",
+   "series": "Engineering Myths Busted",
+   "history": [
+    {
+     "at": "2026-10-27T15:32:47.979067+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-27T15:32:48.105209+00:00",
+     "status": "briefed",
+     "note": "l/modules/esm/loader:747:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)\n    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v22.23.4\nTraceback (most recent call last):\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/"
+    }
+   ]
   }
  }
 }
