@@ -1,0 +1,7 @@
+A drone that steers with just ONE motor. 🚁
+Maker Joshua Bird's hinged propeller hub changes blade angle as the motor speeds up and slows down, so timed surges tilt the drone. Limits: indoor only, with an infrared beacon for heading. Code and CAD are open source.
+Why care: fewer parts, harder control.
+
+Sources: dronexl.co, github.com, hackaday.com
+
+#Drones #ControlSystems #Robotics #Engineering #OpenSource #GRobotics

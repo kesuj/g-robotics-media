@@ -295,7 +295,7 @@
    "brief": "briefs/g20261027-06-nvidia-cosmos-world-models.json",
    "created": "2026-10-27T15:32:47.700080+00:00",
    "news_date": "2026-10-21",
-   "status": "briefed",
+   "status": "qa_passed",
    "retries": 1,
    "format": "clip",
    "style": "chalkboard",
@@ -309,8 +309,29 @@
      "at": "2026-10-27T15:32:47.848804+00:00",
      "status": "briefed",
      "note": "l/modules/esm/loader:747:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)\n    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v22.23.4\nTraceback (most recent call last):\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/"
+    },
+    {
+     "at": "2026-10-27T16:06:44.813101+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-27T16:06:46.054963+00:00",
+     "status": "qa_passed"
     }
-   ]
+   ],
+   "video_file": "renders/g20261027-06.mp4",
+   "caption_file": "state/captions/g20261027-06.txt",
+   "qa": {
+    "duration": 30.1,
+    "size_mb": 6.2,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.3
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-06.mp4"
   },
   "g20261027-07": {
    "id": "g20261027-07",
@@ -319,7 +340,7 @@
    "brief": "briefs/g20261027-07-ipad-mini-chip-binning.json",
    "created": "2026-10-27T15:32:47.849196+00:00",
    "news_date": "2026-10-26",
-   "status": "briefed",
+   "status": "qa_passed",
    "retries": 1,
    "format": "clip",
    "style": "sunset",
@@ -333,8 +354,29 @@
      "at": "2026-10-27T15:32:47.978510+00:00",
      "status": "briefed",
      "note": "l/modules/esm/loader:747:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)\n    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v22.23.4\nTraceback (most recent call last):\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/"
+    },
+    {
+     "at": "2026-10-27T16:07:51.096543+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-27T16:07:53.693669+00:00",
+     "status": "qa_passed"
     }
-   ]
+   ],
+   "video_file": "renders/g20261027-07.mp4",
+   "caption_file": "state/captions/g20261027-07.txt",
+   "qa": {
+    "duration": 24.5,
+    "size_mb": 4.1,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.4
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-07.mp4"
   },
   "g20261027-08": {
    "id": "g20261027-08",
@@ -343,7 +385,7 @@
    "brief": "briefs/g20261027-08-zblan-fiber-space-myth.json",
    "created": "2026-10-27T15:32:47.979053+00:00",
    "news_date": "2026-10-26",
-   "status": "briefed",
+   "status": "qa_passed",
    "retries": 1,
    "format": "clip",
    "style": "classic",
@@ -357,8 +399,69 @@
      "at": "2026-10-27T15:32:48.105209+00:00",
      "status": "briefed",
      "note": "l/modules/esm/loader:747:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)\n    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v22.23.4\nTraceback (most recent call last):\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/"
+    },
+    {
+     "at": "2026-10-27T16:08:59.913111+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-27T16:09:02.022200+00:00",
+     "status": "qa_passed"
     }
-   ]
+   ],
+   "video_file": "renders/g20261027-08.mp4",
+   "caption_file": "state/captions/g20261027-08.txt",
+   "qa": {
+    "duration": 26.6,
+    "size_mb": 3.7,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.3
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-08.mp4"
+  },
+  "g20261027-09": {
+   "id": "g20261027-09",
+   "title": "A Drone That Steers With Just One Motor",
+   "kind": "clip",
+   "brief": "briefs/g20261027-09-single-motor-drone.json",
+   "created": "2026-10-27T16:09:02.022530+00:00",
+   "news_date": "2026-10-20",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "notebook",
+   "series": "Drone Engineering in 30 Seconds",
+   "history": [
+    {
+     "at": "2026-10-27T16:09:02.022536+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-27T16:10:14.125252+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-27T16:10:16.481329+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261027-09.mp4",
+   "caption_file": "state/captions/g20261027-09.txt",
+   "qa": {
+    "duration": 29.9,
+    "size_mb": 4.2,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.3
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-09.mp4"
   }
  }
 }

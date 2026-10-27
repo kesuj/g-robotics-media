@@ -1,0 +1,6 @@
+Myth: space makes perfect optical fibre. 🛰️
+Fact: ZBLAN glass forms fewer crystals in orbit, and ~11.9 km was drawn on the ISS — but the best loss cut so far is ~2×, versus ~100× in theory. Impurities and cost remain the limits.
+
+Sources: nasa.gov, spectrum.ieee.org
+
+#OpticalFiber #ISS #SpaceManufacturing #Materials #Engineering #GRobotics

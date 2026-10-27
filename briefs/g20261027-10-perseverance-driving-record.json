@@ -1,0 +1,37 @@
+{
+ "id": "g20261027-10",
+ "slug": "perseverance-driving-record",
+ "format": "clip",
+ "title": "A Mars Rover Just Broke the Distance Record",
+ "category": "Space",
+ "date": "2026-10-11",
+ "description": "On 11 October 2026 NASA's Perseverance passed Opportunity's off-world driving record of about 45.16 km, reaching about 45.22 km. IEEE Spectrum credits its AutoNav self-driving software, used for roughly nine tenths of its driving.",
+ "sources": [
+  "https://spectrum.ieee.org/mars-rover-distance-record",
+  "https://www.guinnessworldrecords.com/news/2026/10/nasas-perseverance-rover-breaks-the-record-for-longest-road-trip-on-mars"
+ ],
+ "tags": ["perseverance", "mars", "autonav", "autonomous driving", "nasa", "rover"],
+ "style": "blueprint",
+ "series": "Inside Autonomous Systems",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Mars has a new distance champion",
+   "vo": "A robot on Mars just broke the record for driving farthest on another world."
+  },
+  {
+   "type": "concept",
+   "text": "Self-driving beat the old record",
+   "points": ["About forty-five kilometres driven", "Autonomy drives most of the way", "Humans still plan the route"],
+   "tag": "WHY IT WON",
+   "vo": "On eleven October, N A S A's Perseverance passed Opportunity's record of about forty-five kilometres. I E E E Spectrum credits its self-driving software, which handles around nine tenths of its driving. Humans still set the long-range route and mark areas to avoid, like sand."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "A Mars rover just took the off-world driving record. 🔴\nOn 11 Oct 2026 NASA's Perseverance passed Opportunity's ~45.16 km, reaching ~45.22 km. IEEE Spectrum credits AutoNav self-driving for most of it — but humans still plan routes and mark no-go sand.\nWhy care: autonomy is what makes distance possible when radio delay rules out a joystick.",
+ "hashtags": ["Mars", "Perseverance", "NASA", "Autonomy", "Robotics", "GRobotics"]
+}

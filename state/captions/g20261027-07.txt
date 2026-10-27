@@ -1,0 +1,7 @@
+Same chip name ≠ same chip. 🔍
+The new OLED iPad mini ($699, preorders 28 Oct) uses the A20 Pro — Notebookcheck says the 128/256 GB tiers have a 5-core CPU, the 512 GB has 6. TechCrunch lists 6 cores, so check Apple's spec page before you buy.
+That's chip binning: factories sort chips by quality.
+
+Sources: notebookcheck.net, techcrunch.com
+
+#iPadMini #Apple #Chips #Semiconductors #GRobotics

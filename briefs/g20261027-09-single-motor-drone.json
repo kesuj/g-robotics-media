@@ -1,0 +1,39 @@
+{
+ "id": "g20261027-09",
+ "slug": "single-motor-drone",
+ "format": "clip",
+ "title": "A Drone That Steers With Just One Motor",
+ "category": "Drones",
+ "date": "2026-10-20",
+ "description": "Maker Joshua Bird built a small drone that hovers and steers with one motor and a hinged propeller hub, with no servos or tail rotor. It only flies indoors, where an infrared beacon gives it a heading. Code and CAD files are open on GitHub.",
+ "sources": [
+  "https://dronexl.co/2026/10/20/joshua-bird-single-motor-drone-hinged-propeller/",
+  "https://hackaday.com/2026/10/17/building-a-flying-drone-with-a-single-propeller/",
+  "https://github.com/jyjblrd/single-propeller-drone"
+ ],
+ "tags": ["drone", "single motor", "under-actuated", "ardupilot", "control systems", "maker"],
+ "style": "notebook",
+ "series": "Drone Engineering in 30 Seconds",
+ "presenter": "dai",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "A drone with only one motor?",
+   "vo": "This drone steers in every direction with just one motor."
+  },
+  {
+   "type": "concept",
+   "text": "One motor, a hinged propeller",
+   "points": ["Hinged hub tilts the blades", "Motor speed surges steer it", "Infrared beacon gives heading"],
+   "tag": "HOW IT WORKS",
+   "vo": "Maker Joshua Bird used a hinged propeller hub. When the motor speeds up and slows down very fast, the blades change angle, so timed surges tilt the drone. A standard speed controller could not keep up, and it only flies indoors, where an infrared beacon tells it which way is forward."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "A drone that steers with just ONE motor. 🚁\nMaker Joshua Bird's hinged propeller hub changes blade angle as the motor speeds up and slows down, so timed surges tilt the drone. Limits: indoor only, with an infrared beacon for heading. Code and CAD are open source.\nWhy care: fewer parts, harder control.",
+ "hashtags": ["Drones", "ControlSystems", "Robotics", "Engineering", "OpenSource", "GRobotics"]
+}
