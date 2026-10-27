@@ -1,0 +1,56 @@
+{
+ "id": "g20261027-05",
+ "slug": "anduril-ai-grand-prix-camera-only",
+ "format": "clip",
+ "title": "No GPS, One Camera: Racing Drone AI",
+ "category": "Drones",
+ "date": "2026-10-26",
+ "description": "Anduril's AI Grand Prix is an autonomous drone race where all teams fly Neros hardware, so only software differs. Estonian-Czech team Remanguys, which uses one camera and no GPS or lidar, reached the finals in Columbus, Ohio.",
+ "sources": [
+  "https://dronelife.com/2026/10/26/anduril-ai-grand-prix-autonomous-drone-racing/",
+  "http://dronelife.com/2026/01/28/anduril-launches-500k-drone-racing-ai-grand-prix/"
+ ],
+ "tags": [
+  "autonomous drones",
+  "drone racing",
+  "computer vision",
+  "slam",
+  "anduril",
+  "ai"
+ ],
+ "mascot": true,
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Racing drones with no pilot",
+   "vo": "No pilot, no GPS, no lidar. Just one camera and software, racing at speed."
+  },
+  {
+   "type": "concept",
+   "text": "Same drone, only the software differs",
+   "points": [
+    "Every team flies Neros hardware",
+    "Camera builds a 3D map live",
+    "More than 3000 teams entered"
+   ],
+   "tag": "AI GRAND PRIX",
+   "vo": "In Anduril's AI Grand Prix, every team flies the same drone, so only software decides. One finalist says it estimates position and builds a three D map from a single camera. The finals are in Columbus, Ohio."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "No pilot. No GPS. One camera. 🏁\nIn Anduril's AI Grand Prix every team flies the same hardware; only the software differs. Tallinn-based Remānguys made the finals in Columbus, Ohio. Camera-accuracy figures are the team's own claims.",
+ "hashtags": [
+  "Drones",
+  "Autonomy",
+  "ComputerVision",
+  "DroneRacing",
+  "AI",
+  "GRobotics"
+ ],
+ "series": "Inside Autonomous Systems",
+ "style": "sunset"
+}

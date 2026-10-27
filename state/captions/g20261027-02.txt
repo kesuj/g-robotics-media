@@ -1,7 +1,6 @@
-Before the Moon, a rehearsal in Earth orbit. 🚀
-NASA's Artemis III (planned 2027) will dock Orion with test versions of Blue Origin's Blue Moon and SpaceX's Starship. No landing yet — a crewed landing is the 2028 target.
-Why it matters: docking and cabin checks are cheaper to fix in orbit than at the Moon.
+A robot hand that can feel a grip slipping 🤖
+Eka Robotics raised $150M for a model that mixes vision with touch, trained mostly in simulation. Claimed: ~1,500 picks/hour on unseen objects. Company numbers, not independently verified; long-term factory reliability is still unproven.
 
-Sources: nasa.gov
+Sources: thenextweb.com, therobotreport.com
 
-#Artemis #NASA #MoonLander #SpaceEngineering #GRobotics
+#Robotics #PhysicalAI #ReinforcementLearning #RobotHand #GRobotics #Engineering

@@ -1,0 +1,58 @@
+{
+ "id": "g20261027-03",
+ "slug": "artemis-iii-docking-rehearsal",
+ "format": "clip",
+ "title": "Artemis III Won't Land on the Moon",
+ "category": "Space",
+ "date": "2026-10-23",
+ "description": "NASA redefined Artemis III as a low Earth orbit test of rendezvous and docking between Orion and test landers from Blue Origin and SpaceX, planned for 2027, ahead of landings targeted for 2028.",
+ "sources": [
+  "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
+  "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/"
+ ],
+ "tags": [
+  "artemis",
+  "nasa",
+  "moon",
+  "orion",
+  "starship",
+  "blue origin",
+  "docking"
+ ],
+ "mascot": true,
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Artemis III won't touch the Moon",
+   "vo": "The next Artemis flight will not land on the Moon. It is a docking rehearsal."
+  },
+  {
+   "type": "concept",
+   "text": "Three spacecraft, two weeks, Earth orbit",
+   "points": [
+    "Orion docks with Blue Moon test lander",
+    "Then docks with Starship test article",
+    "Landings now targeted for 2028"
+   ],
+   "tag": "WHAT HAPPENED",
+   "vo": "Artemis three, planned for next year, keeps four astronauts in Earth orbit. Orion will dock with test versions of a Blue Origin lander and a SpaceX Starship. It proves the hardware before landings, which NASA is targeting for twenty twenty eight."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "Artemis III won't land on the Moon 🌙\nNASA turned it into an Earth-orbit rehearsal: Orion docks with test landers from Blue Origin and SpaceX (launch planned 2027). Landings are targeted for 2028. Test articles aren't flight-ready landers, and dates can slip.",
+ "hashtags": [
+  "Artemis",
+  "NASA",
+  "Space",
+  "Moon",
+  "Starship",
+  "BlueOrigin",
+  "GRobotics"
+ ],
+ "series": "The Science Behind the Machine",
+ "style": "blueprint"
+}

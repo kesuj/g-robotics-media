@@ -1,7 +1,6 @@
-100,000+ totes moved by one humanoid. 🤖
-Agility's Digit works at a GXO warehouse and the rollout expands from early 2027. The catch: GXO's CEO said in August it hasn't achieved ROI on humanoids yet.
-Hype and payback — both are true.
+No pilot. No GPS. One camera. 🏁
+In Anduril's AI Grand Prix every team flies the same hardware; only the software differs. Tallinn-based Remānguys made the finals in Columbus, Ohio. Camera-accuracy figures are the team's own claims.
 
-Sources: agilityrobotics.com, therobotreport.com
+Sources: dronelife.com
 
-#Humanoid #Robotics #Warehouse #AgilityRobotics #GRobotics
+#Drones #Autonomy #ComputerVision #DroneRacing #AI #GRobotics

@@ -1,7 +1,6 @@
-Same drone. No pilot. Only code. 🏁
-In Anduril's AI Grand Prix every team flies identical drones, so the software decides. Estonia's Remānguys says it reached the finals using one camera, no GPS or LiDAR (their claim).
-Why it matters: fair hardware shows what the software really does.
+Fiber made in space 🛰️
+About 11.8 km of ZBLAN fiber was drawn on the ISS. Microgravity cuts crystal defects, but expected gains are ~2x at best, not the 100x in theory — impurities are the bottleneck. Early results; the ISS retires in 2030.
 
-Sources: dronelife.com
+Sources: nasa.gov, spectrum.ieee.org
 
-#AIGrandPrix #DroneRacing #AutonomousDrones #ComputerVision #GRobotics #UAS
+#OpticalFiber #Photonics #ISS #SpaceManufacturing #Engineering #GRobotics

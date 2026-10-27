@@ -19,19 +19,17 @@
 {"at": "2026-10-27T02:26:48.822564+00:00", "action": "research.collect", "new": 8, "feed_errors": []}
 {"at": "2026-10-27T04:43:18.673120+00:00", "action": "research.collect", "new": 98, "feed_errors": []}
 {"at": "2026-10-27T05:06:11.023072+00:00", "action": "research.collect", "new": 7, "feed_errors": []}
-{"at": "2026-10-27T05:14:04.004172+00:00", "action": "research.collect", "new": 0, "feed_errors": []}
-{"at": "2026-10-27T05:19:08.997606+00:00", "action": "status", "id": "g20261027-02", "status": "briefed"}
-{"at": "2026-10-27T05:20:59.567907+00:00", "action": "status", "id": "g20261027-02", "status": "rendered"}
-{"at": "2026-10-27T05:21:01.279753+00:00", "action": "status", "id": "g20261027-02", "status": "qa_passed"}
-{"at": "2026-10-27T05:21:01.280063+00:00", "action": "status", "id": "g20261027-03", "status": "briefed"}
-{"at": "2026-10-27T05:21:01.429291+00:00", "action": "status", "id": "g20261027-03", "status": "briefed", "note": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 363, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/b"}
-{"at": "2026-10-27T05:21:01.429644+00:00", "action": "status", "id": "g20261027-04", "status": "briefed"}
-{"at": "2026-10-27T05:22:35.808510+00:00", "action": "status", "id": "g20261027-04", "status": "rendered"}
-{"at": "2026-10-27T05:22:37.778945+00:00", "action": "status", "id": "g20261027-04", "status": "qa_passed"}
-{"at": "2026-10-27T05:22:37.779236+00:00", "action": "status", "id": "g20261027-05", "status": "briefed"}
-{"at": "2026-10-27T05:23:58.681903+00:00", "action": "status", "id": "g20261027-05", "status": "rendered"}
-{"at": "2026-10-27T05:24:00.228565+00:00", "action": "status", "id": "g20261027-05", "status": "qa_passed"}
-{"at": "2026-10-27T05:24:00.228851+00:00", "action": "status", "id": "g20261027-06", "status": "briefed"}
-{"at": "2026-10-27T05:26:06.297515+00:00", "action": "status", "id": "g20261027-06", "status": "rendered"}
-{"at": "2026-10-27T05:26:08.300215+00:00", "action": "status", "id": "g20261027-06", "status": "qa_passed"}
-{"at": "2026-10-27T05:26:08.301084+00:00", "action": "produce.run", "made": 4}
+{"at": "2026-10-27T05:27:25.675699+00:00", "action": "research.collect", "new": 3, "feed_errors": []}
+{"at": "2026-10-27T05:30:15.914789+00:00", "action": "status", "id": "g20261027-02", "status": "briefed"}
+{"at": "2026-10-27T05:31:22.060763+00:00", "action": "status", "id": "g20261027-02", "status": "rendered"}
+{"at": "2026-10-27T05:31:22.809131+00:00", "action": "status", "id": "g20261027-02", "status": "qa_passed"}
+{"at": "2026-10-27T05:31:22.809305+00:00", "action": "status", "id": "g20261027-03", "status": "briefed"}
+{"at": "2026-10-27T05:32:22.616651+00:00", "action": "status", "id": "g20261027-03", "status": "rendered"}
+{"at": "2026-10-27T05:32:25.252866+00:00", "action": "status", "id": "g20261027-03", "status": "qa_passed"}
+{"at": "2026-10-27T05:32:25.253074+00:00", "action": "status", "id": "g20261027-04", "status": "briefed"}
+{"at": "2026-10-27T05:33:19.194888+00:00", "action": "status", "id": "g20261027-04", "status": "rendered"}
+{"at": "2026-10-27T05:33:19.843071+00:00", "action": "status", "id": "g20261027-04", "status": "qa_passed"}
+{"at": "2026-10-27T05:33:19.843288+00:00", "action": "status", "id": "g20261027-05", "status": "briefed"}
+{"at": "2026-10-27T05:34:19.582894+00:00", "action": "status", "id": "g20261027-05", "status": "rendered"}
+{"at": "2026-10-27T05:34:20.312871+00:00", "action": "status", "id": "g20261027-05", "status": "qa_passed"}
+{"at": "2026-10-27T05:34:20.313523+00:00", "action": "produce.run", "made": 4}

@@ -1,0 +1,53 @@
+{
+ "id": "g20261027-04",
+ "slug": "zblan-fiber-made-in-space",
+ "format": "clip",
+ "title": "Fiber Made in Space: Hype or Real?",
+ "category": "Science",
+ "date": "2026-10-26",
+ "description": "A Luxembourg-led team drew about twelve kilometres of ZBLAN optical fibre on the ISS. Space-made step-index fibre showed lower loss and more strength, but the team estimates at best a twofold loss reduction versus a theoretical hundredfold.",
+ "sources": [
+  "https://spectrum.ieee.org/zblan-fiber-optic-cables-iss",
+  "https://www.nasa.gov/mission/iss-research/news/optical-fiber-production/"
+ ],
+ "tags": [
+  "optical fiber",
+  "zblan",
+  "iss",
+  "space manufacturing",
+  "materials",
+  "photonics"
+ ],
+ "mascot": true,
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Can space make better fiber?",
+   "vo": "Could optical fiber made in orbit beat anything we can make on Earth?"
+  },
+  {
+   "type": "stat",
+   "number": 11.8,
+   "unit": "kilometers",
+   "text": "Of ZBLAN fiber drawn aboard the ISS",
+   "tag": "IN ORBIT",
+   "vo": "On the space station, one month of drawing produced about eleven point eight kilometers of fiber. Without gravity, fewer crystals form to scatter light. But the team expects at best a twofold loss reduction, because impurities remain the real problem."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "Fiber made in space 🛰️\nAbout 11.8 km of ZBLAN fiber was drawn on the ISS. Microgravity cuts crystal defects, but expected gains are ~2x at best, not the 100x in theory — impurities are the bottleneck. Early results; the ISS retires in 2030.",
+ "hashtags": [
+  "OpticalFiber",
+  "Photonics",
+  "ISS",
+  "SpaceManufacturing",
+  "Engineering",
+  "GRobotics"
+ ],
+ "series": "One Engineering Concept",
+ "style": "notebook"
+}

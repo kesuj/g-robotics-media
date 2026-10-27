@@ -1,0 +1,55 @@
+{
+ "id": "g20261027-02",
+ "slug": "eka-robot-hand-feels-slip",
+ "format": "clip",
+ "title": "This Robot Hand Feels a Grip Slipping",
+ "category": "Robotics",
+ "date": "2026-10-20",
+ "description": "Eka Robotics announced a 150 million dollar Series A for a vision-force-action model that adds touch feedback to robot grasping. It is trained mostly by reinforcement learning in simulation. Performance figures are company claims.",
+ "sources": [
+  "https://www.therobotreport.com/eka-robotics-raises-150m-scale-vision-force-action-model-robot/",
+  "https://thenextweb.com/news/eka-robotics-150m-series-a-vision-force-robots"
+ ],
+ "tags": [
+  "robotics",
+  "physical ai",
+  "robot hand",
+  "reinforcement learning",
+  "force sensing",
+  "simulation",
+  "startups"
+ ],
+ "mascot": true,
+ "beats": [
+  {
+   "type": "hook",
+   "text": "A robot hand that feels slipping",
+   "vo": "This robot hand can feel an object starting to slip, and tighten its grip before it falls."
+  },
+  {
+   "type": "stat",
+   "number": 1500,
+   "unit": "picks per hour",
+   "text": "Company claim, on objects it never trained on",
+   "tag": "EKA ROBOTICS",
+   "vo": "Eka Robotics says its system makes about fifteen hundred picks an hour on unseen objects. A human manages about six hundred. These are company claims, not independently verified."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "A robot hand that can feel a grip slipping 🤖\nEka Robotics raised $150M for a model that mixes vision with touch, trained mostly in simulation. Claimed: ~1,500 picks/hour on unseen objects. Company numbers, not independently verified; long-term factory reliability is still unproven.",
+ "hashtags": [
+  "Robotics",
+  "PhysicalAI",
+  "ReinforcementLearning",
+  "RobotHand",
+  "GRobotics",
+  "Engineering"
+ ],
+ "series": "Robotics Research Explained",
+ "style": "neon",
+ "presenter": "aarav"
+}
