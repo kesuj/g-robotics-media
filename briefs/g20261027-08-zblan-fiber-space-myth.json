@@ -1,0 +1,38 @@
+{
+ "id": "g20261027-08",
+ "slug": "zblan-fiber-space-myth",
+ "format": "clip",
+ "title": "Myth: Space Makes Perfect Optical Fibre",
+ "category": "Space",
+ "date": "2026-10-26",
+ "description": "Glass fibre made in orbit sounds ideal, but IEEE Spectrum reports the best gain from microgravity so far is about a two-fold loss reduction against a theoretical hundred-fold, and impurities remain a problem. About 11.9 km was drawn on the ISS (NASA).",
+ "sources": [
+  "https://spectrum.ieee.org/zblan-fiber-optic-cables-iss",
+  "https://www.nasa.gov/missions/station/iss-research/optical-fiber-production/"
+ ],
+ "tags": ["zblan", "optical fiber", "iss", "microgravity", "space manufacturing", "materials"],
+ "style": "classic",
+ "series": "Engineering Myths Busted",
+ "presenter": "maya",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Is space the secret to perfect fibre?",
+   "vo": "Glass fibre made in orbit sounds perfect. Is it?"
+  },
+  {
+   "type": "concept",
+   "text": "Microgravity helps, but not enough",
+   "points": ["Fewer crystals form in orbit", "Best gain so far: about two times", "Impurities still limit the glass"],
+   "tag": "MYTH VS FACT",
+   "vo": "In space, a fluoride glass called Z B L A N forms fewer crystals, and about eleven kilometres of fibre were drawn on the station. But the best loss reduction is about two times, against a hundred times in theory. Impurities still limit it."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "Myth: space makes perfect optical fibre. 🛰️\nFact: ZBLAN glass forms fewer crystals in orbit, and ~11.9 km was drawn on the ISS — but the best loss cut so far is ~2×, versus ~100× in theory. Impurities and cost remain the limits.",
+ "hashtags": ["OpticalFiber", "ISS", "SpaceManufacturing", "Materials", "Engineering", "GRobotics"]
+}

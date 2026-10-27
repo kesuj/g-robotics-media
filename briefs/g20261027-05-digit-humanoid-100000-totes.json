@@ -1,0 +1,39 @@
+{
+ "id": "g20261027-05",
+ "slug": "digit-humanoid-100000-totes",
+ "format": "clip",
+ "title": "A Humanoid Robot Has Moved 100,000 Totes",
+ "category": "Robotics",
+ "date": "2026-10-26",
+ "description": "Agility Robotics says its Digit humanoid has moved more than 100,000 totes at a GXO warehouse in Georgia, and GXO plans more sites from early 2027. GXO's CEO said in August that humanoids have not yet paid back.",
+ "sources": [
+  "https://www.therobotreport.com/agility-gxo-logistics-plan-expanded-deployment-digit-humanoid/",
+  "https://agilityrobotics.com/content/gxo-signs-industry-first-multi-year-agreement-with-agility-robotics"
+ ],
+ "tags": ["humanoid robot", "agility robotics", "digit", "warehouse automation", "gxo", "logistics"],
+ "style": "notebook",
+ "series": "Robots Doing Incredible Things",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Humanoids in warehouses: do they pay?",
+   "vo": "Humanoid robots are in warehouses now. But are they paying off?"
+  },
+  {
+   "type": "stat",
+   "number": 100000,
+   "suffix": "+",
+   "unit": "totes moved",
+   "text": "Digit's tally at one GXO warehouse",
+   "tag": "AGILITY'S FIGURE",
+   "vo": "Agility's Digit has moved over one hundred thousand totes at a G X O site in Georgia, and more sites start in early twenty twenty seven. But G X O's chief executive said in August that humanoids have not paid back yet."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "100,000+ totes moved by one humanoid. 🤖\nAgility's Digit works at a GXO warehouse and the rollout expands from early 2027. The catch: GXO's CEO said in August it hasn't achieved ROI on humanoids yet.\nHype and payback — both are true.",
+ "hashtags": ["Humanoid", "Robotics", "Warehouse", "AgilityRobotics", "GRobotics"]
+}

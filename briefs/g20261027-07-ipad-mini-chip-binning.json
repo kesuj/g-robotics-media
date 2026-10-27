@@ -1,0 +1,37 @@
+{
+ "id": "g20261027-07",
+ "slug": "ipad-mini-chip-binning",
+ "format": "clip",
+ "title": "Why Cheaper iPad Minis May Get a Weaker A20 Pro",
+ "category": "Chips",
+ "date": "2026-10-26",
+ "description": "Apple announced an OLED iPad mini with the A20 Pro on 26 October 2026 at 699 dollars, with preorders from 28 October and sales from 6 November. Notebookcheck reports the 128 and 256 gigabyte models use a five-core CPU version while the 512 gigabyte model has six cores; TechCrunch lists six cores generally, so check Apple's spec page.",
+ "sources": [
+  "https://techcrunch.com/2026/10/26/apple-unveils-new-ipad-mini-with-oled-display-and-faster-a20-pro-chip/",
+  "https://www.notebookcheck.net/Apple-s-699-iPad-mini-gets-OLED-and-A20-Pro-but-the-512-GB-model-packs-a-surprise.1434183.0.html"
+ ],
+ "tags": ["ipad mini", "a20 pro", "chip binning", "apple", "oled"],
+ "style": "sunset",
+ "series": "One Engineering Concept",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Same chip name. Different chip?",
+   "vo": "Same chip name, but is it the same chip?"
+  },
+  {
+   "type": "concept",
+   "text": "Chip binning: sorting chips by quality",
+   "points": ["Chips differ slightly after making", "Weaker ones sold as cheaper tiers", "Check cores before buying"],
+   "tag": "ENGINEER'S TAKE",
+   "vo": "Chip makers test every chip and sort them. Notebookcheck reports the cheaper iPad mini storage tiers get an A twenty Pro with five C P U cores, while the biggest gets six. TechCrunch lists six cores, so check Apple's spec page."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "Same chip name ≠ same chip. 🔍\nThe new OLED iPad mini ($699, preorders 28 Oct) uses the A20 Pro — Notebookcheck says the 128/256 GB tiers have a 5-core CPU, the 512 GB has 6. TechCrunch lists 6 cores, so check Apple's spec page before you buy.\nThat's chip binning: factories sort chips by quality.",
+ "hashtags": ["iPadMini", "Apple", "Chips", "Semiconductors", "GRobotics"]
+}

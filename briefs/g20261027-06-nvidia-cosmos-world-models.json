@@ -1,0 +1,38 @@
+{
+ "id": "g20261027-06",
+ "slug": "nvidia-cosmos-world-models",
+ "format": "clip",
+ "title": "Robots Can Now Practise Inside an AI-Made World",
+ "category": "AI",
+ "date": "2026-10-21",
+ "description": "At GTC Berlin on 21 October 2026 NVIDIA expanded Cosmos, its open tools for world models that simulate how the physical world behaves, so developers can generate rare training scenes and test robot policies in simulation. Speed and savings figures are vendor-reported.",
+ "sources": [
+  "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+  "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/"
+ ],
+ "tags": ["world models", "nvidia cosmos", "physical ai", "robot simulation", "gtc berlin"],
+ "style": "chalkboard",
+ "series": "AI Breakthrough of the Day",
+ "presenter": "aarav",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Robots practise inside an AI-made world",
+   "vo": "Robots and self-driving cars can now practise inside an A I generated world."
+  },
+  {
+   "type": "concept",
+   "text": "World models: practice before the real thing",
+   "points": ["Simulate how the world behaves", "Generate rare training scenes", "Test robot policies first"],
+   "tag": "WHAT'S NEW",
+   "vo": "At G T C Berlin, NVIDIA expanded Cosmos, its open tools for world models. These A I systems simulate how the physical world behaves, so teams can test robots in simulation first. The speed and savings figures come from NVIDIA and partners."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "Robots practising inside an AI-made world. 🧠\nNVIDIA expanded Cosmos (GTC Berlin, 21 Oct): world models that simulate the physical world so teams can generate rare scenes and test robot policies before real trials. Gains quoted are vendor-reported.\nWhy care: failures are free in simulation.",
+ "hashtags": ["WorldModels", "PhysicalAI", "NVIDIA", "Robotics", "AI", "GRobotics"]
+}

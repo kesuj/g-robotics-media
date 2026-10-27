@@ -1,0 +1,63 @@
+{
+ "id": "g20261027-03",
+ "slug": "nepal-php-flaw-websites-offline",
+ "format": "news",
+ "title": "Nepal Switched Off Government Sites Over a PHP Flaw",
+ "category": "Nepal Cyber",
+ "date": "2026-10-26",
+ "description": "Two critical PHP flaws became public on 21 October 2026, each scoring 9.2 out of 10, and Nepal's SDOC took government systems offline while patching. Most portals are back, but the Nagarik App and some vendor-run sites were still down at the latest report.",
+ "sources": [
+  "https://kathmandupost.com/science-technology/2026/10/23/nepal-takes-government-websites-offline-over-critical-php-flaws",
+  "https://kathmandupost.com/science-technology/2026/10/26/most-nepal-government-websites-back-online-after-php2shell-flaw",
+  "https://kathmandupost.com/science-technology/2026/10/24/php-foundation-under-funded-with-one-full-time-staff-member-director-says"
+ ],
+ "tags": ["nepal", "php", "cybersecurity", "sdoc", "government websites", "vulnerability", "patching"],
+ "mascot": true,
+ "style": "newsroom",
+ "series": "Nepal Builds the Future",
+ "presenter": "dai",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Nepal switched off government websites",
+   "vo": "Nepal switched off thousands of government websites last week. The reason was a flaw in a programming language."
+  },
+  {
+   "type": "headline",
+   "text": "Critical PHP flaws force Nepal sites offline",
+   "source": "Source: Kathmandu Post",
+   "date": "26 OCT 2026",
+   "tag": "CYBER ALERT",
+   "ticker": "Most portals restored after central patching",
+   "vo": "Two critical flaws in P H P, which runs most of the web, became public on October twenty first. Nepal's S D O C took government systems offline while it patched them."
+  },
+  {
+   "type": "stat",
+   "number": 9.2,
+   "unit": "out of ten",
+   "text": "Severity score of each PHP flaw",
+   "tag": "SEVERITY",
+   "vo": "Each flaw scored nine point two out of ten, because an attacker could run code on a server without any password."
+  },
+  {
+   "type": "concept",
+   "text": "How Nepal responded",
+   "points": ["Systems taken offline as precaution", "Patched centrally, then restored", "Some vendor-run sites still down"],
+   "tag": "WHAT HAPPENED",
+   "vo": "Officials patched the shared government platform centrally and restored most portals. The Nagarik App and some vendor-run sites were still unavailable at the latest report. The reports I read do not confirm a successful attack on a Nepali site."
+  },
+  {
+   "type": "tip",
+   "text": "Check your PHP version and upgrade to a supported release",
+   "tag": "ENGINEER'S TAKE",
+   "vo": "If you run a website, check your P H P version today. Older releases such as eight point one have no fix, so upgrade."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for tech and power news every day."
+  }
+ ],
+ "caption": "Nepal switched off government websites — because of a bug in PHP. 🇳🇵\nTwo critical flaws (9.2/10 each) went public on 21 Oct. Nepal's SDOC patched the shared platform; most portals are back, but the Nagarik App and some vendor-run sites were still down at the latest report.\nनेपालका सरकारी वेबसाइट PHP त्रुटिका कारण अफलाइन भए; अधिकांश फर्किसकेका छन्।\nRunning a website? Check your PHP version.",
+ "hashtags": ["Nepal", "CyberSecurity", "PHP", "NepalTech", "GRobotics", "Websites"]
+}

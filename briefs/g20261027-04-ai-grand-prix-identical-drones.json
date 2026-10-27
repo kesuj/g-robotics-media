@@ -1,0 +1,37 @@
+{
+ "id": "g20261027-04",
+ "slug": "ai-grand-prix-identical-drones",
+ "format": "clip",
+ "title": "Same Drone, No Pilot: Inside the AI Grand Prix",
+ "category": "Drones",
+ "date": "2026-10-26",
+ "description": "In Anduril's AI Grand Prix, teams write software that flies identical Neros drones with no human pilot. Estonian startup Remanguys says it reached the finals using single-camera vision; that is a company claim.",
+ "sources": [
+  "https://dronelife.com/2026/10/26/anduril-ai-grand-prix-autonomous-drone-racing/",
+  "http://dronelife.com/2026/01/28/anduril-launches-500k-drone-racing-ai-grand-prix/"
+ ],
+ "tags": ["ai grand prix", "autonomous drones", "drone racing", "anduril", "computer vision"],
+ "style": "neon",
+ "series": "Inside Autonomous Systems",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Identical drones. Only code can win.",
+   "vo": "What if every racing drone were identical, and only the software could win?"
+  },
+  {
+   "type": "concept",
+   "text": "Racing drones with no human pilot",
+   "points": ["Same hardware for every team", "One Estonian team uses one camera", "Finals are in Ohio"],
+   "tag": "INSIDE AUTONOMY",
+   "vo": "In Anduril's A I Grand Prix, teams write software that flies identical drones, with no human pilot. Estonian startup Remanguys says its code flies on a single camera, without G P S or lidar. That is the company's own claim."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "Same drone. No pilot. Only code. 🏁\nIn Anduril's AI Grand Prix every team flies identical drones, so the software decides. Estonia's Remānguys says it reached the finals using one camera, no GPS or LiDAR (their claim).\nWhy it matters: fair hardware shows what the software really does.",
+ "hashtags": ["AIGrandPrix", "DroneRacing", "AutonomousDrones", "ComputerVision", "GRobotics", "UAS"]
+}

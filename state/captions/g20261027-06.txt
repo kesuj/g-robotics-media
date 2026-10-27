@@ -1,0 +1,7 @@
+Robots practising inside an AI-made world. 🧠
+NVIDIA expanded Cosmos (GTC Berlin, 21 Oct): world models that simulate the physical world so teams can generate rare scenes and test robot policies before real trials. Gains quoted are vendor-reported.
+Why care: failures are free in simulation.
+
+Sources: blogs.nvidia.com
+
+#WorldModels #PhysicalAI #NVIDIA #Robotics #AI #GRobotics

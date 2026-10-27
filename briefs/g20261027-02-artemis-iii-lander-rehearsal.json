@@ -1,0 +1,37 @@
+{
+ "id": "g20261027-02",
+ "slug": "artemis-iii-lander-rehearsal",
+ "format": "clip",
+ "title": "Artemis III: A Moon Landing Rehearsal in Earth Orbit",
+ "category": "Space",
+ "date": "2026-10-23",
+ "description": "NASA says Artemis III, planned for 2027, will keep four astronauts in Earth orbit to dock Orion with test versions of Blue Origin's Blue Moon and SpaceX's Starship. A crewed landing is a 2028 target, not a confirmed date.",
+ "sources": [
+  "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
+  "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/"
+ ],
+ "tags": ["artemis iii", "nasa", "moon", "blue moon", "starship", "orion", "space"],
+ "style": "blueprint",
+ "series": "The Science Behind the Machine",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Moon landing rehearsal, in orbit",
+   "vo": "Before anyone lands on the Moon, NASA wants to rehearse the hard part right here in Earth orbit."
+  },
+  {
+   "type": "concept",
+   "text": "Artemis III tests two lunar landers",
+   "points": ["Orion docks with Blue Moon", "Orion docks with Starship", "Crew inspects Blue Moon cabin"],
+   "tag": "WHAT'S NEW",
+   "vo": "Artemis three is planned for next year. Four astronauts in Orion will dock with test versions of two landers, then check the Blue Moon cabin. It stays in Earth orbit, with no landing. A crewed landing is a twenty twenty eight target."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "Before the Moon, a rehearsal in Earth orbit. 🚀\nNASA's Artemis III (planned 2027) will dock Orion with test versions of Blue Origin's Blue Moon and SpaceX's Starship. No landing yet — a crewed landing is the 2028 target.\nWhy it matters: docking and cabin checks are cheaper to fix in orbit than at the Moon.",
+ "hashtags": ["Artemis", "NASA", "MoonLander", "SpaceEngineering", "GRobotics"]
+}

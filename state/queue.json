@@ -103,6 +103,190 @@
     "lufs": -14.1
    },
    "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/news-20261027.mp4"
+  },
+  "g20261027-02": {
+   "id": "g20261027-02",
+   "title": "Artemis III: A Moon Landing Rehearsal in Earth Orbit",
+   "kind": "clip",
+   "brief": "briefs/g20261027-02-artemis-iii-lander-rehearsal.json",
+   "created": "2026-10-27T05:19:08.997551+00:00",
+   "news_date": "2026-10-23",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "blueprint",
+   "series": "The Science Behind the Machine",
+   "history": [
+    {
+     "at": "2026-10-27T05:19:08.997565+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-27T05:20:59.567827+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-27T05:21:01.279680+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261027-02.mp4",
+   "caption_file": "state/captions/g20261027-02.txt",
+   "qa": {
+    "duration": 27.9,
+    "size_mb": 2.7,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.4
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-02.mp4"
+  },
+  "g20261027-03": {
+   "id": "g20261027-03",
+   "title": "Nepal Switched Off Government Sites Over a PHP Flaw",
+   "kind": "news",
+   "brief": "briefs/g20261027-03-nepal-php-flaw-websites-offline.json",
+   "created": "2026-10-27T05:21:01.280018+00:00",
+   "news_date": "2026-10-26",
+   "status": "briefed",
+   "retries": 1,
+   "format": "news",
+   "style": "newsroom",
+   "series": "Nepal Builds the Future",
+   "history": [
+    {
+     "at": "2026-10-27T05:21:01.280027+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-27T05:21:01.429213+00:00",
+     "status": "briefed",
+     "note": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 363, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/b"
+    }
+   ]
+  },
+  "g20261027-04": {
+   "id": "g20261027-04",
+   "title": "Same Drone, No Pilot: Inside the AI Grand Prix",
+   "kind": "clip",
+   "brief": "briefs/g20261027-04-ai-grand-prix-identical-drones.json",
+   "created": "2026-10-27T05:21:01.429597+00:00",
+   "news_date": "2026-10-26",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "neon",
+   "series": "Inside Autonomous Systems",
+   "history": [
+    {
+     "at": "2026-10-27T05:21:01.429606+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-27T05:22:35.808423+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-27T05:22:37.778873+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261027-04.mp4",
+   "caption_file": "state/captions/g20261027-04.txt",
+   "qa": {
+    "duration": 28.3,
+    "size_mb": 2.9,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.3
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-04.mp4"
+  },
+  "g20261027-05": {
+   "id": "g20261027-05",
+   "title": "A Humanoid Robot Has Moved 100,000 Totes",
+   "kind": "clip",
+   "brief": "briefs/g20261027-05-digit-humanoid-100000-totes.json",
+   "created": "2026-10-27T05:22:37.779193+00:00",
+   "news_date": "2026-10-26",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "notebook",
+   "series": "Robots Doing Incredible Things",
+   "history": [
+    {
+     "at": "2026-10-27T05:22:37.779201+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-27T05:23:58.681825+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-27T05:24:00.228485+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261027-05.mp4",
+   "caption_file": "state/captions/g20261027-05.txt",
+   "qa": {
+    "duration": 25.8,
+    "size_mb": 3.7,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.2
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-05.mp4"
+  },
+  "g20261027-06": {
+   "id": "g20261027-06",
+   "title": "Robots Can Now Practise Inside an AI-Made World",
+   "kind": "clip",
+   "brief": "briefs/g20261027-06-nvidia-cosmos-world-models.json",
+   "created": "2026-10-27T05:24:00.228808+00:00",
+   "news_date": "2026-10-21",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "chalkboard",
+   "series": "AI Breakthrough of the Day",
+   "history": [
+    {
+     "at": "2026-10-27T05:24:00.228816+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-27T05:26:06.297439+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-27T05:26:08.300144+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261027-06.mp4",
+   "caption_file": "state/captions/g20261027-06.txt",
+   "qa": {
+    "duration": 30.1,
+    "size_mb": 6.2,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.3
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-06.mp4"
   }
  }
 }
