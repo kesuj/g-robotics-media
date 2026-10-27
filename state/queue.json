@@ -59,7 +59,7 @@
    "brief": "briefs/news/news-20261027.json",
    "created": "2026-10-26T20:35:10.965525+00:00",
    "news_date": "2026-10-27",
-   "status": "qa_passed",
+   "status": "published",
    "retries": 0,
    "format": "gdai_news",
    "style": null,
@@ -88,6 +88,14 @@
     {
      "at": "2026-10-26T21:15:56.637447+00:00",
      "status": "qa_passed"
+    },
+    {
+     "at": "2026-10-27T12:42:00.789380+00:00",
+     "status": "submitted"
+    },
+    {
+     "at": "2026-10-27T12:43:08.631435+00:00",
+     "status": "published"
     }
    ],
    "video_file": "renders/news-20261027.mp4",
@@ -102,7 +110,11 @@
     "acodec": "aac",
     "lufs": -14.1
    },
-   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/news-20261027.mp4"
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/news-20261027.mp4",
+   "container_id": "18099149081358525",
+   "media_id": "17924311704449380",
+   "permalink": "https://www.instagram.com/reel/De_4dqKDiKs/",
+   "published_at": "2026-10-27T12:43:08.631414+00:00"
   },
   "g20261027-02": {
    "id": "g20261027-02",
