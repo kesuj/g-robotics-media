@@ -175,8 +175,8 @@
    "brief": "briefs/g20261027-03-artemis-iii-docking-rehearsal.json",
    "created": "2026-10-27T05:31:22.809284+00:00",
    "news_date": "2026-10-23",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "blueprint",
    "series": "The Science Behind the Machine",
@@ -201,6 +201,11 @@
     {
      "at": "2026-10-27T20:03:54.160800+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-10-28T08:32:14.767968+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],

@@ -74,3 +74,5 @@
 {"at": "2026-10-28T06:09:39.934140+00:00", "action": "status", "id": "g20261028-02", "status": "rendered"}
 {"at": "2026-10-28T06:09:42.161317+00:00", "action": "status", "id": "g20261028-02", "status": "qa_passed"}
 {"at": "2026-10-28T06:09:42.162551+00:00", "action": "produce.run", "made": 3}
+{"at": "2026-10-28T08:32:14.768076+00:00", "action": "status", "id": "g20261027-03", "status": "failed", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-10-28T08:32:14.768225+00:00", "action": "slot.error", "id": "g20261027-03", "note": "HTTP 400 code=200: API access blocked.", "alert": true}
