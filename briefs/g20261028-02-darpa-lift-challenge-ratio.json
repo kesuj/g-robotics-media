@@ -1,0 +1,38 @@
+{
+ "id": "g20261028-02",
+ "slug": "darpa-lift-challenge-ratio",
+ "format": "clip",
+ "title": "Nobody Hit DARPA's Four-to-One Drone Lift",
+ "category": "Drones",
+ "date": "2026-09-29",
+ "description": "At DARPA's first Lift Challenge in August 2026, no team completed the course at the four-to-one payload-to-weight goal. AVIDrone won with 3.84 to one. A Texas A&M student team showed why it is hard: its battery was over half of the drone's weight.",
+ "sources": [
+  "https://aerospaceamerica.aiaa.org/news/darpa-to-host-drone-payload-competition-with-larger-lift-goals/",
+  "https://interestingengineering.com/ai-robotics/texas-am-students-heavy-lift-drone-darpa-challenge"
+ ],
+ "tags": ["darpa", "drones", "heavy lift", "payload ratio", "uas", "competition"],
+ "style": "chalkboard",
+ "series": "This Week in Drones and AI",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Can a drone carry four times its weight?",
+   "vo": "Could a drone lift four times its own weight and still fly a course?"
+  },
+  {
+   "type": "stat",
+   "number": 3.84,
+   "unit": "to one",
+   "text": "Winning payload-to-weight ratio",
+   "tag": "BEST FULL RUN",
+   "vo": "At DARPA's first Lift Challenge, nobody finished the course at four to one. Winner A V I Drone reached three point eight four to one. Texas A and M's entry showed the problem: its battery was over half the drone's weight, and unlike fuel, it never gets lighter."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "Nobody hit 4:1. 🚁\nAt DARPA's first Lift Challenge (Aug 2026) no team completed the course at four times drone weight. AVIDrone won with 3.84:1. Texas A&M's student drone: battery > half its weight, and unlike fuel it never gets lighter.\nNext round: 4:1 is the minimum, over a longer course.",
+ "hashtags": ["DARPA", "Drones", "UAS", "Engineering", "HeavyLift", "GRobotics"]
+}

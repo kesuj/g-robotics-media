@@ -63,3 +63,14 @@
 {"at": "2026-10-27T21:47:42.277812+00:00", "action": "analytics.error", "id": "news-20261027", "note": "HTTP 400 code=200: API access blocked."}
 {"at": "2026-10-27T21:47:42.355384+00:00", "action": "analytics.error", "id": "g20261027-02", "note": "HTTP 400 code=200: API access blocked."}
 {"at": "2026-10-27T21:47:42.355632+00:00", "action": "analytics.pull", "items": 0}
+{"at": "2026-10-28T06:01:58.425855+00:00", "action": "research.collect", "new": 273, "feed_errors": []}
+{"at": "2026-10-28T06:04:40.005578+00:00", "action": "status", "id": "g20261027-10", "status": "briefed"}
+{"at": "2026-10-28T06:06:23.880903+00:00", "action": "status", "id": "g20261027-10", "status": "rendered"}
+{"at": "2026-10-28T06:06:26.271689+00:00", "action": "status", "id": "g20261027-10", "status": "qa_passed"}
+{"at": "2026-10-28T06:06:26.271952+00:00", "action": "status", "id": "g20261028-01", "status": "briefed"}
+{"at": "2026-10-28T06:07:51.390699+00:00", "action": "status", "id": "g20261028-01", "status": "rendered"}
+{"at": "2026-10-28T06:07:53.284670+00:00", "action": "status", "id": "g20261028-01", "status": "qa_passed"}
+{"at": "2026-10-28T06:07:53.284915+00:00", "action": "status", "id": "g20261028-02", "status": "briefed"}
+{"at": "2026-10-28T06:09:39.934140+00:00", "action": "status", "id": "g20261028-02", "status": "rendered"}
+{"at": "2026-10-28T06:09:42.161317+00:00", "action": "status", "id": "g20261028-02", "status": "qa_passed"}
+{"at": "2026-10-28T06:09:42.162551+00:00", "action": "produce.run", "made": 3}

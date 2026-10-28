@@ -1,0 +1,7 @@
+Spacecraft run on computers slower than your phone. 🛰️
+NASA's JPL is testing a radiation-hardened chip (with Microchip Technology) aiming for up to 100x today's spaceflight computing; early indications show ~500x vs current rad-hard chips. Still in testing, not flight-certified.
+Why care: radio delay means spacecraft must think for themselves.
+
+Sources: jpl.nasa.gov, sciencealert.com
+
+#NASA #JPL #SpaceTech #Chips #Autonomy #Engineering #GRobotics

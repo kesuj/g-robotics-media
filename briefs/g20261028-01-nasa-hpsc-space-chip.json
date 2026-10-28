@@ -1,0 +1,38 @@
+{
+ "id": "g20261028-01",
+ "slug": "nasa-hpsc-space-chip",
+ "format": "clip",
+ "title": "NASA's Next Space Chip Is Being Torture-Tested",
+ "category": "Chips",
+ "date": "2026-05-12",
+ "description": "NASA's Jet Propulsion Laboratory is testing a radiation-hardened processor built with Microchip Technology. The goal is up to one hundred times the computing power of today's spaceflight computers; early indications suggest about five hundred times. It is not yet certified for flight.",
+ "sources": [
+  "https://www.jpl.nasa.gov/news/hello-universe-nasas-next-gen-space-processor-undergoes-testing/",
+  "https://www.sciencealert.com/nasa-is-testing-its-own-cutting-edge-ai-chip-for-future-space-missions"
+ ],
+ "tags": ["nasa", "jpl", "space chip", "radiation hardened", "microchip", "autonomy"],
+ "style": "neon",
+ "series": "The Science Behind the Machine",
+ "presenter": "maya",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Spacecraft computers are decades behind",
+   "vo": "Spacecraft run on computers far slower than your phone."
+  },
+  {
+   "type": "concept",
+   "text": "A faster brain, built for radiation",
+   "points": ["Goal: up to one hundred times faster", "Tested for radiation, heat, shock", "Not yet cleared for flight"],
+   "tag": "WHAT IS NEW",
+   "vo": "N A S A's J P L is testing a new chip made with Microchip Technology. The goal is one hundred times today's computing power, and early signs point to five hundred times. It still needs flight certification."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Follow for a daily dose of engineering."
+  }
+ ],
+ "caption": "Spacecraft run on computers slower than your phone. 🛰️\nNASA's JPL is testing a radiation-hardened chip (with Microchip Technology) aiming for up to 100x today's spaceflight computing; early indications show ~500x vs current rad-hard chips. Still in testing, not flight-certified.\nWhy care: radio delay means spacecraft must think for themselves.",
+ "hashtags": ["NASA", "JPL", "SpaceTech", "Chips", "Autonomy", "Engineering", "GRobotics"]
+}

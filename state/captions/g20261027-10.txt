@@ -1,0 +1,7 @@
+A Mars rover just took the off-world driving record. 🔴
+On 11 Oct 2026 NASA's Perseverance passed Opportunity's ~45.16 km, reaching ~45.22 km. IEEE Spectrum credits AutoNav self-driving for most of it — but humans still plan routes and mark no-go sand.
+Why care: autonomy is what makes distance possible when radio delay rules out a joystick.
+
+Sources: guinnessworldrecords.com, spectrum.ieee.org
+
+#Mars #Perseverance #NASA #Autonomy #Robotics #GRobotics

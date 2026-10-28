@@ -1,0 +1,7 @@
+Nobody hit 4:1. 🚁
+At DARPA's first Lift Challenge (Aug 2026) no team completed the course at four times drone weight. AVIDrone won with 3.84:1. Texas A&M's student drone: battery > half its weight, and unlike fuel it never gets lighter.
+Next round: 4:1 is the minimum, over a longer course.
+
+Sources: aerospaceamerica.aiaa.org, interestingengineering.com
+
+#DARPA #Drones #UAS #Engineering #HeavyLift #GRobotics

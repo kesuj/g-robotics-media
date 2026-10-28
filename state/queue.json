@@ -472,6 +472,126 @@
     "lufs": -14.3
    },
    "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-09.mp4"
+  },
+  "g20261027-10": {
+   "id": "g20261027-10",
+   "title": "A Mars Rover Just Broke the Distance Record",
+   "kind": "clip",
+   "brief": "briefs/g20261027-10-perseverance-driving-record.json",
+   "created": "2026-10-28T06:04:40.005528+00:00",
+   "news_date": "2026-10-11",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "blueprint",
+   "series": "Inside Autonomous Systems",
+   "history": [
+    {
+     "at": "2026-10-28T06:04:40.005539+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-28T06:06:23.880830+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-28T06:06:26.271616+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261027-10.mp4",
+   "caption_file": "state/captions/g20261027-10.txt",
+   "qa": {
+    "duration": 31.3,
+    "size_mb": 2.9,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.3
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261027-10.mp4"
+  },
+  "g20261028-01": {
+   "id": "g20261028-01",
+   "title": "NASA's Next Space Chip Is Being Torture-Tested",
+   "kind": "clip",
+   "brief": "briefs/g20261028-01-nasa-hpsc-space-chip.json",
+   "created": "2026-10-28T06:06:26.271909+00:00",
+   "news_date": "2026-05-12",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "neon",
+   "series": "The Science Behind the Machine",
+   "history": [
+    {
+     "at": "2026-10-28T06:06:26.271917+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-28T06:07:51.390627+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-28T06:07:53.284618+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261028-01.mp4",
+   "caption_file": "state/captions/g20261028-01.txt",
+   "qa": {
+    "duration": 24.9,
+    "size_mb": 3.5,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.4
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261028-01.mp4"
+  },
+  "g20261028-02": {
+   "id": "g20261028-02",
+   "title": "Nobody Hit DARPA's Four-to-One Drone Lift",
+   "kind": "clip",
+   "brief": "briefs/g20261028-02-darpa-lift-challenge-ratio.json",
+   "created": "2026-10-28T06:07:53.284876+00:00",
+   "news_date": "2026-09-29",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "chalkboard",
+   "series": "This Week in Drones and AI",
+   "history": [
+    {
+     "at": "2026-10-28T06:07:53.284883+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-28T06:09:39.934065+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-28T06:09:42.161249+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261028-02.mp4",
+   "caption_file": "state/captions/g20261028-02.txt",
+   "qa": {
+    "duration": 27.5,
+    "size_mb": 4.6,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.3
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261028-02.mp4"
   }
  }
 }
