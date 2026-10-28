@@ -1,0 +1,62 @@
+{
+ "id": "news-20261028",
+ "episode": 2,
+ "date": "2026-10-28",
+ "title": "Tech News with G. Dai — Episode 2",
+ "intro": "Namaste! Welcome to episode two of Tech News with G. Dai. Five stories you need to know today. Let's get into it!",
+ "stories": [
+  {
+   "tag": "Cyber alert",
+   "region": "NEPAL",
+   "headline": "PHP2Shell flaw shuts Nepal's gov sites",
+   "kit": "cyber",
+   "stat": {"value": 70, "prefix": "", "suffix": "%", "label": "of websites run on PHP"},
+   "vo": "Here's a wake-up call for Nepal! Two critical PHP flaws, called PHP-to-Shell, forced government and bank websites offline. PHP runs about seventy percent of the web, so patch early and upgrade old versions.",
+   "source": "Kathmandu Post, Al Jazeera",
+   "urls": ["https://kathmandupost.com/science-technology/2026/10/25/php2shell-security-flaw-forces-thousands-of-nepali-websites-offline", "https://kathmandupost.com/science-technology/2026/10/26/most-nepal-government-websites-back-online-after-php2shell-flaw", "https://aljazeera.com/news/2026/10/22/world-leaders-warn-against-security-flaw-found-in-php-computer-programming"]
+  },
+  {
+   "tag": "AI skills",
+   "region": "NEPAL",
+   "headline": "Nepalis put everyday AI to work",
+   "kit": "ai",
+   "stat": {"value": 3, "prefix": "", "suffix": " hrs to 1", "label": "bank-records task, done with AI help"},
+   "vo": "Here's a surprise from Lalitpur! Ordinary Nepalis are using AI for real work. One bank employee wrote a script with AI that cut a three hour records check to one hour. Always verify the answers.",
+   "source": "Kathmandu Post",
+   "urls": ["https://kathmandupost.com/science-technology/2026/10/25/from-induction-cookers-to-bank-records-nepalis-find-ways-to-use-ai"]
+  },
+  {
+   "tag": "Space robots",
+   "region": "WORLD",
+   "headline": "Google and NASA test a Moon-ready robot",
+   "kit": "robot",
+   "stat": {"value": 85, "prefix": "", "suffix": "%", "label": "initial lab success rate"},
+   "vo": "Robots for the Moon are coming! Google and NASA tested an open-source AI model that moves a medical bag from plain English prompts. It succeeded eighty-five percent of the time in the lab, so it's early.",
+   "source": "Google Cloud",
+   "urls": ["https://cloud.google.com/blog/topics/public-sector/google-cloud-and-nasa-testing-robotic-systems-for-deep-space-missions"]
+  },
+  {
+   "tag": "AI memory",
+   "region": "WORLD",
+   "headline": "SK hynix profit hits a record",
+   "kit": "chip",
+   "stat": {"value": 79.7, "prefix": "", "suffix": "%", "label": "operating margin, a record"},
+   "vo": "This is huge for chips! SK hynix just posted record quarterly results, with an operating margin of seventy-nine point seven percent. Its AI memory is sold out through twenty twenty-nine, so memory prices may stay high.",
+   "source": "Korea Herald",
+   "urls": ["https://www.koreaherald.com/article/10917003"]
+  },
+  {
+   "tag": "AI security",
+   "region": "WORLD",
+   "headline": "A hidden file can hijack coding agents",
+   "kit": "cyber",
+   "stat": {"value": 90, "prefix": "", "suffix": "%", "label": "success against Codex in a lab test"},
+   "vo": "Coders, listen up! Researchers found a booby-trapped AGENTS dot M-D file can trick an AI coding agent into installing a rogue package. It worked ninety percent of the time on Codex in a test. Avoid running agents from Downloads.",
+   "source": "BleepingComputer",
+   "urls": ["https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Follow G. Robotics for daily tech news, and I'll see you tomorrow!",
+ "caption": "Nepal's government websites went dark this week. Here's today's tech brief! 🇳🇵\n\n1️⃣ 🛡️ PHP2Shell flaw shuts Nepal's gov sites\n2️⃣ 🤖 Nepalis put everyday AI to work\n3️⃣ 🚀 Google and NASA test a Moon-ready robot\n4️⃣ 💾 SK hynix profit hits a record\n5️⃣ 🔐 A hidden file can hijack coding agents\n\nHave you used AI for work or study? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: Kathmandu Post, Al Jazeera, Google Cloud, Korea Herald, BleepingComputer.",
+ "hashtags": ["#TechNews", "#NepalTech", "#GRobotics", "#AI", "#Cybersecurity", "#Robotics", "#Chips", "#Nepal"]
+}
