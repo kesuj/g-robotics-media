@@ -610,8 +610,8 @@
    "brief": "briefs/news/news-20261028.json",
    "created": "2026-10-28T16:18:37.827973+00:00",
    "news_date": "2026-10-28",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "gdai_news",
    "style": null,
    "series": "Tech News with G. Dai",
@@ -638,6 +638,11 @@
     {
      "at": "2026-10-28T20:15:06.035941+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-10-29T08:29:03.638619+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
