@@ -102,3 +102,5 @@
 {"at": "2026-10-29T16:48:05.308512+00:00", "action": "status", "id": "news-20261029", "status": "rendered"}
 {"at": "2026-10-29T16:48:10.618434+00:00", "action": "status", "id": "news-20261029", "status": "qa_passed"}
 {"at": "2026-10-29T16:48:10.619701+00:00", "action": "produce.run", "made": 1}
+{"at": "2026-10-29T17:03:27.265952+00:00", "action": "research.collect", "new": 144, "feed_errors": []}
+{"at": "2026-10-29T17:03:27.378606+00:00", "action": "produce.run", "made": 0}
