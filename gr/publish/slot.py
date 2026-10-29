@@ -59,12 +59,12 @@ def main(dry=False):
             cid = it.get("container_id")
             if not cid:
                 if ig.login == "facebook":
-                    cid = ig.create_container(caption)
+                    cid = ig.create_container(caption, cover_offset_ms=it.get("cover_offset_ms"))
                     ig.upload_bytes(cid, ROOT / it["video_file"].replace("\\", "/"))
                 else:
                     from gr.publish import hosting
                     url = it.get("video_url") or hosting.upload(ROOT / it["video_file"].replace("\\", "/"), f"{iid}.mp4")
-                    cid = ig.create_container(caption, video_url=url)
+                    cid = ig.create_container(caption, video_url=url, cover_offset_ms=it.get("cover_offset_ms"))
                 set_status(q, iid, "submitted", container_id=cid)
             ig.wait_ready(cid)
             media_id, link = ig.publish(cid)

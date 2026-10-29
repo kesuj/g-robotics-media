@@ -19,6 +19,9 @@ Validate with `python engine/validate_lanes.py`.
 }
 ```
 Optional: `"style"`: one of classic, blueprint, neon, notebook, chalkboard, sunset, newsroom (omit to rotate).
+G. Robotics briefs also carry `"caption"`, `"hashtags"`, `"series"`, `"voice"` (`male` → en-IN-PrabhatNeural,
+`female` → en-IN-NeerjaExpressiveNeural; English only) and the `"viral"` block described in `docs/prompts/editor.md`
+(its `cover_text` replaces the title on the hook frame / Reel cover).
 
 ## Recipes (beat order, regex)
 - **news**: `hook headline (stat )?concept (timeline )?tip outro`
@@ -36,7 +39,7 @@ Optional: `"style"`: one of classic, blueprint, neon, notebook, chalkboard, suns
 | profile | `name`, `role` (≤ 7 words), `icon` (ONE emoji, no flags/people-skin-tones), `known_for` (2–3 × ≤ 3 words), optional `tag` | |
 | quote | `quote` (≤ 22 words, a real, sourced quote — the source URL must be in `sources`), `by` | omit the beat if you can't source it |
 | tip | `text` (≤ 14 words), `tag` ("WHY IT MATTERS", "ENGINEER'S TAKE", "EXAM LINK") | |
-| outro | `text` = "Daily EE" | vo: news "Follow for tech and power news every day." · people "Follow to meet the minds behind the tech." · clip "Follow for a daily dose of engineering." |
+| outro | `text` = "Daily EE" (engine marker; the screen shows the G. Robotics end card) | vo: ONE call to action with its reason, ≤ 24 words, written per Reel by cta-writer (G. Robotics; the old fixed sign-offs are rejected by `gr/qa/viral.py`) |
 
 ## Voiceover rules
 - Spoken English for a text-to-speech voice: **no digits** (write "twenty twenty-six", "three point five gigawatts"), no symbols (% → "percent"), spell acronyms with spaces ("A I", "E V", "N E A").

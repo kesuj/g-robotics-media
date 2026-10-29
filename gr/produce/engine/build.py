@@ -2,7 +2,7 @@
 
     python build.py <episode.json> [--no-render]
 
-Steps: equations (MathJax) → circuit (schemdraw) → voiceover with word timings (ElevenLabs)
+Steps: equations (MathJax) → circuit (schemdraw) → voiceover with word timings (edge-tts South Asian English; Kokoro fallback)
 → HyperFrames project in build/<id>/ → check → render to out/<id>-<slug>.mp4 → out/<id>.youtube.json.
 """
 import html
@@ -18,6 +18,7 @@ import beats_v2
 import beats_v3
 import mascot
 import presenter
+import sound
 import styles
 from beats_v2 import theme
 
@@ -81,38 +82,62 @@ def make_circuit(ep, proj):
     return ""
 
 
+EDGE_VOICES = {"male": "en-IN-PrabhatNeural", "female": "en-IN-NeerjaExpressiveNeural"}
+EDGE_PY = os.environ.get("EDGE_PYTHON", sys.executable)
+
+
+def edge_voice(ep):
+    """South Asian English voice for this episode: brief "voice" (male | female | an en-IN/en-* edge voice name);
+    the female presenter (maya) gets the female voice. Never a non-English voice — the channel is English only."""
+    v = str(ep.get("voice") or ("female" if ep.get("presenter") == "maya" else "male"))
+    v = EDGE_VOICES.get(v.lower(), v)
+    return v if re.fullmatch(r"en-[A-Z]{2}-\w+Neural", v) else os.environ.get("GR_EDGE_VOICE", EDGE_VOICES["male"])
+
+
 def voice_engine(chars):
-    """ElevenLabs while the month's credits cover this episode, else free local Kokoro (config "voice": auto|elevenlabs|kokoro)."""
-    pref = CONFIG.get("voice", "auto")
+    """config "voice": edge (South Asian English Microsoft neural voices, default, free) | kokoro | elevenlabs |
+    auto (ElevenLabs while credits last, else edge). ElevenLabs is never called unless chosen explicitly."""
+    pref = CONFIG.get("voice", "edge")
     if pref != "auto" or chars == 0:
-        return pref if pref != "auto" else "elevenlabs"
+        return pref if pref != "auto" else "edge"
     try:
         import urllib.request
         key = os.environ.get("ELEVENLABS_API_KEY") or next(l.split("=", 1)[1].strip() for l in ENV.read_text(encoding="utf8").splitlines() if l.startswith("ELEVENLABS_API_KEY="))
         req = urllib.request.Request("https://api.elevenlabs.io/v1/user/subscription", headers={"xi-api-key": key})
         sub = json.loads(urllib.request.urlopen(req, timeout=20).read())
         left = sub["character_limit"] - sub["character_count"]
-        return "elevenlabs" if left >= chars * 1.1 else "kokoro"
+        return "elevenlabs" if left >= chars * 1.1 else "edge"
     except Exception:
-        return "kokoro"
+        return "edge"
+
+
+def _drop(jobs):
+    for j in jobs:  # one voice per episode: drop any half-made lines before the next engine
+        Path(j["mp3"]).unlink(missing_ok=True)
+        Path(j["words"]).unlink(missing_ok=True)
 
 
 def make_voice(ep, proj):
     (proj / "assets/vo").mkdir(parents=True, exist_ok=True)
-    jobs = [{"text": b["vo"], "mp3": str(proj / f"assets/vo/b{i:02d}.mp3"), "words": str(proj / f"assets/vo/b{i:02d}.json")}
+    voice = edge_voice(ep)
+    jobs = [{"text": b["vo"], "mp3": str(proj / f"assets/vo/b{i:02d}.mp3"), "words": str(proj / f"assets/vo/b{i:02d}.json"), "voice": voice}
             for i, b in enumerate(ep["beats"])]
     jf = proj / "assets/vo/jobs.json"
     jf.write_text(json.dumps(jobs), encoding="utf8")
     engine = voice_engine(sum(len(j["text"]) for j in jobs if not Path(j["mp3"]).exists()))
-    print("voice:", engine)
+    print("voice:", engine, voice if engine == "edge" else "")
     if engine == "elevenlabs":
         try:
             run(["node"] + ([f"--env-file={ENV}"] if ENV else []) + [ENGINE / "vo.mjs", jf])
         except subprocess.CalledProcessError:
+            engine = "edge"
+            _drop(jobs)
+    if engine == "edge":
+        try:
+            run([EDGE_PY, ENGINE / "vo_edge.py", jf])
+        except subprocess.CalledProcessError:
             engine = "kokoro"
-            for j in jobs:  # one voice per episode: drop any half-made ElevenLabs lines
-                Path(j["mp3"]).unlink(missing_ok=True)
-                Path(j["words"]).unlink(missing_ok=True)
+            _drop(jobs)
     if engine == "kokoro":
         run([KOKORO_PY, ENGINE / "vo_kokoro.py", jf])
     out = []
@@ -173,19 +198,30 @@ def words_html(text, cls):
     return " ".join(f'<span class="{cls}">{esc(w)}</span>' for w in text.split())
 
 
+def cover_text(ep):
+    """Frame 0 is the hook and the Reel's cover: the cover-thumbnail-brief text when the brief has one, else the title."""
+    return ((ep.get("viral") or {}).get("cover_text") or ep["title"]).strip()
+
+
 def beat_hook(cid, b, dur, ep):
     num = ep["id"].replace("ep", "#") if CONFIG.get("show_id", True) else ep.get("series", "")
-    css = '''    #hk-num { position: absolute; left: 80px; top: 300px; font-family: "Archivo Black"; font-size: 46px; color: #b45309; }
+    css = '''    #hk-num { position: absolute; left: 80px; right: 80px; top: 300px; font-family: "Archivo Black"; font-size: @NUMPX@px; color: #b45309; white-space: nowrap; }
     #hk-title { position: absolute; left: 80px; right: 80px; top: 380px; font-size: 112px; }
     #hk-title .w { display: inline-block; }
     #hk-mark { position: absolute; left: 70px; top: 0; height: 0; background: #ffd400; }
     #hk-line { position: absolute; left: 80px; right: 270px; top: 930px; font-size: 54px; }
     #hk-bolt { position: absolute; right: 70px; top: 760px; width: 160px; height: 220px; }'''
-    body = f'''    <div id="hk-num">{esc(" · ".join(x for x in (num, ep.get("category", "")) if x))}</div>
-    <div id="hk-title" class="k-h">{words_html(ep["title"], "w")}</div>
+    label = " · ".join(x for x in (num, ep.get("category", "")) if x)
+    if len(label) > 30 and num:
+        label = num                       # long series names: one line, no category
+    css = css.replace("@NUMPX@", str(min(46, int(920 / (0.62 * max(1, len(label)))))))   # always one line
+    body = f'''    <div id="hk-num">{esc(label)}</div>
+    <div id="hk-title" class="k-h">{words_html(cover_text(ep), "w")}</div>
     <div id="hk-line" class="k-b">{esc(b.get("text", ""))}</div>
     <svg id="hk-bolt" viewBox="0 0 80 110"><path d="M48 2 L8 62 H36 L28 108 L72 42 H44 Z" fill="#ffd400" stroke="#111827" stroke-width="4" stroke-linejoin="round"/></svg>'''
-    js = f'''      tl.fromTo("#hk-title .w", {{ opacity: 0, y: 40 }}, {{ opacity: 1, y: 0, duration: 0.28, ease: "power3.out", stagger: 0.07 }}, 0.05);
+    js = f'''      tl.fromTo("#hk-title", {{ scale: 1.1, transformOrigin: "0% 0%" }}, {{ scale: 1, duration: 0.35, ease: "power4.out" }}, 0);
+      tl.fromTo("#hk-title .w", {{ y: 10 }}, {{ y: 0, duration: 0.3, ease: "power3.out", stagger: 0.05 }}, 0);
+      tl.to("#hk-title", {{ scale: 1.035, duration: {dur:.2f}, ease: "none", transformOrigin: "0% 0%" }}, 0.4);
       tl.fromTo("#hk-bolt", {{ scale: 0, rotation: -20 }}, {{ scale: 1, rotation: 0, duration: 0.4, ease: "back.out(2.2)" }}, 0.4);
       tl.fromTo("#hk-line", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.25 }}, Math.min(1.2, {dur:.2f} * 0.45));'''
     return scene(cid, dur, css, body, js)
@@ -393,6 +429,26 @@ def captions(beats, starts, voices):
     return scene("captions", total, css, "\n".join(rows), "\n".join(js))
 
 
+# ---------------------------------------------------------------- sound
+
+PAYOFF = ("answer", "reveal", "verdict", "stat", "headline", "profile")
+
+
+def sound_design(ep, proj, starts, voices, total):
+    """Music bed ducked under the voice + sub-boom hits on the hook claim, the payoff (with a riser into it) and the CTA.
+    Falls back to the old fixed-level bed if the stem cannot be made."""
+    types = [b["type"] for b in ep["beats"]]
+    pay = next((i for i, t in enumerate(types) if t in PAYOFF and i > 0), max(1, len(types) - 2))
+    hits = [starts[0] + 0.05, starts[pay] - 0.05] + ([starts[-1] - 0.05] if types[-1] == "outro" and len(types) > 2 else [])
+    try:
+        sound.mix(proj / "assets/music/bed.mp3", proj / "assets/music/mix.wav", total, sound.speech_spans(starts, voices),
+                  hits=hits, rises=[starts[pay] - 0.05], ffmpeg=str(FFMPEG_BIN / "ffmpeg"))
+        return f'      <audio id="music" data-timeline-role="music" class="clip" src="assets/music/mix.wav" data-start="0" data-duration="{total}" data-track-index="7" data-volume="1"></audio>'
+    except Exception as e:  # noqa: BLE001 — a plain bed is better than no Reel
+        print("sound design failed, plain bed:", e)
+        return f'      <audio id="music" data-timeline-role="music" class="clip" src="assets/music/bed.mp3" data-start="0" data-duration="{total}" data-media-start="2" data-track-index="7" data-volume="0.1" data-fade-out="1.5"></audio>'
+
+
 # ---------------------------------------------------------------- assemble
 
 def build(ep_path, render=True):
@@ -461,6 +517,7 @@ def build(ep_path, render=True):
 
     (proj / "compositions/chrome.html").write_text(chrome(total, ep), encoding="utf8")
     (proj / "compositions/captions.html").write_text(captions(ep["beats"], starts, voices), encoding="utf8")
+    music = sound_design(ep, proj, starts, voices, total)
 
     index = f'''<!doctype html>
 <html lang="en" data-resolution="portrait">
@@ -481,7 +538,7 @@ def build(ep_path, render=True):
 {chr(10).join(hosts)}
       <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="{total}" data-track-index="3" data-track-kind="captions" data-width="{W}" data-height="{H}"></div>
 {chr(10).join(audio)}
-      <audio id="music" data-timeline-role="music" class="clip" src="assets/music/bed.mp3" data-start="0" data-duration="{total}" data-media-start="2" data-track-index="7" data-volume="0.1" data-fade-out="1.5"></audio>
+{music}
     </div>
     <script>
       window.__timelines = window.__timelines || {{}};

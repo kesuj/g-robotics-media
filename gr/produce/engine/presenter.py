@@ -16,7 +16,7 @@ PERSONAS = {
     "maya": {"name": "MAYA", "skin": "#b97a54", "hair": "#2a1810", "top": "#0f7f7b", "trim": "#f6c445", "glasses": False,
              "hair_path": "M40 118 C30 40 170 36 160 118 C162 70 140 56 100 58 C60 56 40 72 40 118 Z M38 110 C30 170 50 200 56 206 L60 120 Z M162 110 C170 170 150 200 144 206 L140 120 Z",
              "earrings": True},
-    "dai": {"name": "BIJULI DAI", "skin": "#f2c79c", "hair": "#ffd401", "top": "#2563ec", "trim": "#ffd401", "glasses": False,
+    "dai": {"name": "G. DAI", "skin": "#f2c79c", "hair": "#ffd401", "top": "#2563ec", "trim": "#ffd401", "glasses": False,
             "hair_path": "M38 82 C40 34 160 34 162 82 Z", "hardhat": True},
 }
 

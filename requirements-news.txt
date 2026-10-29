@@ -4,3 +4,4 @@ torchaudio==2.8.0+cpu
 omnivoice==0.2.1
 faster-whisper==1.2.1
 numpy
+edge-tts==7.3.1

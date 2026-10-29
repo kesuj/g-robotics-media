@@ -1,0 +1,54 @@
+{
+ "id": "g20261030-91",
+ "slug": "viral-test-drone-hover",
+ "format": "clip",
+ "title": "Why a Drone Can Hover Perfectly Still",
+ "category": "Drones",
+ "date": "2026-10-30",
+ "description": "Test fixture for the viral pipeline: a concept clip about how a quadcopter holds a hover using its IMU and a control loop.",
+ "sources": [
+  "https://ardupilot.org/copter/docs/common-imu-notch-filtering.html",
+  "https://docs.px4.io/main/en/flight_stack/controller_diagrams.html"
+ ],
+ "tags": ["drone", "quadcopter", "control loop", "imu", "pid"],
+ "style": "neon",
+ "series": "Drone Engineering in 30 Seconds",
+ "voice": "male",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "It is falling. All the time.",
+   "vo": "That drone is not floating. It is falling, hundreds of times every second."
+  },
+  {
+   "type": "concept",
+   "tag": "THE SECRET",
+   "text": "A tiny sensor catches every wobble",
+   "points": ["Gyro feels the tilt", "Loop fixes it in milliseconds", "Four motors speed up or slow down"],
+   "vo": "Inside is a tiny gyro that feels every wobble. A control loop checks it about four hundred times a second and nudges each of the four motors, so every small fall gets caught before you can see it."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Know someone who thinks drones just float? Send this to them."
+  }
+ ],
+ "caption": "That hovering drone is falling hundreds of times a second. 🚁\nA gyro feels each tilt and a control loop corrects the four motors about four hundred times a second, so you never see the fall.\nWhat should we explain next: GPS hold or obstacle avoidance?",
+ "hashtags": ["DroneEngineering", "Quadcopter", "ControlSystems", "NepalTech", "GRobotics", "STEM"],
+ "viral": {
+  "goal": "share",
+  "emotion": "awe + identity (I know how it really works)",
+  "angle": "contrarian",
+  "open_loop": "how something that is always falling looks perfectly still",
+  "payoff_beat": 1,
+  "hook_variants": [
+   {"vo": "That drone is not floating. It is falling, hundreds of times every second.", "text": "It is falling. All the time."},
+   {"vo": "Hold a drone still in the air? Impossible, unless you fix it four hundred times a second.", "text": "400 fixes a second"}
+  ],
+  "hook_scores": {"scroll_stop": 9, "curiosity": 9, "clarity": 8, "specificity": 8, "audience_fit": 8},
+  "rehooks": [],
+  "cover_text": "It's Always Falling",
+  "cta": {"type": "share", "vo": "Know someone who thinks drones just float? Send this to them."},
+  "first_comment": "Fun fact: racing drones run this loop even faster, up to eight thousand times a second."
+ }
+}

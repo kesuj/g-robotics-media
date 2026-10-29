@@ -52,6 +52,16 @@ def problems(ep):
         out.append("caption must say G. Dai is AI-generated")
     if not 4 <= len(ep["hashtags"]) <= 8:
         out.append("need 4–8 hashtags")
+    texts = [ep["title"], ep["intro"], ep["outro"], ep["caption"], *map(str, ep["hashtags"])]
+    texts += [str(s.get(k, "")) for s in ep["stories"] for k in ("tag", "headline", "vo")]
+    if any(re.search(r"[ऀ-ॿ]", t) for t in texts):
+        out.append("English only: Devanagari text found")
+    if len(ep["caption"].split("\n")[0]) > 125:
+        out.append("caption first line > 125 chars — it gets cut before 'more'")
+    for i, s in enumerate(ep["stories"], 1):
+        first = re.split(r"(?<=[.!?])\s+", s.get("vo", "").strip())[0]
+        if len(first.split()) > 14:
+            out.append(f"story {i}: opening sentence {len(first.split())} words — hook first, ≤ 14 words")
     return out
 
 

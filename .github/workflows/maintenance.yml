@@ -21,6 +21,8 @@ jobs:
       - run: pip install -r requirements.txt
       - env: {IG_USER_ID: "${{ secrets.IG_USER_ID }}", IG_ACCESS_TOKEN: "${{ secrets.IG_ACCESS_TOKEN }}", IG_LOGIN: "${{ vars.IG_LOGIN || 'instagram' }}"}
         run: python -m gr.analytics.pull
+      - name: Digest what worked for the next editor run
+        run: python -m gr.analytics.digest
       - run: |
           git config user.name "g-robotics-bot"; git config user.email "bot@users.noreply.github.com"
           git add state; git commit -m "analytics: $(date -u +%F)" || exit 0

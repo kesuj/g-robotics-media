@@ -4,7 +4,8 @@
 
 Episode fields: id, episode (int), date (YYYY-MM-DD), intro (VO), stories [{tag, region NEPAL|WORLD, headline, kit,
 vo, source, stat?: {value, prefix?, suffix?, label}}], outro (VO). See docs/NEWS-EPISODE-SCHEMA.md.
-Voice: OmniVoice clone of assets/voice/gdai_ref.wav (subprocess in OMNIVOICE_PYTHON); falls back to Kokoro.
+Voice: OmniVoice clone of assets/voice/gdai_ref.wav (subprocess in OMNIVOICE_PYTHON); falls back to
+edge-tts en-IN-PrabhatNeural (Indian-English male).
 """
 import datetime as dt
 import html
@@ -71,7 +72,10 @@ def make_voice(ep, proj):
             run([FF, "-v", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", f"{0.36 * len(ws) + 0.2:.2f}", vo / f"{k}.wav"])
         (vo / "words.json").write_text(json.dumps(fake), encoding="utf8")
     if not (vo / "words.json").exists():
-        run([py, HERE / "voice.py", vo / "job.json"])
+        try:
+            run([py, HERE / "voice.py", vo / "job.json"])
+        except subprocess.CalledProcessError:
+            edge_fallback(segs, vo)
     words = json.loads((vo / "words.json").read_text(encoding="utf8"))
     out = []
     for k, _ in segs:
@@ -83,6 +87,22 @@ def make_voice(ep, proj):
                  "loudnorm=I=-16:TP=-1.5:LRA=7", "-ar", "44100", "-b:a", "192k", mp3])
         out.append({"id": k, "file": f"assets/vo/{k}.mp3", "dur": dur(mp3), "words": words[k]})
     return out
+
+
+def edge_fallback(segs, vo):
+    """OmniVoice failed: speak G. Dai's lines with Microsoft's Indian-English male neural voice (edge-tts, free),
+    keeping the same files (segment wav + words.json) so the rest of the build is unchanged."""
+    edge = REPO / "gr/produce/engine/vo_edge.py"
+    jobs = [{"text": t, "mp3": str(vo / f"{k}.edge.mp3"), "words": str(vo / f"{k}.edge.json"),
+             "voice": os.environ.get("GDAI_EDGE_VOICE", "en-IN-PrabhatNeural")} for k, t in segs]
+    (vo / "edge-jobs.json").write_text(json.dumps(jobs, indent=1), encoding="utf8")
+    run([os.environ.get("EDGE_PYTHON", sys.executable), edge, vo / "edge-jobs.json"])
+    words = {}
+    for (k, _), j in zip(segs, jobs):
+        run([FF, "-v", "error", "-y", "-i", j["mp3"], "-ar", "24000", "-ac", "1", vo / f"{k}.wav"])
+        words[k] = json.loads(Path(j["words"]).read_text(encoding="utf8"))
+    (vo / "words.json").write_text(json.dumps(words, indent=1), encoding="utf8")
+    print("voice: edge fallback", jobs[0]["voice"], flush=True)
 
 
 # ---------------------------------------------------------------- pieces
@@ -277,7 +297,8 @@ def build(ep_path, render=True):
     n = len(ep["stories"])
     # scene windows: intro from 0, each story from its voice start - 0.25, outro until the end
     bounds = [0.0] + [max(0.0, starts[k] - 0.25) for k in range(1, len(segs))] + [total]
-    music.bed(proj / "assets/bed.wav", total, hits=bounds[1:-1])
+    speech = [(st + sg["words"][0]["s"], st + sg["words"][-1]["e"]) for sg, st in zip(segs, starts) if sg["words"]]
+    music.bed(proj / "assets/bed.wav", total, hits=bounds[1:-1], speech=speech)
 
     scenes, js = [], []
     b, j = intro_html(ep, bounds[0], bounds[1] - bounds[0])
@@ -331,7 +352,7 @@ tl.from("#gd-card, #gd-plate", {{ y: 80, opacity: 0, duration: 0.7, ease: "expo.
 <div id="ai-note">G. Dai is an AI-generated presenter · Voice: AI</div>
 {cap_html}
 {audio}
-<audio id="music" class="clip" src="assets/bed.wav" data-start="0" data-duration="{total}" data-track-index="21" data-volume="0.09"></audio>
+<audio id="music" class="clip" src="assets/bed.wav" data-start="0" data-duration="{total}" data-track-index="21" data-volume="0.14"></audio>
 </div>
 <script>
 window.__timelines = window.__timelines || {{}};

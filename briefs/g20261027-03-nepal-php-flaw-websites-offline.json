@@ -58,6 +58,6 @@
    "vo": "Follow for tech and power news every day."
   }
  ],
- "caption": "Nepal switched off government websites — because of a bug in PHP. 🇳🇵\nTwo critical flaws (9.2/10 each) went public on 21 Oct. Nepal's SDOC patched the shared platform; most portals are back, but the Nagarik App and some vendor-run sites were still down at the latest report.\nनेपालका सरकारी वेबसाइट PHP त्रुटिका कारण अफलाइन भए; अधिकांश फर्किसकेका छन्।\nRunning a website? Check your PHP version.",
+ "caption": "Nepal switched off government websites — because of a bug in PHP. 🇳🇵\nTwo critical flaws (9.2/10 each) went public on 21 Oct. Nepal's SDOC patched the shared platform; most portals are back, but the Nagarik App and some vendor-run sites were still down at the latest report.\nRunning a website? Check your PHP version.",
  "hashtags": ["Nepal", "CyberSecurity", "PHP", "NepalTech", "GRobotics", "Websites"]
 }

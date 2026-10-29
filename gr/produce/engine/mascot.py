@@ -27,7 +27,7 @@ SVG = '''    <svg id="ms" viewBox="0 0 200 250" aria-hidden="true">
       <path d="M80 140 Q100 150 120 140" fill="none" stroke="#111828" stroke-width="4" stroke-linecap="round"/>
       <ellipse id="ms-mouth" cx="100" cy="146" rx="14" ry="11" fill="#7f1d1d" stroke="#111828" stroke-width="4"/>
     </svg>
-    <div id="ms-tag">BIJULI DAI</div>'''
+    <div id="ms-tag">G. DAI</div>'''
 
 
 def parts(words, total):

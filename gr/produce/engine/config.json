@@ -16,8 +16,10 @@
  "lane_taglines": {
   "news": "World tech news, every day.",
   "people": "Meet the minds behind the machines.",
-  "clip": "A daily dose of engineering."
+  "clip": "Build it. Fly it. G. Robotics."
  },
  "cta": "FOLLOW",
- "show_id": false
+ "show_id": false,
+ "voice": "edge",
+ "_voice_note": "edge = Microsoft neural South Asian English (en-IN-PrabhatNeural male / en-IN-NeerjaExpressiveNeural female via brief \"voice\"), free; falls back to Kokoro. English only. ElevenLabs only if set to elevenlabs/auto."
 }

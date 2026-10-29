@@ -2,8 +2,9 @@
 
     python -m gr.produce.run [--limit 4]
 
-A brief = an episode JSON in the engine schema (docs/EPISODE-SCHEMA.md) plus "caption" and "hashtags".
-Failed renders/QA are retried up to 2 times, then moved to failed (never published).
+A brief = an episode JSON in the engine schema (docs/EPISODE-SCHEMA.md) plus "caption", "hashtags" and "viral".
+Briefs that fail the viral QA (gr/qa/viral.py: weak hook / retention) are failed before rendering — no retries, the
+editor must rewrite them. Failed renders/QA are retried up to 2 times, then moved to failed (never published).
 """
 import json
 import os
@@ -12,12 +13,14 @@ import subprocess
 import sys
 from pathlib import Path
 
+from gr.qa import viral
 from gr.qa.check import check_caption, check_video
 from gr.state import ROOT, audit, now, queue, set_status
 
 ENGINE = ROOT / "gr" / "produce" / "engine"
 WORK = Path(os.environ.get("GR_WORK", ROOT / "work"))
 RENDERS = ROOT / "renders"
+COVER_OFFSET_MS = 900     # engine Reels: frame 0 is the cover text; by 0.9 s the punch-in has settled
 
 
 def caption_text(ep):
@@ -88,6 +91,11 @@ def main(limit=4):
                     it["not_before"] = f"{ep['date']}T17:30:00+05:45"
                     it["priority"] = 1
                 set_status(q, iid, "briefed")
+            if it.get("kind") != "news":
+                weak = viral.check(ep)
+                if weak:
+                    set_status(q, iid, "failed", note="viral QA: " + "; ".join(weak)[:380])
+                    continue
             try:
                 mp4 = render_news(brief) if it.get("kind") == "news" else render(brief)
                 dest = RENDERS / f"{iid}.mp4"
@@ -105,7 +113,8 @@ def main(limit=4):
                 if os.environ.get("GITHUB_TOKEN") and os.environ.get("GITHUB_REPOSITORY"):
                     from gr.publish import hosting     # cloud: keep the file in the release so later jobs can fetch it
                     url = hosting.upload(dest, f"{iid}.mp4")
-                set_status(q, iid, "qa_passed", caption_file=cap_file.relative_to(ROOT).as_posix(), qa=facts, video_url=url)
+                extra = {"cover_offset_ms": COVER_OFFSET_MS} if it.get("kind") != "news" else {}
+                set_status(q, iid, "qa_passed", caption_file=cap_file.relative_to(ROOT).as_posix(), qa=facts, video_url=url, **extra)
                 made += 1
             except Exception as e:  # noqa: BLE001 — any failure keeps the item out of the publish queue
                 it["retries"] = it.get("retries", 0) + 1

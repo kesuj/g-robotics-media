@@ -30,6 +30,8 @@ jobs:
         run: |
           echo "date=$(TZ=Asia/Kathmandu date +%F)" >> "$GITHUB_OUTPUT"
           echo "stamp=$(TZ=Asia/Kathmandu date +%Y%m%d)" >> "$GITHUB_OUTPUT"
+      - name: Performance digest for the editor (state/research/performance.md)
+        run: python -m gr.analytics.digest
       - name: Research and write today's episode (Claude Code)
         if: hashFiles(format('briefs/news/news-{0}.json', steps.d.outputs.stamp)) == ''
         uses: anthropics/claude-code-action@v1
@@ -37,10 +39,10 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.SS || secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ github.token }}   # repo token; no Claude GitHub App needed (the editor only edits files)
-          prompt: "Today's Nepal date is ${{ steps.d.outputs.date }}. Follow docs/prompts/news-editor.md exactly and write briefs/news/news-${{ steps.d.outputs.stamp }}.json."
+          prompt: "Today's Nepal date is ${{ steps.d.outputs.date }}. Follow docs/prompts/news-editor.md exactly (using the skills in .claude/skills) and write briefs/news/news-${{ steps.d.outputs.stamp }}.json."
           claude_args: >-
-            --max-turns 120
-            --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(python:*),Bash(ls:*)"
+            --max-turns 140
+            --allowedTools "Skill,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(python:*),Bash(ls:*)"
       - name: Voice, render, QA and queue
         env:
           GITHUB_TOKEN: ${{ github.token }}

@@ -3,3 +3,4 @@ soundfile==0.13.1
 schemdraw==0.23
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.14.1+cpu
+edge-tts==7.3.1

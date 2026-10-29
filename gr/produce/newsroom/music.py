@@ -1,7 +1,9 @@
 """Procedural news bed + transition SFX (numpy only, no samples → no licence questions, identical every run).
 
-bed(path, seconds, hits)  — a driving broadcast-style bed: pulsing synth bass, warm pad chords, ticking hats,
-                            with a soft whoosh + impact at every time in `hits` (story transitions).
+bed(path, seconds, hits, speech)  — a driving broadcast-style bed: pulsing synth bass, warm pad chords, ticking hats,
+                            with a soft whoosh + impact at every time in `hits` (story transitions), ducked by DUCK
+                            (≈ −7 dB, fast attack / slow release) inside every `speech` span [(start, end)] so the
+                            voice sits on top and the music lifts in the gaps.
 """
 import wave
 
@@ -11,6 +13,7 @@ SR = 44100
 CHORDS = [  # A minor → F → C → G (root, third, fifth in Hz)
     (110.00, 130.81, 164.81), (87.31, 110.00, 130.81), (130.81, 164.81, 196.00), (98.00, 123.47, 146.83)]
 BPM = 112
+DUCK = 0.45
 
 
 def _env(n, a, r):
@@ -45,7 +48,20 @@ def _lp_fast(x, k):
     return np.convolve(x, ker)[:len(x)]
 
 
-def bed(path, seconds, hits=()):
+def duck(n, speech, attack=0.08, release=0.45):
+    """Gain curve: 1 in the gaps, DUCK while the voice talks, smoothed in 1 ms blocks."""
+    target = np.ones(n)
+    for s, e in speech:
+        target[max(0, int((s - 0.06) * SR)):min(n, int((e + 0.12) * SR))] = DUCK
+    env, acc, blk = np.empty(n), 1.0, SR // 1000
+    for i in range(0, n, blk):
+        k = 1 - np.exp(-blk / ((attack if target[i] < acc else release) * SR))
+        acc += k * (target[i] - acc)
+        env[i:i + blk] = acc
+    return env
+
+
+def bed(path, seconds, hits=(), speech=()):
     n = int(seconds * SR) + SR
     out = np.zeros((n, 2))
     beat = 60 / BPM
@@ -104,6 +120,8 @@ def bed(path, seconds, hits=()):
             boom = np.sin(2 * np.pi * (38 + 40 * np.exp(-tt * 9)) * tt) * np.exp(-tt * 4) * 0.45
             out[ks:ks + kl] += boom[:, None]
     out = out[:int(seconds * SR)]
+    if speech:
+        out *= duck(len(out), speech)[:, None]
     fade = int(1.2 * SR)
     out[-fade:] *= np.linspace(1, 0, fade)[:, None]
     out /= max(1e-6, np.abs(out).max()) / 0.8

@@ -5,6 +5,17 @@ Audience: students, engineers and tech fans in Nepal. Instagram covers **all of 
 chips, space, robotics, drones, apps, internet, cybersecurity, EVs, science, startups, games tech, sports tech)
 — it is NOT an electrical-power channel. At most one energy/power story, and only if it is genuinely big.
 
+**English only:** every line (VO, headlines, caption, hashtags) is simple, natural South Asian English — no Nepali/Hindi
+script, no Devanagari. G. Dai's voice is an Indian-English male voice.
+
+**Skills (vendored in `.claude/skills/`; invoke with the Skill tool, or Read the `SKILL.md` and follow it if the tool is
+unavailable; never stop to ask a human).** Fixed inputs: Instagram Reels, Nepali/South Asian tech audience (16–30),
+English only. Use: **trend-spotter** (step 1.6, what is rising now), **going-viral** (pick today's lead story for
+share-ability: awe / "Nepal did this" pride / "this changes your phone"), **viral-hook-writer** + **ab-hook-tester**
+(the intro's punchy line and every story's first words), **on-screen-text-writer** (headlines and tags),
+**cta-writer** (the outro ask), **caption-and-hashtags** + **hashtag-keyword-research** (caption and hashtags).
+Read `state/research/performance.md` first — real Insights for past Reels; copy what won.
+
 ## 1. Research (deep, before writing anything)
 Today's date (Nepal time) is in the workflow env `NEWS_DATE`. Work through ALL of these angles with WebSearch,
 then open the best articles with WebFetch:
@@ -32,7 +43,9 @@ Rules for a story to be used:
 ## 3. Write `briefs/news/news-YYYYMMDD.json`
 Follow `docs/NEWS-EPISODE-SCHEMA.md` exactly. Voice lines are spoken by G. Dai, an Indian-English AI news presenter:
 - `intro`: if `episode` is 1 say "Welcome to the very first episode of Tech News with G. Dai"; otherwise
-  "Namaste! Welcome to episode <number in words> of Tech News with G. Dai" + "<count> stories you need to know today." + a punchy line.
+  "Welcome to episode <number in words> of Tech News with G. Dai" + "<count> stories you need to know today." + a punchy line.
+- Lead with the story that gives the strongest hook; save a "wait for the last one" story (surprising, Nepal pride or
+  a gadget people own) for the end and tease it in the intro's punchy line (e.g. "and the last one is about your phone").
 - Each story `vo`: 22–38 words, hook first ("Big moment for Nepal cricket!", "This is huge for AI.", "Here's a surprise…"),
   then the key fact with ONE number, then why it matters. Plain spoken English. Spell numbers in words
   ("sixteen point three billion dollars"); say acronyms with hyphens ("D-R-S", "G-P-U") when they are letters.
@@ -40,8 +53,9 @@ Follow `docs/NEWS-EPISODE-SCHEMA.md` exactly. Voice lines are spoken by G. Dai, 
 - `kit` from: drs, ai, chip, space, drone, robot, phone, nepal, globe, ev, app, cyber (pick the closest).
 - `stat` only with a real number from the source (value is a number; prefix/suffix like "$", "B", " nm", "Rs ").
   Never invent a number; omit `stat` if the story has no solid figure.
-- `outro`: "That's your tech brief for today. Follow G. Robotics for daily tech news, and I'll see you tomorrow!" (vary lightly).
-- `caption`: hook line, numbered list of headlines with an emoji each, a question for comments, then
+- `outro`: ONE ask with a reason (cta-writer), e.g. "Which story surprised you? Tell me in the comments, and follow
+  G. Robotics so you never miss tomorrow's brief." (vary daily; ≤ 30 words).
+- `caption`: hook line (≤ 125 chars — the part shown before "more"), numbered list of headlines with an emoji each, a question for comments, then
   "G. Dai is an AI-generated presenter." and a short sources line. ≤ 900 characters. `hashtags`: 6–8.
 - `episode`: one more than the highest episode in existing `briefs/news/*.json`.
 
