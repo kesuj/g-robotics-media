@@ -1,0 +1,62 @@
+{
+ "id": "news-20261029",
+ "episode": 3,
+ "date": "2026-10-29",
+ "title": "Tech News with G. Dai — Episode 3",
+ "intro": "Namaste! Welcome to episode three of Tech News with G. Dai. Five stories you need to know today. Let's dive right in!",
+ "stories": [
+  {
+   "tag": "Internet",
+   "region": "NEPAL",
+   "headline": "Fibre rush hits Nepal Telecom",
+   "kit": "nepal",
+   "stat": {"value": 4999, "prefix": "Rs ", "suffix": "", "label": "for a year of 30 Mbps fibre"},
+   "vo": "Nepal is rushing to fibre! Private providers dropped cheaper plans and raised prices, so Nepal Telecom's yearly thirty megabit package at Rs four thousand nine hundred ninety-nine doubled new connections to six thousand in a month.",
+   "source": "The Kathmandu Post",
+   "urls": ["https://kathmandupost.com/money/2026/10/28/users-turn-to-nepal-telecom-as-private-isps-raise-internet-prices"]
+  },
+  {
+   "tag": "Cricket tech",
+   "region": "NEPAL",
+   "headline": "NPL 2026 goes fully digital",
+   "kit": "app",
+   "stat": {"value": 400, "prefix": "Rs ", "suffix": "", "label": "NetTV pass, whole tournament"},
+   "vo": "Cricket season is here! The Nepal Premier League is live, with thirty-two matches until November twenty-first. Stream everything on NetTV for Rs four hundred, and buy stadium tickets digitally through eSewa.",
+   "source": "NepaliTelecom, Wisden",
+   "urls": ["https://www.nepalitelecom.com/2026/10/npl-2026-watch-all-matches-on-nettv-for-rs-400-subscription-open.html", "https://www.wisden.com/cricket-news/nepal-premier-league-2026-live-streaming-and-tv-channels-where-to-watch-live-and-start-time-for-npl-2026"]
+  },
+  {
+   "tag": "AI models",
+   "region": "WORLD",
+   "headline": "OpenAI's cheaper, faster GPT-6.1 Terra",
+   "kit": "ai",
+   "stat": {"value": 5, "prefix": "$", "suffix": "", "label": "per million output tokens"},
+   "vo": "This is big for AI builders! OpenAI launched GPT-six point one Terra, made for computer use. It runs over three times faster, and costs one dollar per million input tokens. Cheaper agents are coming.",
+   "source": "BleepingComputer",
+   "urls": ["https://bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing"]
+  },
+  {
+   "tag": "Gadgets",
+   "region": "WORLD",
+   "headline": "Apple's first OLED touch MacBook Pro",
+   "kit": "phone",
+   "stat": {"value": 400, "prefix": "$", "suffix": "", "label": "extra over mini-LED models"},
+   "vo": "Here's a surprise from Apple! The first Mac with an OLED touch screen is here, in the MacBook Pro. It adds a Dynamic Island and costs four hundred dollars more. Pre-orders are open, shipping November sixth.",
+   "source": "MacRumors",
+   "urls": ["https://macrumors.com/2026/10/28/apple-announcements-october-2026"]
+  },
+  {
+   "tag": "Space",
+   "region": "WORLD",
+   "headline": "ISS gets its seventh new solar array",
+   "kit": "space",
+   "stat": {"value": 215, "prefix": "", "suffix": " kW", "label": "station power after upgrade"},
+   "vo": "Space station upgrade day! Today, two astronauts spacewalk to unfold the seventh new solar array. When the eighth follows on November fifth, station power rises from one hundred sixty to two hundred fifteen kilowatts.",
+   "source": "Spaceflight Now",
+   "urls": ["https://spaceflightnow.com/2026/10/28/nasa-nears-end-of-space-station-solar-array-upgrade-with-oct-29-and-nov-5-spacewalks/"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Follow G. Robotics for daily tech news, and I'll see you tomorrow!",
+ "caption": "Fibre fights, cricket streams and a touch-screen OLED Mac! Here's today's tech brief:\n\n1. 🌐 Fibre rush hits Nepal Telecom\n2. 🏏 NPL 2026 goes fully digital\n3. 🤖 OpenAI's cheaper, faster GPT-6.1 Terra\n4. 💻 Apple's first OLED touch MacBook Pro\n5. 🛰️ ISS gets its seventh new solar array\n\nWhich story matters most to you? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: Kathmandu Post, NepaliTelecom, Wisden, BleepingComputer, MacRumors, Spaceflight Now.",
+ "hashtags": ["#TechNews", "#NepalTech", "#GRobotics", "#AI", "#NPL2026", "#Apple", "#Space"]
+}
