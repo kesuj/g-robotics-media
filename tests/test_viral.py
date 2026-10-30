@@ -73,8 +73,8 @@ def test_edge_voice_is_south_asian_english_only(monkeypatch):
     sys.path.insert(0, str(FIX.parents[2] / "gr" / "produce" / "engine"))
     monkeypatch.delenv("GR_EDGE_VOICE", raising=False)
     import build
-    assert build.edge_voice({}) == "en-IN-PrabhatNeural"
-    assert build.edge_voice({"voice": "female"}) == "en-IN-NeerjaExpressiveNeural"
-    assert build.edge_voice({"presenter": "maya"}) == "en-IN-NeerjaExpressiveNeural"
-    assert build.edge_voice({"voice": "ne-NP-SagarNeural"}) == "en-IN-PrabhatNeural"   # never a non-English voice
+    assert build.edge_voice({}) == "en-US-AndrewMultilingualNeural"
+    assert build.edge_voice({"voice": "female"}) == "en-US-AvaMultilingualNeural"
+    assert build.edge_voice({"presenter": "maya"}) == "en-US-AvaMultilingualNeural"
+    assert build.edge_voice({"voice": "ne-NP-SagarNeural"}) == "en-US-AndrewMultilingualNeural"   # never a non-English voice
     assert build.CONFIG["voice"] == "edge"

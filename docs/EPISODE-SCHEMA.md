@@ -19,8 +19,8 @@ Validate with `python engine/validate_lanes.py`.
 }
 ```
 Optional: `"style"`: one of classic, blueprint, neon, notebook, chalkboard, sunset, newsroom (omit to rotate).
-G. Robotics briefs also carry `"caption"`, `"hashtags"`, `"series"`, `"voice"` (`male` → en-IN-PrabhatNeural,
-`female` → en-IN-NeerjaExpressiveNeural; English only) and the `"viral"` block described in `docs/prompts/editor.md`
+G. Robotics briefs also carry `"caption"`, `"hashtags"`, `"series"`, `"voice"` (`male` → en-US-AndrewMultilingualNeural,
+`female` → en-US-AvaMultilingualNeural; English only) and the `"viral"` block described in `docs/prompts/editor.md`
 (its `cover_text` replaces the title on the hook frame / Reel cover).
 
 ## Recipes (beat order, regex)

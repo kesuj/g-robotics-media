@@ -4,8 +4,8 @@
 
 Episode fields: id, episode (int), date (YYYY-MM-DD), intro (VO), stories [{tag, region NEPAL|WORLD, headline, kit,
 vo, source, stat?: {value, prefix?, suffix?, label}}], outro (VO). See docs/NEWS-EPISODE-SCHEMA.md.
-Voice: OmniVoice clone of assets/voice/gdai_ref.wav (subprocess in OMNIVOICE_PYTHON); falls back to
-edge-tts en-IN-PrabhatNeural (Indian-English male).
+Voice: edge-tts en-US-AndrewMultilingualNeural (natural male). GDAI_CLONE=1 uses the OmniVoice clone of assets/voice/gdai_ref.wav
+(subprocess in OMNIVOICE_PYTHON) instead, falling back to edge-tts.
 """
 import datetime as dt
 import html
@@ -71,6 +71,8 @@ def make_voice(ep, proj):
             fake[k] = [{"w": w, "s": round(0.36 * i, 3), "e": round(0.36 * i + 0.3, 3)} for i, w in enumerate(ws)]
             run([FF, "-v", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", f"{0.36 * len(ws) + 0.2:.2f}", vo / f"{k}.wav"])
         (vo / "words.json").write_text(json.dumps(fake), encoding="utf8")
+    if not (vo / "words.json").exists() and not os.environ.get("GDAI_CLONE"):
+        edge_fallback(segs, vo)
     if not (vo / "words.json").exists():
         try:
             run([py, HERE / "voice.py", vo / "job.json"])
@@ -90,11 +92,11 @@ def make_voice(ep, proj):
 
 
 def edge_fallback(segs, vo):
-    """OmniVoice failed: speak G. Dai's lines with Microsoft's Indian-English male neural voice (edge-tts, free),
+    """OmniVoice failed: speak G. Dai's lines with Microsoft's natural male neural voice (edge-tts, free),
     keeping the same files (segment wav + words.json) so the rest of the build is unchanged."""
     edge = REPO / "gr/produce/engine/vo_edge.py"
     jobs = [{"text": t, "mp3": str(vo / f"{k}.edge.mp3"), "words": str(vo / f"{k}.edge.json"),
-             "voice": os.environ.get("GDAI_EDGE_VOICE", "en-IN-PrabhatNeural")} for k, t in segs]
+             "voice": os.environ.get("GDAI_EDGE_VOICE", "en-US-AndrewMultilingualNeural")} for k, t in segs]
     (vo / "edge-jobs.json").write_text(json.dumps(jobs, indent=1), encoding="utf8")
     run([os.environ.get("EDGE_PYTHON", sys.executable), edge, vo / "edge-jobs.json"])
     words = {}

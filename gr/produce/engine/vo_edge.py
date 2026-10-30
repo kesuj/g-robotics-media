@@ -3,7 +3,7 @@
     python vo_edge.py <jobs.json>
     jobs = [{ "text": "...", "mp3": "path.mp3", "words": "path.json", "voice"?: "en-IN-..." }]  (existing outputs are skipped)
 Writes the same files as vo.mjs / vo_kokoro.py: an MP3 and [{"w", "s", "e"}] word timings (from WordBoundary events).
-Voice: GR_EDGE_VOICE (default en-IN-PrabhatNeural, Indian English male; en-IN-NeerjaExpressiveNeural for female).
+Voice: GR_EDGE_VOICE (default en-US-AndrewMultilingualNeural, natural male; en-US-AvaMultilingualNeural for female).
 English only — the channel does not publish Nepali/Hindi voiceover.
 """
 import asyncio
@@ -15,7 +15,7 @@ from pathlib import Path
 
 import edge_tts
 
-VOICE = os.environ.get("GR_EDGE_VOICE", "en-IN-PrabhatNeural")
+VOICE = os.environ.get("GR_EDGE_VOICE", "en-US-AndrewMultilingualNeural")
 RATE = os.environ.get("GR_EDGE_RATE", "+8%")
 
 

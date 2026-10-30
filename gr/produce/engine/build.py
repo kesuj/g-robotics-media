@@ -82,12 +82,12 @@ def make_circuit(ep, proj):
     return ""
 
 
-EDGE_VOICES = {"male": "en-IN-PrabhatNeural", "female": "en-IN-NeerjaExpressiveNeural"}
+EDGE_VOICES = {"male": "en-US-AndrewMultilingualNeural", "female": "en-US-AvaMultilingualNeural"}
 EDGE_PY = os.environ.get("EDGE_PYTHON", sys.executable)
 
 
 def edge_voice(ep):
-    """South Asian English voice for this episode: brief "voice" (male | female | an en-IN/en-* edge voice name);
+    """Natural English voice for this episode: brief "voice" (male | female | an en-IN/en-* edge voice name);
     the female presenter (maya) gets the female voice. Never a non-English voice — the channel is English only."""
     v = str(ep.get("voice") or ("female" if ep.get("presenter") == "maya" else "male"))
     v = EDGE_VOICES.get(v.lower(), v)

@@ -9,7 +9,7 @@ Instagram covers ALL technology (AI, gadgets, apps, robotics, drones, space, sci
 
 **English only.** Every word of VO, on-screen text, caption, hashtags and first comment is in simple, natural South Asian
 English (the way a sharp Kathmandu or Bengaluru engineer talks — short sentences, no American slang, no Nepali/Hindi
-script, no Devanagari). The voice is a South Asian English neural voice (`"voice"`: `male` default, or `female`).
+script, no Devanagari). The voice is a natural native-English neural voice (`"voice"`: `male` default, or `female`).
 
 Read first: `config/editorial.json`, `docs/EPISODE-SCHEMA.md`, two recent files in `briefs/`, `state/queue.json`
 (what is queued/published recently — formats, series, styles, topics, presenters), `state/research/candidates.jsonl`
