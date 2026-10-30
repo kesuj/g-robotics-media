@@ -1,0 +1,60 @@
+{
+ "id": "news-20261030",
+ "episode": 4,
+ "date": "2026-10-30",
+ "title": "Tech News with G. Dai — Episode 4",
+ "intro": "Namaste! Welcome to episode four of Tech News with G. Dai. Five stories you need to know today. And the last one is a six that helps red pandas!",
+ "stories": [
+  {
+   "tag": "AI plans",
+   "region": "WORLD",
+   "headline": "OpenAI doubles Pro limits after backlash",
+   "kit": "ai",
+   "stat": {"value": 2, "prefix": "", "suffix": "x", "label": "usage limits on all Pro tiers"},
+   "vo": "Good news for AI builders! OpenAI planned to cut Pro plan limits, then backlash hit. Now it has doubled usage limits on all its Pro tiers, effective today. Even big companies listen to users.",
+   "source": "BleepingComputer",
+   "urls": ["https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/"]
+  },
+  {
+   "tag": "Telecom",
+   "region": "NEPAL",
+   "headline": "NT launches a fibre complaint portal",
+   "kit": "nepal",
+   "vo": "Good news for Nepal Telecom users! Fibre demand jammed the one-nine-eight call centre, so N-T launched a beta complaint portal. Log in with an N-T number and O-T-P to report problems or apply for fibre.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/10/nepal-telecom-launches-complain-portal.html"]
+  },
+  {
+   "tag": "Cybersecurity",
+   "region": "WORLD",
+   "headline": "Tampered Claude Code add-on hit Cursor",
+   "kit": "cyber",
+   "stat": {"value": 5000, "prefix": "", "suffix": "", "label": "developers possibly exposed"},
+   "vo": "Developers, be careful! A tampered Claude Code extension on Cursor's marketplace carried a backdoor for eleven hours, and up to five thousand developers were exposed. Check your machine for an S-S-H key named svc-telemetry.",
+   "source": "BleepingComputer",
+   "urls": ["https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"]
+  },
+  {
+   "tag": "Robotaxis",
+   "region": "WORLD",
+   "headline": "Waymo taps Toyota for global robotaxis",
+   "kit": "ev",
+   "vo": "Robotaxis are going global! Waymo and Toyota will build self-driving electric bZ-four-X cars at Toyota's Takaoka factory in Japan. Testing starts in twenty twenty-seven, and the U-K is planned too.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/10/30/waymos-next-robotaxi-will-be-a-toyota-bz4x-destined-for-japan-and-the-uk/"]
+  },
+  {
+   "tag": "Digital payments",
+   "region": "NEPAL",
+   "headline": "eSewa pays for red pandas, per six",
+   "kit": "app",
+   "stat": {"value": 2000, "prefix": "Rs ", "suffix": "", "label": "donated for every six in NPL"},
+   "vo": "Here's a feel-good one from Nepal! During N-P-L, eSewa will donate Rs two thousand for every six and Rs one thousand for every four, up to Rs ten lakh, to plant ten thousand trees for red pandas.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/10/esewa-to-contribute-rs-2000-for-every-six-in-npl-2026-for-red-panda-conservation.html"]
+  }
+ ],
+ "outro": "Which story surprised you most? Tell me in the comments, and follow G. Robotics so you never miss tomorrow's brief.",
+ "caption": "Fibre complaints, a risky coding add-on and sixes that save red pandas! Today's tech brief:\n\n1. 🤖 OpenAI doubles Pro limits after backlash\n2. 🌐 NT launches a fibre complaint portal\n3. 🔐 Tampered Claude Code add-on hit Cursor\n4. 🚗 Waymo taps Toyota for global robotaxis\n5. 🏏 eSewa pays for red pandas, per six\n\nWhich story surprised you most? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: BleepingComputer, NepaliTelecom, TechCrunch.",
+ "hashtags": ["#TechNews", "#NepalTech", "#GRobotics", "#AI", "#NPL2026", "#Cybersecurity", "#Robotaxi"]
+}

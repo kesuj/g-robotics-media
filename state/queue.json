@@ -726,6 +726,48 @@
     "lufs": -14.1
    },
    "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/news-20261029.mp4"
+  },
+  "news-20261030": {
+   "id": "news-20261030",
+   "title": "Tech News with G. Dai — Episode 4",
+   "kind": "news",
+   "brief": "briefs/news/news-20261030.json",
+   "created": "2026-10-30T16:15:23.398521+00:00",
+   "news_date": "2026-10-30",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "gdai_news",
+   "style": null,
+   "series": "Tech News with G. Dai",
+   "not_before": "2026-10-30T17:30:00+05:45",
+   "priority": 1,
+   "history": [
+    {
+     "at": "2026-10-30T16:15:23.398532+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-10-30T16:25:46.084875+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-10-30T16:25:49.690815+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/news-20261030.mp4",
+   "caption_file": "state/captions/news-20261030.txt",
+   "qa": {
+    "duration": 89.69,
+    "size_mb": 31.0,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.0
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/news-20261030.mp4"
   }
  }
 }
