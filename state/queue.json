@@ -230,8 +230,8 @@
    "brief": "briefs/g20261027-04-zblan-fiber-made-in-space.json",
    "created": "2026-10-27T05:32:25.253052+00:00",
    "news_date": "2026-10-26",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "notebook",
    "series": "One Engineering Concept",
@@ -256,6 +256,11 @@
     {
      "at": "2026-10-29T13:44:56.113113+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-10-30T13:37:05.184610+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
