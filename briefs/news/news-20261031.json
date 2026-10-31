@@ -1,0 +1,61 @@
+{
+ "id": "news-20261031",
+ "episode": 5,
+ "date": "2026-10-31",
+ "title": "Tech News with G. Dai — Episode 5",
+ "intro": "Namaste! Welcome to episode five of Tech News with G. Dai. Five stories you need to know today. And the last one is about your phone data!",
+ "stories": [
+  {
+   "tag": "Space AI",
+   "region": "WORLD",
+   "headline": "Google's AI chips now orbit Earth",
+   "kit": "space",
+   "stat": {"value": 4, "prefix": "", "suffix": " T-P-Us", "label": "on Google's test satellite"},
+   "vo": "Wow, AI is now in orbit! Google's first space data center satellite is online, with four T-P-Us on board. Its first job was writing a space poem, and two more satellites launch in twenty twenty-seven.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/"]
+  },
+  {
+   "tag": "Cybersecurity",
+   "region": "WORLD",
+   "headline": "Linux flaw allows remote root attacks",
+   "kit": "cyber",
+   "stat": {"value": 9.8, "prefix": "", "suffix": "/10", "label": "severity score"},
+   "vo": "Server admins, listen up! A new Linux kernel flaw, rated nine point eight out of ten, can give attackers remote root access. Anthropic researchers built a working exploit in about fifty-three minutes. Patches are still rolling out.",
+   "source": "BleepingComputer",
+   "urls": ["https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/"]
+  },
+  {
+   "tag": "Social media",
+   "region": "WORLD",
+   "headline": "Reddit to lock content behind logins",
+   "kit": "app",
+   "vo": "Here's a surprise for Reddit fans! After twenty years of open browsing, Reddit will slowly become a logged-in service. Tests start in coming months outside the U-S, so reading without an account may soon end.",
+   "source": "BleepingComputer",
+   "urls": ["https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/"]
+  },
+  {
+   "tag": "Internet",
+   "region": "NEPAL",
+   "headline": "NT fibre plan is hugely popular",
+   "kit": "nepal",
+   "stat": {"value": 4999, "prefix": "Rs ", "suffix": "", "label": "NT Fiber 30 Mbps yearly plan"},
+   "vo": "Big demand for Nepal Telecom fibre! The thirty M-B-P-S yearly plan costs just rupees four thousand nine hundred ninety-nine, but N-T can connect only about twelve hundred homes a day, so many people are waiting.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/10/nepal-telecoms-30-mbps-plan-reaches-peak-popularity.html"]
+  },
+  {
+   "tag": "Mobile data",
+   "region": "NEPAL",
+   "headline": "NT's NPL pack: 8 GB a day",
+   "kit": "phone",
+   "stat": {"value": 599, "prefix": "Rs ", "suffix": "", "label": "30 days, 8 GB per day"},
+   "vo": "Cricket fans, this one is for your phone! Nepal Telecom's N-P-L Unlimited Pack gives eight G-B of data every day, plus three hundred thirty-three call minutes, for rupees five ninety-nine. Buy it by Mangsir fifth.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/10/nepal-telecom-brings-npl-unlimited-pack-for-streaming-updates.html"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Which story would you share with a friend? Tell me in the comments, and follow G. Robotics so you never miss tomorrow's brief.",
+ "caption": "AI chips are now orbiting Earth, and Reddit may soon need a login 🚀\n\n1️⃣ 🛰️ Google's AI chips now orbit Earth\n2️⃣ 🔓 Linux flaw allows remote root attacks\n3️⃣ 📱 Reddit to lock content behind logins\n4️⃣ 🌐 NT fibre plan is hugely popular\n5️⃣ 🏏 NT's NPL pack: 8 GB a day\n\nWhich story would you share with a friend? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: TechCrunch, BleepingComputer, NepaliTelecom",
+ "hashtags": ["#TechNews", "#NepalTech", "#GDai", "#GRobotics", "#AI", "#Cybersecurity", "#NepalTelecom", "#NPL2026"]
+}
