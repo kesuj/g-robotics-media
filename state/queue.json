@@ -286,7 +286,7 @@
    "created": "2026-10-27T05:33:19.843266+00:00",
    "news_date": "2026-10-26",
    "status": "qa_passed",
-   "retries": 1,
+   "retries": 2,
    "format": "clip",
    "style": "sunset",
    "series": "Inside Autonomous Systems",
@@ -305,6 +305,11 @@
     },
     {
      "at": "2026-10-31T13:06:01.265809+00:00",
+     "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-01T13:48:10.991765+00:00",
      "status": "qa_passed",
      "note": "HTTP 400 code=200: API access blocked."
     }
