@@ -1,0 +1,61 @@
+{
+ "id": "news-20261101",
+ "episode": 6,
+ "date": "2026-11-01",
+ "title": "Tech News with G. Dai — Episode 6",
+ "intro": "Namaste! Welcome to episode six of Tech News with G. Dai. Five stories you need to know today. And the last one is for cricket fans!",
+ "stories": [
+  {
+   "tag": "Laptops",
+   "region": "WORLD",
+   "headline": "Apple's first touchscreen MacBook Pro",
+   "kit": "chip",
+   "stat": {"value": 24, "prefix": "", "suffix": " hours", "label": "claimed battery life"},
+   "vo": "This is huge for Apple fans! The new MacBook Pro finally has a touchscreen and a tandem O-LED display, with M-five Pro and Max chips. Sales start November sixth, but Nepal pricing is not announced yet.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/apple-macbook-pro-touchsreen-2026-price-in-nepal"]
+  },
+  {
+   "tag": "Science",
+   "region": "WORLD",
+   "headline": "First new fabric fibre in 25 years",
+   "kit": "globe",
+   "stat": {"value": 25, "prefix": "", "suffix": " years", "label": "since the last new fibre class"},
+   "vo": "Here's a surprise from science! A startup called Everbloom made renoa, a washable, cashmere-like fibre from waste wool and feathers. The U-S regulator approved it as the first new fibre class in twenty-five years.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/01/heres-what-renoa-the-first-new-fiber-in-25-years-feels-like/"]
+  },
+  {
+   "tag": "AI apps",
+   "region": "WORLD",
+   "headline": "ChatGPT Work features join regular Chat",
+   "kit": "ai",
+   "vo": "Big change for ChatGPT users! OpenAI will bring its Work features into regular Chat, and test the combined app in the coming weeks. Chat and Codex will also share one usage allowance.",
+   "source": "BleepingComputer",
+   "urls": ["https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/"]
+  },
+  {
+   "tag": "Cybersecurity",
+   "region": "WORLD",
+   "headline": "Android 'SMS of Death' crashes phones",
+   "kit": "cyber",
+   "stat": {"value": 20, "prefix": "", "suffix": " texts", "label": "can cause a reboot loop"},
+   "vo": "Check your phone now! A new Android bug lets one crafted text crash a phone with no tap needed. About twenty messages can cause a reboot loop. Android twelve and thirteen are still unpatched.",
+   "source": "BleepingComputer",
+   "urls": ["https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/"]
+  },
+  {
+   "tag": "Cricket tickets",
+   "region": "NEPAL",
+   "headline": "Buy NPL tickets in the eSewa app",
+   "kit": "app",
+   "stat": {"value": 500, "prefix": "Rs ", "suffix": "", "label": "cheapest league-stage ticket"},
+   "vo": "Cricket fans, this one is for you! This month, N-P-L tickets start at rupees five hundred and are sold on the eSewa app. The tournament runs until November twenty-first, and tickets sell out fast.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/10/nepal-premier-league-npl-3-ticket-price.html"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Is your phone on Android twelve or thirteen? Tell me in the comments, and follow G. Robotics so you never miss tomorrow's brief.",
+ "caption": "One text message can crash some Android phones. Is yours safe? 📱\n\n1️⃣ 💻 Apple's first touchscreen MacBook Pro\n2️⃣ 🧵 First new fabric fibre in 25 years\n3️⃣ 🤖 ChatGPT Work features join regular Chat\n4️⃣ 🔒 Android 'SMS of Death' crashes phones\n5️⃣ 🏏 Buy NPL tickets in the eSewa app\n\nWhich Android version is on your phone? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: NepaliTelecom, TechCrunch, BleepingComputer",
+ "hashtags": ["#TechNews", "#NepalTech", "#GDai", "#GRobotics", "#Android", "#MacBookPro", "#ChatGPT", "#NPL2026"]
+}
