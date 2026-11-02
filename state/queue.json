@@ -340,8 +340,8 @@
    "brief": "briefs/g20261027-06-nvidia-cosmos-world-models.json",
    "created": "2026-10-27T15:32:47.700080+00:00",
    "news_date": "2026-10-21",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "chalkboard",
    "series": "AI Breakthrough of the Day",
@@ -366,6 +366,11 @@
     {
      "at": "2026-11-02T21:42:55.856577+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-02T23:06:46.889509+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
