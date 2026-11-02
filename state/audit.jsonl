@@ -174,3 +174,5 @@
 {"at": "2026-11-01T21:39:27.579632+00:00", "action": "analytics.pull", "items": 0}
 {"at": "2026-11-02T06:37:46.265974+00:00", "action": "research.collect", "new": 211, "feed_errors": []}
 {"at": "2026-11-02T06:37:46.423010+00:00", "action": "produce.run", "made": 0}
+{"at": "2026-11-02T09:30:11.648539+00:00", "action": "status", "id": "news-20261101", "status": "failed", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-11-02T09:30:11.648736+00:00", "action": "slot.error", "id": "news-20261101", "note": "HTTP 400 code=200: API access blocked.", "alert": true}
