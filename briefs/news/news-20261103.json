@@ -1,0 +1,61 @@
+{
+ "id": "news-20261103",
+ "episode": 7,
+ "date": "2026-11-03",
+ "title": "Tech News with G. Dai — Episode 7",
+ "intro": "Namaste! Welcome to episode seven of Tech News with G. Dai. Five stories you need to know today. And the last one is about a new phone in Nepal!",
+ "stories": [
+  {
+   "tag": "Chips",
+   "region": "WORLD",
+   "headline": "Marvell buys Lumentum for $115B",
+   "kit": "chip",
+   "stat": {"value": 115, "prefix": "$", "suffix": "B", "label": "enterprise value of the deal"},
+   "vo": "This is huge for AI chips! Marvell will buy Lumentum, which makes optical parts, in a deal worth one hundred fifteen billion dollars. It is one of the biggest tech deals ever, built for fast A-I networks.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/"]
+  },
+  {
+   "tag": "Cybersecurity",
+   "region": "WORLD",
+   "headline": "Google breaks a TV-box malware botnet",
+   "kit": "cyber",
+   "stat": {"value": 1.3, "prefix": "", "suffix": "M", "label": "Android TV boxes in the botnet"},
+   "vo": "Check your Android T-V box! Google broke a botnet called X-C-P-E, with more than one point three million boxes infected from the factory. The maker is now banned. Install clean firmware, or unplug the box from the internet.",
+   "source": "BleepingComputer",
+   "urls": ["https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/"]
+  },
+  {
+   "tag": "AI apps",
+   "region": "WORLD",
+   "headline": "Grok Bot limits cut over high costs",
+   "kit": "ai",
+   "vo": "Here's a surprise for A-I users! Some Grok Bot subscribers found their weekly limits suddenly used up. Elon Musk says it was on purpose, because serving the bot cost too much compared to revenue.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/"]
+  },
+  {
+   "tag": "Cricket streaming",
+   "region": "NEPAL",
+   "headline": "NetTV removes 110 pirated NPL streams",
+   "kit": "nepal",
+   "stat": {"value": 110, "prefix": "", "suffix": " links", "label": "pirated NPL links removed"},
+   "vo": "Cricket fans, listen up! NetTV, the official N-P-L broadcaster, has removed one hundred ten pirate links, mostly on Facebook. About one hundred fifty thousand people already bought the official pass, which costs rupees four hundred.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/11/nettv-takes-anti-piracy-action-against-illegal-npl-live-streams.html"]
+  },
+  {
+   "tag": "Phones",
+   "region": "NEPAL",
+   "headline": "Vivo V80 launches in Nepal",
+   "kit": "phone",
+   "stat": {"value": 7200, "prefix": "", "suffix": " mAh", "label": "battery with 90W charging"},
+   "vo": "Your next phone is here! The Vivo V-eighty is now in Nepal with a seven thousand two hundred milliamp-hour battery and Zeiss cameras. It starts at rupees one lakh eight thousand nine hundred ninety-nine. Pre-booking ends November fourth.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/vivo-v80-price-in-nepal"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Would you pay for the official NPL stream, or watch free? Tell me in the comments, and follow G. Robotics so you never miss tomorrow's brief.",
+ "caption": "Google just broke a botnet hiding inside cheap Android TV boxes. Is yours safe? 📺\n\n1️⃣ 💽 Marvell buys Lumentum for $115B\n2️⃣ 🔒 Google breaks a TV-box malware botnet\n3️⃣ 🤖 Grok Bot limits cut over high costs\n4️⃣ 🏏 NetTV removes 110 pirated NPL streams\n5️⃣ 📱 Vivo V80 launches in Nepal\n\nWould you pay for the official NPL stream? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: TechCrunch, BleepingComputer, NepaliTelecom",
+ "hashtags": ["#TechNews", "#NepalTech", "#GDai", "#GRobotics", "#NPL2026", "#Android", "#VivoV80", "#AI"]
+}
