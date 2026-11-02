@@ -285,8 +285,8 @@
    "brief": "briefs/g20261027-05-anduril-ai-grand-prix-camera-only.json",
    "created": "2026-10-27T05:33:19.843266+00:00",
    "news_date": "2026-10-26",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "sunset",
    "series": "Inside Autonomous Systems",
@@ -311,6 +311,11 @@
     {
      "at": "2026-11-01T13:48:10.991765+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-02T16:34:49.448624+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
