@@ -211,3 +211,5 @@
 {"at": "2026-11-03T18:00:36.668772+00:00", "action": "research.collect", "new": 262, "feed_errors": []}
 {"at": "2026-11-03T18:00:36.974964+00:00", "action": "status", "id": "g20261103-02", "status": "failed", "note": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/b"}
 {"at": "2026-11-03T18:00:36.976352+00:00", "action": "produce.run", "made": 0}
+{"at": "2026-11-03T19:30:03.594773+00:00", "action": "status", "id": "news-20261103", "status": "qa_passed", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-11-03T19:30:03.594910+00:00", "action": "slot.error", "id": "news-20261103", "note": "HTTP 400 code=200: API access blocked.", "alert": true}
