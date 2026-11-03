@@ -192,3 +192,13 @@
 {"at": "2026-11-03T00:28:20.125740+00:00", "action": "analytics.error", "id": "news-20261027", "note": "HTTP 400 code=200: API access blocked."}
 {"at": "2026-11-03T00:28:20.200446+00:00", "action": "analytics.error", "id": "g20261027-02", "note": "HTTP 400 code=200: API access blocked."}
 {"at": "2026-11-03T00:28:20.200822+00:00", "action": "analytics.pull", "items": 0}
+{"at": "2026-11-03T07:07:14.143471+00:00", "action": "research.collect", "new": 92, "feed_errors": []}
+{"at": "2026-11-03T07:14:18.630852+00:00", "action": "status", "id": "g20261103-01", "status": "briefed"}
+{"at": "2026-11-03T07:16:45.282471+00:00", "action": "status", "id": "g20261103-01", "status": "rendered"}
+{"at": "2026-11-03T07:16:47.999429+00:00", "action": "status", "id": "g20261103-01", "status": "qa_passed"}
+{"at": "2026-11-03T07:16:47.999658+00:00", "action": "status", "id": "g20261103-02", "status": "briefed"}
+{"at": "2026-11-03T07:16:48.084206+00:00", "action": "status", "id": "g20261103-02", "status": "briefed", "note": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/b"}
+{"at": "2026-11-03T07:16:48.084429+00:00", "action": "status", "id": "g20261103-03", "status": "briefed"}
+{"at": "2026-11-03T07:17:57.025072+00:00", "action": "status", "id": "g20261103-03", "status": "rendered"}
+{"at": "2026-11-03T07:17:59.055338+00:00", "action": "status", "id": "g20261103-03", "status": "qa_passed"}
+{"at": "2026-11-03T07:17:59.056431+00:00", "action": "produce.run", "made": 2}

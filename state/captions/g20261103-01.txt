@@ -1,0 +1,9 @@
+A drone sensor that transmits nothing? Yes, and it's real. 📡
+FIU engineers detect small drones from the magnetic field their motors leak: loop antenna, neural network, a few hundred dollars to develop.
+The catch: about 15 m range outdoors, 98.5% detection. Models were harder to tell apart.
+Could this guard a Nepali airport or event? Tell us below.
+Send this to a friend who thinks radar is the only way.
+
+Sources: dronexl.co, news.fiu.edu
+
+#DroneDetection #UAS #DroneEngineering #DroneNepal #NepalTech #Sensors #EngineeringStudents #GRobotics

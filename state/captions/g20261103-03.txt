@@ -1,0 +1,7 @@
+A robot hand that walks on its fingers. Yes, really. 🖐️
+ETH Zurich trained a commercial hand in simulation: 14 surfaces crossed, 21 of 25 falls recovered. Pushing objects still needed an overhead camera.
+Where would a walking hand actually help? Comment your idea below.
+
+Sources: spectrum.ieee.org, techeblog.com
+
+#Robotics #RoboticHand #ReinforcementLearning #ETHZurich #RoboticsNepal #NepalTech #EngineeringStudents #GRobotics

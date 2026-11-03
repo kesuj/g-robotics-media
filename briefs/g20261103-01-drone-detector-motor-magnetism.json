@@ -1,0 +1,69 @@
+{
+ "id": "g20261103-01",
+ "slug": "drone-detector-motor-magnetism",
+ "format": "people",
+ "title": "The Sensor That Hears Drones Without Radar",
+ "category": "Drones",
+ "date": "2026-10-23",
+ "description": "Engineers at Florida International University, Brookhaven National Laboratory and a Sri Lankan university built a passive sensor that detects small drones from the faint magnetic field their motors leak. It transmits nothing, works to about fifteen metres in outdoor tests, and the team says it costs a few hundred dollars to develop.",
+ "sources": [
+  "https://news.fiu.edu/2026/fiu-engineers-develop-stealthy-low-cost-tech-to-detect-drones",
+  "https://dronexl.co/2026/11/01/fiu-passive-drone-detection-motor-magnetic-field/"
+ ],
+ "tags": ["drones", "drone detection", "uas", "sensors", "ieee", "fiu", "engineering"],
+ "style": "classic",
+ "series": "Drone Engineering in 30 Seconds",
+ "voice": "male",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Spots drones. Transmits nothing.",
+   "vo": "This sensor catches drones while sending nothing at all."
+  },
+  {
+   "type": "profile",
+   "name": "Arjuna Madanayake",
+   "role": "Professor, electrical engineering, FIU",
+   "icon": "📡",
+   "known_for": ["Passive drone sensing", "IEEE Sensors paper", "Brookhaven collaboration"],
+   "tag": "THE TEAM",
+   "vo": "Professor Arjuna Madanayake leads the team at Florida International University, with Brookhaven National Laboratory and a Sri Lankan university. But here's the part nobody tells you: it has no radio at all."
+  },
+  {
+   "type": "concept",
+   "text": "Drone motors leak a magnetic signature",
+   "points": ["Field pulses with motor spin", "Loop antenna only listens", "AI reads the pattern"],
+   "tag": "HOW IT WORKS",
+   "vo": "A drone's brushless motors leak a faint magnetic field that pulses with their spin. A one metre loop antenna listens, and a neural network reads the pattern. Nothing is transmitted, so nothing gives the sensor away."
+  },
+  {
+   "type": "tip",
+   "text": "Catch: range is about 15 metres, so it guards a spot.",
+   "tag": "ENGINEER'S TAKE",
+   "vo": "The catch: range is about fifteen metres outdoors, so it guards one spot, not a city. Detection hit ninety eight point five percent, but telling three drone models apart was lower."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Know someone who thinks radar is the only way? Send them this: a drone's own motors give it away."
+  }
+ ],
+ "caption": "A drone sensor that transmits nothing? Yes, and it's real. 📡\nFIU engineers detect small drones from the magnetic field their motors leak: loop antenna, neural network, a few hundred dollars to develop.\nThe catch: about 15 m range outdoors, 98.5% detection. Models were harder to tell apart.\nCould this guard a Nepali airport or event? Tell us below.\nSend this to a friend who thinks radar is the only way.",
+ "hashtags": ["DroneDetection", "UAS", "DroneEngineering", "DroneNepal", "NepalTech", "Sensors", "EngineeringStudents", "GRobotics"],
+ "viral": {
+  "goal": "share",
+  "emotion": "awe + identity (I knew this first)",
+  "angle": "curiosity-gap",
+  "open_loop": "how a sensor spots drones while transmitting nothing",
+  "payoff_beat": 2,
+  "hook_variants": [
+   {"vo": "This sensor catches drones while sending nothing at all.", "text": "Spots drones. Transmits nothing."},
+   {"vo": "Every drone leaks a magnetic fingerprint, and a few hundred dollars can read it.", "text": "Every drone leaks a fingerprint"}
+  ],
+  "hook_scores": {"scroll_stop": 8, "curiosity": 9, "clarity": 8, "specificity": 8, "audience_fit": 8},
+  "rehooks": ["But here's the part nobody tells you: it has no radio at all."],
+  "cover_text": "Detects Drones. Sends Nothing.",
+  "cta": {"type": "share", "vo": "Know someone who thinks radar is the only way? Send them this: a drone's own motors give it away."},
+  "first_comment": "Would you trust a sensor with 15 m range to guard a venue? What would you add to make it work at 100 m?"
+ }
+}

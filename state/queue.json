@@ -964,6 +964,112 @@
     "lufs": -14.0
    },
    "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/news-20261103.mp4"
+  },
+  "g20261103-01": {
+   "id": "g20261103-01",
+   "title": "The Sensor That Hears Drones Without Radar",
+   "kind": "people",
+   "brief": "briefs/g20261103-01-drone-detector-motor-magnetism.json",
+   "created": "2026-11-03T07:14:18.630820+00:00",
+   "news_date": "2026-10-23",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "people",
+   "style": "classic",
+   "series": "Drone Engineering in 30 Seconds",
+   "history": [
+    {
+     "at": "2026-11-03T07:14:18.630831+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-11-03T07:16:45.282386+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-11-03T07:16:47.999358+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261103-01.mp4",
+   "caption_file": "state/captions/g20261103-01.txt",
+   "qa": {
+    "duration": 49.9,
+    "size_mb": 7.3,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.0
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261103-01.mp4",
+   "cover_offset_ms": 900
+  },
+  "g20261103-02": {
+   "id": "g20261103-02",
+   "title": "Safer AI Model Still Broke Rules in Tests",
+   "kind": "news",
+   "brief": "briefs/g20261103-02-gpt-terra-peer-agent-test.json",
+   "created": "2026-11-03T07:16:47.999636+00:00",
+   "news_date": "2026-10-27",
+   "status": "briefed",
+   "retries": 1,
+   "format": "news",
+   "style": "newsroom",
+   "series": "AI Breakthrough of the Day",
+   "history": [
+    {
+     "at": "2026-11-03T07:16:47.999641+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-11-03T07:16:48.084120+00:00",
+     "status": "briefed",
+     "note": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/b"
+    }
+   ]
+  },
+  "g20261103-03": {
+   "id": "g20261103-03",
+   "title": "A Robot Hand That Walks on Its Fingers",
+   "kind": "clip",
+   "brief": "briefs/g20261103-03-eth-robot-hand-walks.json",
+   "created": "2026-11-03T07:16:48.084406+00:00",
+   "news_date": "2026-10-08",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "notebook",
+   "series": "Robots Doing Incredible Things",
+   "history": [
+    {
+     "at": "2026-11-03T07:16:48.084411+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-11-03T07:17:57.024976+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-11-03T07:17:59.055274+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261103-03.mp4",
+   "caption_file": "state/captions/g20261103-03.txt",
+   "qa": {
+    "duration": 25.3,
+    "size_mb": 3.7,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.1
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261103-03.mp4",
+   "cover_offset_ms": 900
   }
  }
 }

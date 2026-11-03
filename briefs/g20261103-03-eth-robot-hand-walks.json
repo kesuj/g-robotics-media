@@ -1,0 +1,56 @@
+{
+ "id": "g20261103-03",
+ "slug": "eth-robot-hand-walks",
+ "format": "clip",
+ "title": "A Robot Hand That Walks on Its Fingers",
+ "category": "Robotics",
+ "date": "2026-10-08",
+ "description": "ETH Zurich's Soft Robotics Lab trained a commercial robot hand to crawl on its fingers using reinforcement learning in simulation. It crossed fourteen surfaces and righted itself after twenty-one of twenty-five falls, though pushing objects still needed an overhead camera.",
+ "sources": [
+  "https://spectrum.ieee.org/walking-robotic-hand",
+  "https://www.techeblog.com/?p=258591"
+ ],
+ "tags": ["robotics", "robot hand", "reinforcement learning", "eth zurich", "soft robotics", "ai"],
+ "style": "notebook",
+ "series": "Robots Doing Incredible Things",
+ "voice": "male",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "A hand that walks",
+   "vo": "A robot hand just learned to walk on its fingers."
+  },
+  {
+   "type": "stat",
+   "number": 21,
+   "suffix": " of 25",
+   "unit": "falls recovered",
+   "text": "Times it flipped itself upright",
+   "tag": "ETH ZURICH",
+   "vo": "ETH Zurich strapped a small backpack to a commercial hand and trained it in simulation. It crossed fourteen surfaces, including gravel, and righted itself twenty one times out of twenty five. Pushing objects still needed a camera."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Where would a walking hand help? Comment your idea; we want to see what Nepal's builders come up with."
+  }
+ ],
+ "caption": "A robot hand that walks on its fingers. Yes, really. 🖐️\nETH Zurich trained a commercial hand in simulation: 14 surfaces crossed, 21 of 25 falls recovered. Pushing objects still needed an overhead camera.\nWhere would a walking hand actually help? Comment your idea below.",
+ "hashtags": ["Robotics", "RoboticHand", "ReinforcementLearning", "ETHZurich", "RoboticsNepal", "NepalTech", "EngineeringStudents", "GRobotics"],
+ "viral": {
+  "goal": "comment",
+  "emotion": "awe + playful curiosity",
+  "angle": "result-first",
+  "open_loop": "how well a walking hand really works",
+  "payoff_beat": 1,
+  "hook_variants": [
+   {"vo": "A robot hand just learned to walk on its fingers.", "text": "A hand that walks"},
+   {"vo": "Why would anyone teach a robot hand to crawl?", "text": "Why teach a hand to crawl?"}
+  ],
+  "hook_scores": {"scroll_stop": 8, "curiosity": 8, "clarity": 9, "specificity": 8, "audience_fit": 8},
+  "rehooks": [],
+  "cover_text": "Robot Hand Walks",
+  "cta": {"type": "comment", "vo": "Where would a walking hand help? Comment your idea; we want to see what Nepal's builders come up with."},
+  "first_comment": "Where would a hand that can walk, right itself and press keys be useful: space, disaster zones or your lab?"
+ }
+}
