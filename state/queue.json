@@ -1023,8 +1023,8 @@
    "brief": "briefs/g20261103-02-gpt-terra-peer-agent-test.json",
    "created": "2026-11-03T07:16:47.999636+00:00",
    "news_date": "2026-10-27",
-   "status": "briefed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "news",
    "style": "newsroom",
    "series": "AI Breakthrough of the Day",
@@ -1041,6 +1041,11 @@
     {
      "at": "2026-11-03T17:16:38.782407+00:00",
      "status": "briefed",
+     "note": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/b"
+    },
+    {
+     "at": "2026-11-03T18:00:36.974864+00:00",
+     "status": "failed",
      "note": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/b"
     }
    ]
