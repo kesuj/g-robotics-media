@@ -1,0 +1,59 @@
+{
+ "id": "news-20261104",
+ "episode": 8,
+ "date": "2026-11-04",
+ "title": "Tech News with G. Dai — Episode 8",
+ "intro": "Namaste! Welcome to episode eight of Tech News with G. Dai. Five stories you need to know today. And the last one is a gaming laptop store now open in Kathmandu!",
+ "stories": [
+  {
+   "tag": "AI safety",
+   "region": "WORLD",
+   "headline": "Anthropic: AI may soon build AI",
+   "kit": "ai",
+   "vo": "This is huge for A-I! Anthropic says in a public filing that it may imminently reach the point where A-I speeds up its own development. It says no model has crossed that line yet.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"]
+  },
+  {
+   "tag": "E-governance",
+   "region": "NEPAL",
+   "headline": "Nepal's e-GP tender system is back",
+   "kit": "nepal",
+   "stat": {"value": 2, "prefix": "", "suffix": " phases", "label": "of the e-GP relaunch rollout"},
+   "vo": "Good news for Nepal contractors! The upgraded e-G-P system is live again after being suspended in August over security risks. It now has two-factor login and encrypted bids. Contract management comes in phase two.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/11/nepal-upgraded-e-gp-system-launch.html"]
+  },
+  {
+   "tag": "AI in schools",
+   "region": "WORLD",
+   "headline": "Google backs down on school Search plan",
+   "kit": "app",
+   "vo": "Here's a surprise! Google planned to switch off Search for schools that refused its A-I tools. After loud backlash, it now says Gemini and Search will be off by default, and schools can choose.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/"]
+  },
+  {
+   "tag": "Apps",
+   "region": "WORLD",
+   "headline": "Apple: dating apps must be 18+",
+   "kit": "phone",
+   "stat": {"value": 18, "prefix": "", "suffix": "+", "label": "age rating for dating apps"},
+   "vo": "Parents, take note! Apple now says any app with dating features must be rated eighteen plus, and A-I companion apps with romantic content get tighter limits for minors. New rules start November sixteenth.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/"]
+  },
+  {
+   "tag": "Laptops",
+   "region": "NEPAL",
+   "headline": "ASUS opens first own store in Nepal",
+   "kit": "chip",
+   "vo": "Gamers, this one is for you! A-S-U-S opened its first own-brand store in Putalisadak, Kathmandu. You can try R-O-G laptops with R-T-X fifty ninety graphics before you buy.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/11/asus-opens-first-exclusive-brand-store-in-nepal-new-rog-tuf-gaming-laptops.html"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Should schools be forced to use A-I? Tell me in the comments, and follow G. Robotics so you never miss tomorrow's brief.",
+ "caption": "Anthropic says AI may soon help build its own next version. Should we worry? 🤖\n\n1️⃣ 🤖 Anthropic: AI may soon build AI\n2️⃣ 🇳🇵 Nepal's e-GP tender system is back\n3️⃣ 🏫 Google backs down on school Search plan\n4️⃣ 📱 Apple: dating apps must be 18+\n5️⃣ 💻 ASUS opens first own store in Nepal\n\nShould schools be forced to use AI? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: TechCrunch, NepaliTelecom",
+ "hashtags": ["#TechNews", "#NepalTech", "#GDai", "#GRobotics", "#AI", "#Anthropic", "#ASUS", "#Apple"]
+}
