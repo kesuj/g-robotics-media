@@ -395,8 +395,8 @@
    "brief": "briefs/g20261027-07-ipad-mini-chip-binning.json",
    "created": "2026-10-27T15:32:47.849196+00:00",
    "news_date": "2026-10-26",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "sunset",
    "series": "One Engineering Concept",
@@ -421,6 +421,11 @@
     {
      "at": "2026-11-03T09:32:42.193651+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-04T09:11:40.317325+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
