@@ -1,0 +1,61 @@
+{
+ "id": "news-20261105",
+ "episode": 9,
+ "date": "2026-11-05",
+ "title": "Tech News with G. Dai — Episode 9",
+ "intro": "Namaste! Welcome to episode nine of Tech News with G. Dai. Five stories you need to know today. And the last one is a big upgrade for every Instagram creator!",
+ "stories": [
+  {
+   "tag": "Drones",
+   "region": "WORLD",
+   "headline": "Zipline drones hit $21.5B value",
+   "kit": "drone",
+   "stat": {"value": 21.5, "prefix": "$", "suffix": "B", "label": "Zipline valuation after new funding"},
+   "vo": "Drones are going big! Zipline raised one point five billion dollars and is now valued at twenty one point five billion. Walmart will add three hundred drone delivery sites. It started by delivering blood in Rwanda.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/"]
+  },
+  {
+   "tag": "Internet",
+   "region": "NEPAL",
+   "headline": "Nepal broadband hits 148.64%",
+   "kit": "nepal",
+   "stat": {"value": 148.64, "prefix": "", "suffix": "%", "label": "broadband penetration, FY 2082/83"},
+   "vo": "Big number for Nepal's internet! The N-T-A report says broadband penetration is one hundred forty eight point six four percent. That counts connections, not people, so many of us hold more than one.",
+   "source": "NepaliTelecom, NTA report",
+   "urls": ["https://www.nepalitelecom.com/2026/11/nepal-broadband-penetration-reaches-148-64-in-fy-2082-83.html"]
+  },
+  {
+   "tag": "Shopping apps",
+   "region": "WORLD",
+   "headline": "TikTok Shop gets its own app",
+   "kit": "app",
+   "vo": "Here's a surprise! TikTok quietly launched a stand-alone TikTok Shop app in Singapore, Malaysia, Thailand and the Philippines. It has live shopping, in-app checkout and order tracking. No word yet on other countries.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/05/tiktok-quietly-launches-a-standalone-tiktok-shop-app/"]
+  },
+  {
+   "tag": "Fiber internet",
+   "region": "NEPAL",
+   "headline": "NTC adds 11,764 fiber users fast",
+   "kit": "globe",
+   "stat": {"value": 11764, "prefix": "", "suffix": " users", "label": "new NTC fiber customers in 18 days"},
+   "vo": "Fast internet is spreading! Nepal Telecom added eleven thousand seven hundred sixty four fiber customers in just eighteen days. A new thirty M-B-P-S plan for Rs four thousand nine hundred ninety nine is a big reason.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/11/nepal-telecom-gains-11764-new-fiber-internet-users-in-18-days.html"]
+  },
+  {
+   "tag": "Creator tools",
+   "region": "WORLD",
+   "headline": "Instagram Edits comes to desktop",
+   "kit": "app",
+   "stat": {"value": 50, "prefix": "", "suffix": "M+", "label": "creators using Edits on mobile"},
+   "vo": "Creators, listen up! Instagram's Edits video editor is now on desktop, starting with Mac. It has a multi-track timeline, auto captions and watermark-free four-K export. Instagram is taking on CapCut.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/05/instagram-brings-edits-to-desktop-to-take-on-capcut/"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Will you edit your next Reel on desktop? Tell me in the comments, and follow G. Robotics so you never miss tomorrow's brief.",
+ "caption": "Instagram just gave creators a CapCut rival on desktop. Ready to try it? 🎬\n\n1️⃣ 🚁 Zipline drones hit $21.5B value\n2️⃣ 🇳🇵 Nepal broadband hits 148.64%\n3️⃣ 🛍️ TikTok Shop gets its own app\n4️⃣ 🌐 NTC adds 11,764 fiber users fast\n5️⃣ 🎬 Instagram Edits comes to desktop\n\nWhich story surprised you most? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: TechCrunch, NepaliTelecom",
+ "hashtags": ["#TechNews", "#NepalTech", "#GDai", "#GRobotics", "#Instagram", "#TikTok", "#Drones", "#NepalTelecom"]
+}
