@@ -450,8 +450,8 @@
    "brief": "briefs/g20261027-08-zblan-fiber-space-myth.json",
    "created": "2026-10-27T15:32:47.979053+00:00",
    "news_date": "2026-10-26",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "classic",
    "series": "Engineering Myths Busted",
@@ -476,6 +476,11 @@
     {
      "at": "2026-11-04T14:53:24.548965+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-05T14:58:20.978538+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
