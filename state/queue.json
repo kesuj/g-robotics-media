@@ -1181,7 +1181,7 @@
    "created": "2026-11-05T17:38:43.971260+00:00",
    "news_date": "2026-11-05",
    "status": "qa_passed",
-   "retries": 1,
+   "retries": 2,
    "format": "gdai_news",
    "style": null,
    "series": "Tech News with G. Dai",
@@ -1202,6 +1202,11 @@
     },
     {
      "at": "2026-11-05T19:57:46.638080+00:00",
+     "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-05T21:28:07.741767+00:00",
      "status": "qa_passed",
      "note": "HTTP 400 code=200: API access blocked."
     }
