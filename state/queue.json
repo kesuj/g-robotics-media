@@ -1214,6 +1214,170 @@
     "lufs": -14.0
    },
    "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/news-20261105.mp4"
+  },
+  "g20261105-01": {
+   "id": "g20261105-01",
+   "title": "A Drone Battery Swap in 25 Seconds",
+   "kind": "clip",
+   "brief": "briefs/g20261105-01-dji-dock-4-25-second-swap.json",
+   "created": "2026-11-05T18:16:58.690489+00:00",
+   "news_date": "2026-10-14",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "neon",
+   "series": "This Week in Drones and AI",
+   "history": [
+    {
+     "at": "2026-11-05T18:16:58.690500+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-11-05T18:19:06.832183+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-11-05T18:19:09.034049+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261105-01.mp4",
+   "caption_file": "state/captions/g20261105-01.txt",
+   "qa": {
+    "duration": 28.9,
+    "size_mb": 4.7,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.0
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261105-01.mp4",
+   "cover_offset_ms": 900
+  },
+  "g20261105-02": {
+   "id": "g20261105-02",
+   "title": "A 1991 Rule Kept Drones Off This Cell Band",
+   "kind": "clip",
+   "brief": "briefs/g20261105-02-fcc-opens-cell-band-drones.json",
+   "created": "2026-11-05T18:19:09.034322+00:00",
+   "news_date": "2026-10-29",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "blueprint",
+   "series": "Inside Autonomous Systems",
+   "history": [
+    {
+     "at": "2026-11-05T18:19:09.034328+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-11-05T18:21:05.381194+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-11-05T18:21:07.304605+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261105-02.mp4",
+   "caption_file": "state/captions/g20261105-02.txt",
+   "qa": {
+    "duration": 27.8,
+    "size_mb": 4.2,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.1
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261105-02.mp4",
+   "cover_offset_ms": 900
+  },
+  "g20261105-03": {
+   "id": "g20261105-03",
+   "title": "Google's AI Chip in Orbit Writes Poems",
+   "kind": "clip",
+   "brief": "briefs/g20261105-03-google-space-data-center-satellite.json",
+   "created": "2026-11-05T18:21:07.304910+00:00",
+   "news_date": "2026-10-30",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "chalkboard",
+   "series": "The Science Behind the Machine",
+   "history": [
+    {
+     "at": "2026-11-05T18:21:07.304915+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-11-05T18:22:50.913553+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-11-05T18:22:52.994340+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261105-03.mp4",
+   "caption_file": "state/captions/g20261105-03.txt",
+   "qa": {
+    "duration": 26.1,
+    "size_mb": 5.7,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.0
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261105-03.mp4",
+   "cover_offset_ms": 900
+  },
+  "g20261105-04": {
+   "id": "g20261105-04",
+   "title": "AI Agents Placed Only Hundreds of DoorDash Orders",
+   "kind": "clip",
+   "brief": "briefs/g20261105-04-doordash-ai-agent-orders.json",
+   "created": "2026-11-05T18:22:52.994632+00:00",
+   "news_date": "2026-10-29",
+   "status": "qa_passed",
+   "retries": 0,
+   "format": "clip",
+   "style": "sunset",
+   "series": "Engineering Myths Busted",
+   "history": [
+    {
+     "at": "2026-11-05T18:22:52.994638+00:00",
+     "status": "briefed"
+    },
+    {
+     "at": "2026-11-05T18:24:33.128180+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-11-05T18:24:35.101392+00:00",
+     "status": "qa_passed"
+    }
+   ],
+   "video_file": "renders/g20261105-04.mp4",
+   "caption_file": "state/captions/g20261105-04.txt",
+   "qa": {
+    "duration": 25.0,
+    "size_mb": 2.8,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.2
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/g20261105-04.mp4",
+   "cover_offset_ms": 900
   }
  }
 }

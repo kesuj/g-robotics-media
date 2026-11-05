@@ -1,0 +1,55 @@
+{
+ "id": "g20261105-01",
+ "slug": "dji-dock-4-25-second-swap",
+ "format": "clip",
+ "title": "A Drone Battery Swap in 25 Seconds",
+ "category": "Drones",
+ "date": "2026-10-14",
+ "description": "DJI launched Dock 4, a drone-in-a-box dock that swaps the battery automatically in about twenty-five seconds, against roughly ninety seconds to two minutes for other docks. It launched with the Matrice 5TD enterprise drone; pricing is not announced and it is unlikely to be sold in the United States.",
+ "sources": [
+  "https://dronedj.com/2026/10/30/dji-dock-4-matrice-5td-drone/",
+  "https://dronexl.co/2026/10/14/dji-dock-4-matrice-5td-battery-swap-launch-no-fcc/"
+ ],
+ "tags": ["drones", "dji", "dji dock 4", "drone in a box", "matrice 5td", "uas", "engineering"],
+ "style": "neon",
+ "series": "This Week in Drones and AI",
+ "voice": "male",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Battery swap: 25 seconds",
+   "vo": "Twenty five seconds. That's how fast this drone gets fresh batteries."
+  },
+  {
+   "type": "stat",
+   "number": 25,
+   "unit": "seconds per battery swap",
+   "text": "DJI Dock 4 swaps the battery, then relaunches",
+   "tag": "DJI DOCK 4",
+   "vo": "DJI says its new Dock Four swaps the battery by itself, so the drone relaunches in about twenty five seconds. Other docks need ninety seconds to two minutes. But here's the catch: no price yet, and it likely won't be sold in the U S."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Know someone who thinks drones always sit idle, charging? Send them this. Waiting time is an engineering problem."
+  }
+ ],
+ "caption": "A drone battery swap in 25 seconds. That's DJI Dock 4. 🚁\nThe drone-in-a-box dock changes batteries by itself; other docks typically need 90 seconds to 2 minutes. It launched with the Matrice 5TD, rated up to 59 minutes of flight in DJI's tests.\nThe catch: no price announced, and it's unlikely to be sold in the US.\nWhere would a self-charging drone help most in Nepal: rescue, farms or power lines? Comment below.\nSend this to a friend who loves drones.",
+ "hashtags": ["DJI", "DroneTech", "DroneNepal", "DroneEngineering", "UAS", "NepalTech", "EngineeringStudents", "GRobotics"],
+ "viral": {
+  "goal": "share",
+  "emotion": "awe + identity (I knew this first)",
+  "angle": "number-payoff",
+  "open_loop": "how fast the drone gets fresh batteries, and the catch",
+  "payoff_beat": 1,
+  "hook_variants": [
+   {"vo": "Twenty five seconds. That's how fast this drone gets fresh batteries.", "text": "Battery swap: 25 seconds"},
+   {"vo": "Why do docked drones still wait two minutes for a battery?", "text": "Why wait 2 minutes?"}
+  ],
+  "hook_scores": {"scroll_stop": 8, "curiosity": 8, "clarity": 9, "specificity": 9, "audience_fit": 8},
+  "rehooks": ["But here's the catch"],
+  "cover_text": "25-Second Battery Swap",
+  "cta": {"type": "share", "vo": "Know someone who thinks drones always sit idle, charging? Send them this. Waiting time is an engineering problem."},
+  "first_comment": "Dock 4 flies up to 59 minutes per DJI's tests. Where would a drone that recharges itself help most in Nepal?"
+ }
+}

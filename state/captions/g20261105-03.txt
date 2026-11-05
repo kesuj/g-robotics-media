@@ -1,0 +1,9 @@
+Google put an AI chip in orbit. Its first job: write a haiku. 🛰️
+The Suncatcher prototype, built with Planet Labs, carries four TPUs but runs one at a time, about 20 minutes per run. It's testing Gemma 4 while engineers check radiation and heat effects.
+The catch: this is a long-term moonshot. Two more satellites are planned for 2027.
+Would you trust an AI chip in space? Comment your answer.
+Send this to a space-tech friend.
+
+Sources: techcrunch.com, thenextweb.com
+
+#SpaceTech #AI #Google #Satellite #DataCenter #NepalTech #EngineeringStudents #GRobotics

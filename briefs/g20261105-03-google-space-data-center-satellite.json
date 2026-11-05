@@ -1,0 +1,56 @@
+{
+ "id": "g20261105-03",
+ "slug": "google-space-data-center-satellite",
+ "format": "clip",
+ "title": "Google's AI Chip in Orbit Writes Poems",
+ "category": "Space",
+ "date": "2026-10-30",
+ "description": "Google's Suncatcher prototype, built by Planet Labs, is online in orbit with four TPUs, only one of which runs at a time and for about twenty minutes. It runs the Gemma 4 model on test prompts while engineers check radiation and thermal effects; two more satellites are planned for 2027.",
+ "sources": [
+  "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+  "https://thenextweb.com/news/google-suncatcher-satellite-first-ai-response-gemma-haiku"
+ ],
+ "tags": ["space", "ai", "google", "suncatcher", "tpu", "data center", "satellite", "engineering"],
+ "style": "chalkboard",
+ "series": "The Science Behind the Machine",
+ "voice": "female",
+ "presenter": "maya",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "An AI chip in orbit",
+   "vo": "Google put an A I chip in orbit. Its first job: write a haiku."
+  },
+  {
+   "type": "stat",
+   "number": 20,
+   "unit": "minutes per run",
+   "text": "One of four chips runs at a time",
+   "tag": "GOOGLE SUNCATCHER",
+   "vo": "The prototype carries four T P U chips, but only one runs at a time, for about twenty minutes. It's a test of Gemma four. But here's the catch: radiation can silently flip bits, so engineers are checking that now."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Think data centers must stay on Earth? Send this to the friend who loves space tech and ask what they think."
+  }
+ ],
+ "caption": "Google put an AI chip in orbit. Its first job: write a haiku. 🛰️\nThe Suncatcher prototype, built with Planet Labs, carries four TPUs but runs one at a time, about 20 minutes per run. It's testing Gemma 4 while engineers check radiation and heat effects.\nThe catch: this is a long-term moonshot. Two more satellites are planned for 2027.\nWould you trust an AI chip in space? Comment your answer.\nSend this to a space-tech friend.",
+ "hashtags": ["SpaceTech", "AI", "Google", "Satellite", "DataCenter", "NepalTech", "EngineeringStudents", "GRobotics"],
+ "viral": {
+  "goal": "share",
+  "emotion": "awe + curiosity",
+  "angle": "result-first",
+  "open_loop": "what the chip in orbit can really do, and the catch",
+  "payoff_beat": 1,
+  "hook_variants": [
+   {"vo": "Google put an A I chip in orbit. Its first job: write a haiku.", "text": "An AI chip in orbit"},
+   {"vo": "Why can this space computer only run for twenty minutes?", "text": "Space AI runs 20 minutes"}
+  ],
+  "hook_scores": {"scroll_stop": 8, "curiosity": 9, "clarity": 8, "specificity": 8, "audience_fit": 8},
+  "rehooks": ["But here's the catch"],
+  "cover_text": "AI Chip in Orbit",
+  "cta": {"type": "share", "vo": "Think data centers must stay on Earth? Send this to the friend who loves space tech and ask what they think."},
+  "first_comment": "Radiation flips bits in space chips. How would you protect an AI model from silent errors?"
+ }
+}

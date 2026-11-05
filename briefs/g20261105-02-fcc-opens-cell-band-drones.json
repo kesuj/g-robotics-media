@@ -1,0 +1,56 @@
+{
+ "id": "g20261105-02",
+ "slug": "fcc-opens-cell-band-drones",
+ "format": "clip",
+ "title": "A 1991 Rule Kept Drones Off This Cell Band",
+ "category": "Drones",
+ "date": "2026-10-29",
+ "description": "The US FCC voted to open fifty megahertz of the 800 megahertz cellular band to drones, lifting a 1991 ban on airborne use of that band. The reporting gives no technical conditions or start date yet, and this is a US rule only.",
+ "sources": [
+  "https://dronedj.com/2026/10/30/fcc-drone-cellular-spectrum/",
+  "https://lightreading.com/regulatory-politics/fcc-clears-drone-operations-in-800mhz-band"
+ ],
+ "tags": ["drones", "fcc", "uas", "cellular", "spectrum", "drone regulation", "engineering"],
+ "style": "blueprint",
+ "series": "Inside Autonomous Systems",
+ "voice": "male",
+ "presenter": "aarav",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "Banned from this band since 1991",
+   "vo": "Drones were banned from this cell band since nineteen ninety one."
+  },
+  {
+   "type": "stat",
+   "number": 50,
+   "unit": "megahertz opened to drones",
+   "text": "US regulator frees the 800 megahertz cell band",
+   "tag": "US FCC",
+   "vo": "The U S regulator, the F C C, voted to open fifty megahertz of that cellular band to drones. The old fear: one airborne phone hitting many towers. But here's the part nobody tells you: no start date or conditions are reported yet."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Should Nepal let drones use phone networks? Comment yes or no and your reason; the best answers get pinned."
+  }
+ ],
+ "caption": "Drones were banned from this cell band for 35 years. Now the US is lifting it. 📡\nThe FCC voted to open 50 MHz of the 800 MHz cellular band to drones. The 1991 rule feared one airborne phone could hit many towers at once; the FCC now says modern networks manage that interference.\nThe catch: no conditions or start date reported yet, and it's a US rule only.\nShould Nepal let drones use phone networks? Comment yes or no, with your reason.",
+ "hashtags": ["DroneTech", "DroneRegulation", "FCC", "DroneNepal", "UAS", "NepalTech", "EngineeringStudents", "GRobotics"],
+ "viral": {
+  "goal": "comment",
+  "emotion": "surprise + stakes (a rule older than your phone)",
+  "angle": "stakes",
+  "open_loop": "why drones were banned from this band and what changes",
+  "payoff_beat": 1,
+  "hook_variants": [
+   {"vo": "Drones were banned from this cell band since nineteen ninety one.", "text": "Banned from this band since 1991"},
+   {"vo": "Your drone can't use phone networks. One rule is about to change that.", "text": "One rule changes drone links"}
+  ],
+  "hook_scores": {"scroll_stop": 8, "curiosity": 8, "clarity": 9, "specificity": 8, "audience_fit": 7},
+  "rehooks": ["But here's the part nobody tells you"],
+  "cover_text": "Drone Ban Lifted",
+  "cta": {"type": "comment", "vo": "Should Nepal let drones use phone networks? Comment yes or no and your reason; the best answers get pinned."},
+  "first_comment": "Why do you think a 1991 rule about phones on aircraft still applied to drones? Tell us what you'd change."
+ }
+}

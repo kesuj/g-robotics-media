@@ -1,0 +1,8 @@
+Drones were banned from this cell band for 35 years. Now the US is lifting it. 📡
+The FCC voted to open 50 MHz of the 800 MHz cellular band to drones. The 1991 rule feared one airborne phone could hit many towers at once; the FCC now says modern networks manage that interference.
+The catch: no conditions or start date reported yet, and it's a US rule only.
+Should Nepal let drones use phone networks? Comment yes or no, with your reason.
+
+Sources: dronedj.com, lightreading.com
+
+#DroneTech #DroneRegulation #FCC #DroneNepal #UAS #NepalTech #EngineeringStudents #GRobotics

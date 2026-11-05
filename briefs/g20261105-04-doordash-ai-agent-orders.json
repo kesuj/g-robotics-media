@@ -1,0 +1,56 @@
+{
+ "id": "g20261105-04",
+ "slug": "doordash-ai-agent-orders",
+ "format": "clip",
+ "title": "AI Agents Placed Only Hundreds of DoorDash Orders",
+ "category": "AI",
+ "date": "2026-10-29",
+ "description": "On its Q3 2026 earnings call, DoorDash CEO Tony Xu said third-party AI agents have placed only several hundred orders, against roughly three million deliveries a day on average per its 2025 report. Most users still order through DoorDash's own app.",
+ "sources": [
+  "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+  "https://aiweekly.co/alerts/doordash-ceo-only-several-hundred-orders-so-far-from-ai-agents"
+ ],
+ "tags": ["ai", "ai agents", "doordash", "agentic commerce", "tech news", "apps"],
+ "style": "sunset",
+ "series": "Engineering Myths Busted",
+ "voice": "male",
+ "beats": [
+  {
+   "type": "hook",
+   "text": "3 million orders. AI agents: hundreds.",
+   "vo": "DoorDash gets three million orders a day. AI agents? Several hundred."
+  },
+  {
+   "type": "stat",
+   "number": 3,
+   "suffix": " million",
+   "unit": "deliveries a day, on average",
+   "text": "Versus several hundred from AI agents",
+   "tag": "DOORDASH Q3 CALL",
+   "vo": "DoorDash's CEO said this on its latest earnings call. Most people still use the app itself. But here's the part nobody tells you: DoorDash is still building agent tools of its own, so this is early days, not a verdict."
+  },
+  {
+   "type": "outro",
+   "text": "Daily EE",
+   "vo": "Would you let an AI agent order your dinner? Comment yes or no, and tell us why."
+  }
+ ],
+ "caption": "AI agents will do everything for you? DoorDash says: several hundred orders. 🍔\nOn its Q3 2026 earnings call, the CEO said third-party AI agents placed only several hundred orders, against roughly 3 million deliveries a day on average. Most users still use the app.\nIt's early days: DoorDash keeps building its own agent tools.\nWould you let an AI agent order your dinner? Comment yes or no.",
+ "hashtags": ["AI", "AIAgents", "DoorDash", "TechNews", "NepalTech", "EngineeringStudents", "GRobotics"],
+ "viral": {
+  "goal": "comment",
+  "emotion": "surprise + skepticism (hype vs reality)",
+  "angle": "myth-bust",
+  "open_loop": "how many orders AI agents really placed, and what it means",
+  "payoff_beat": 1,
+  "hook_variants": [
+   {"vo": "DoorDash gets three million orders a day. AI agents? Several hundred.", "text": "3 million orders. AI agents: hundreds."},
+   {"vo": "Everyone says AI agents will shop for you. DoorDash just shared the real number.", "text": "The real AI agent number"}
+  ],
+  "hook_scores": {"scroll_stop": 8, "curiosity": 8, "clarity": 9, "specificity": 9, "audience_fit": 7},
+  "rehooks": ["But here's the part nobody tells you"],
+  "cover_text": "AI Agents: Hundreds",
+  "cta": {"type": "comment", "vo": "Would you let an AI agent order your dinner? Comment yes or no, and tell us why."},
+  "first_comment": "Would you trust an AI agent with your payment details? What would it need to prove first?"
+ }
+}

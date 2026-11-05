@@ -249,3 +249,17 @@
 {"at": "2026-11-05T17:48:07.270592+00:00", "action": "status", "id": "news-20261105", "status": "rendered"}
 {"at": "2026-11-05T17:48:12.127887+00:00", "action": "status", "id": "news-20261105", "status": "qa_passed"}
 {"at": "2026-11-05T17:48:12.129153+00:00", "action": "produce.run", "made": 1}
+{"at": "2026-11-05T18:13:27.811922+00:00", "action": "research.collect", "new": 163, "feed_errors": []}
+{"at": "2026-11-05T18:16:58.690524+00:00", "action": "status", "id": "g20261105-01", "status": "briefed"}
+{"at": "2026-11-05T18:19:06.832272+00:00", "action": "status", "id": "g20261105-01", "status": "rendered"}
+{"at": "2026-11-05T18:19:09.034114+00:00", "action": "status", "id": "g20261105-01", "status": "qa_passed"}
+{"at": "2026-11-05T18:19:09.034347+00:00", "action": "status", "id": "g20261105-02", "status": "briefed"}
+{"at": "2026-11-05T18:21:05.381282+00:00", "action": "status", "id": "g20261105-02", "status": "rendered"}
+{"at": "2026-11-05T18:21:07.304680+00:00", "action": "status", "id": "g20261105-02", "status": "qa_passed"}
+{"at": "2026-11-05T18:21:07.304934+00:00", "action": "status", "id": "g20261105-03", "status": "briefed"}
+{"at": "2026-11-05T18:22:50.913640+00:00", "action": "status", "id": "g20261105-03", "status": "rendered"}
+{"at": "2026-11-05T18:22:52.994416+00:00", "action": "status", "id": "g20261105-03", "status": "qa_passed"}
+{"at": "2026-11-05T18:22:52.994657+00:00", "action": "status", "id": "g20261105-04", "status": "briefed"}
+{"at": "2026-11-05T18:24:33.128264+00:00", "action": "status", "id": "g20261105-04", "status": "rendered"}
+{"at": "2026-11-05T18:24:35.101466+00:00", "action": "status", "id": "g20261105-04", "status": "qa_passed"}
+{"at": "2026-11-05T18:24:35.102797+00:00", "action": "produce.run", "made": 4}
