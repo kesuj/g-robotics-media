@@ -1,0 +1,59 @@
+{
+ "id": "news-20261106",
+ "episode": 10,
+ "date": "2026-11-06",
+ "title": "Tech News with G. Dai — Episode 10",
+ "intro": "Namaste! Welcome to episode ten of Tech News with G. Dai. Five stories you need to know today. And the last one is a tiny A-I that fits on your phone!",
+ "stories": [
+  {
+   "tag": "Electric cars",
+   "region": "WORLD",
+   "headline": "Tesla to stop making Cybertruck",
+   "kit": "ev",
+   "vo": "Big end for a famous truck! Elon Musk says Tesla will stop making the Cybertruck in twenty twenty seven. The space will make more Cybercab robotaxis. Tesla is shifting its focus to A-I and robots.",
+   "source": "TechCrunch, CBS News",
+   "urls": ["https://techcrunch.com/2026/11/06/tesla-will-stop-making-the-cybertruck-in-2027/", "https://www.cbsnews.com/news/tesla-ending-cybertruck-production-next-year/"]
+  },
+  {
+   "tag": "Internet",
+   "region": "NEPAL",
+   "headline": "Vianet promises same-day fixes",
+   "kit": "nepal",
+   "vo": "Slow internet at home? Vianet has launched a service called Today's Problem, Fix Today. Report an issue before five P-M, and it gets priority for the same day, by remote help or a visiting technician.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/11/vianet-introduces-todays-problem-fix-today-service-for-faster-technical-support.html"]
+  },
+  {
+   "tag": "Fiber internet",
+   "region": "NEPAL",
+   "headline": "WorldLink leads Nepal fiber race",
+   "kit": "globe",
+   "stat": {"value": 1.12, "prefix": "", "suffix": "M", "label": "WorldLink fiber users, Ashoj 2083"},
+   "vo": "Who rules Nepal's fiber internet? N-T-A data for Ashoj shows about three point five seven million fiber users. World-Link leads with over one point one two million. Vianet is second, and Nepal Telecom is fourth.",
+   "source": "NepaliTelecom, NTA MIS report",
+   "urls": ["https://www.nepalitelecom.com/internet-users-isp-in-nepal"]
+  },
+  {
+   "tag": "Robotics",
+   "region": "WORLD",
+   "headline": "Serve Robotics sells robot AI tools",
+   "kit": "robot",
+   "vo": "Robots need brains in the cloud! Serve Robotics, known for sidewalk delivery robots, launched Physical A-I Services. Its Serve Link tool connects robots to data-center A-I, so they need less computing onboard.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/05/serve-robotics-launches-new-business-to-become-the-aws-for-robots/"]
+  },
+  {
+   "tag": "Tiny AI",
+   "region": "WORLD",
+   "headline": "A 32MB voice AI runs offline",
+   "kit": "ai",
+   "stat": {"value": 31.7, "prefix": "", "suffix": " MB", "label": "size of Underdog's Woof speech model"},
+   "vo": "Here's a surprise! A startup called Underdog made Woof, a text-to-speech model of just thirty one point seven M-B. It runs in your browser, even without internet. Small A-I like this could power phone apps.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Would you use an A-I voice that works offline? Tell me in the comments, and follow G. Robotics so you never miss tomorrow's brief.",
+ "caption": "Tesla says the Cybertruck is ending in 2027. Did you ever want one? 🚗\n\n1️⃣ 🚗 Tesla to stop making Cybertruck\n2️⃣ 🇳🇵 Vianet promises same-day fixes\n3️⃣ 🌐 WorldLink leads Nepal fiber race\n4️⃣ 🤖 Serve Robotics sells robot AI tools\n5️⃣ 🎙️ A 32MB voice AI runs offline\n\nWhich story surprised you most? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: TechCrunch, CBS News, NepaliTelecom",
+ "hashtags": ["#TechNews", "#NepalTech", "#GDai", "#GRobotics", "#Tesla", "#Robotics", "#AI", "#NepalInternet"]
+}
