@@ -300,3 +300,7 @@
 {"at": "2026-11-07T15:55:28.719874+00:00", "action": "status", "id": "news-20261107", "status": "briefed"}
 {"at": "2026-11-07T15:57:07.233340+00:00", "action": "status", "id": "news-20261107", "status": "briefed", "note": " in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 292, in build\n    segs = make_voice(ep, proj)\n   "}
 {"at": "2026-11-07T15:57:07.235827+00:00", "action": "produce.run", "made": 0}
+{"at": "2026-11-07T16:36:28.233551+00:00", "action": "research.collect", "new": 75, "feed_errors": []}
+{"at": "2026-11-07T16:44:08.003432+00:00", "action": "status", "id": "news-20261107", "status": "rendered"}
+{"at": "2026-11-07T16:44:11.125294+00:00", "action": "status", "id": "news-20261107", "status": "qa_passed"}
+{"at": "2026-11-07T16:44:11.127351+00:00", "action": "produce.run", "made": 1}
