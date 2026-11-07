@@ -1,0 +1,62 @@
+{
+ "id": "news-20261107",
+ "episode": 11,
+ "date": "2026-11-07",
+ "title": "Tech News with G. Dai — Episode 11",
+ "intro": "Namaste! Welcome to episode eleven of Tech News with G. Dai. Five stories you need to know today. And the last one is a phone that costs two thousand dollars!",
+ "stories": [
+  {
+   "tag": "Nepal AI",
+   "region": "NEPAL",
+   "headline": "42,000 Nepali youths want free AI class",
+   "kit": "nepal",
+   "stat": {"value": 42000, "prefix": "", "suffix": "+", "label": "applicants in 24 hours"},
+   "vo": "Big news for Nepal's youth! Over forty two thousand people applied in just one day for a free online A-I course. The government academy has only two thousand seats, so the demand is huge.",
+   "source": "Onlinekhabar English",
+   "urls": ["https://english.onlinekhabar.com/youths-apply-free-ai-training.html"]
+  },
+  {
+   "tag": "Internet",
+   "region": "NEPAL",
+   "headline": "Nepal broadband passes 148 percent",
+   "kit": "globe",
+   "stat": {"value": 148.64, "prefix": "", "suffix": "%", "label": "broadband penetration, FY 2082/83"},
+   "vo": "Is Nepal fully online? N-T-A's yearly report shows broadband penetration at one hundred forty eight point six four percent, mostly from mobile. Over a hundred percent usually means many people hold more than one connection.",
+   "source": "NepaliTelecom, NTA report",
+   "urls": ["https://www.nepalitelecom.com/2026/11/nepal-broadband-penetration-reaches-148-64-in-fy-2082-83.html"]
+  },
+  {
+   "tag": "Meta AI",
+   "region": "WORLD",
+   "headline": "Meta adds Spaces to Muse agents",
+   "kit": "ai",
+   "stat": {"value": 10, "prefix": "", "suffix": "M", "label": "Muse agent users in US and Canada"},
+   "vo": "This is huge for A-I assistants. Meta launched Spaces for its Muse agent. Each Space is a separate project, like trip planning, and it can update by itself in the background.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"]
+  },
+  {
+   "tag": "Cybersecurity",
+   "region": "WORLD",
+   "headline": "800 AI hacking tools left open online",
+   "kit": "cyber",
+   "stat": {"value": 800, "prefix": "", "suffix": "+", "label": "exposed Artex deployments"},
+   "vo": "Here's a scary one. Researchers found more than eight hundred copies of Artex, an A-I hacking tool, open on the internet without a password. Many attacks still win by using weak passwords. Turn on two-step login.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"]
+  },
+  {
+   "tag": "Phones",
+   "region": "WORLD",
+   "headline": "Apple Duo sells out, apps catch up",
+   "kit": "phone",
+   "stat": {"value": 100000, "prefix": "", "suffix": "+", "label": "apps optimized for iPhone Duo"},
+   "vo": "Wait for this one! Apple's foldable iPhone Duo starts at one thousand nine hundred ninety nine dollars and sold out in hours. Now over one hundred thousand apps are ready for its screen.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/06/the-duo-apps-are-coming-says-apple/"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Would you pay two thousand dollars for a foldable phone? Tell me in the comments, and follow G. Robotics so you never miss tomorrow's brief.",
+ "caption": "42,000 Nepali youths applied for ONE free AI class in a day. Here is today's tech brief 👇\n\n1️⃣ 🇳🇵 42,000 Nepali youths want free AI class\n2️⃣ 🌐 Nepal broadband passes 148 percent\n3️⃣ 🤖 Meta adds Spaces to Muse agents\n4️⃣ 🔐 800 AI hacking tools left open online\n5️⃣ 📱 Apple Duo sells out, apps catch up\n\nWould you pay $1,999 for a foldable phone? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: Onlinekhabar English, NepaliTelecom, TechCrunch",
+ "hashtags": ["#TechNews", "#NepalTech", "#GDai", "#GRobotics", "#AI", "#Cybersecurity", "#iPhone", "#Nepal"]
+}
