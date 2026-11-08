@@ -324,3 +324,5 @@
 {"at": "2026-11-08T16:46:57.477098+00:00", "action": "research.collect", "new": 74, "feed_errors": []}
 {"at": "2026-11-08T16:48:17.205255+00:00", "action": "status", "id": "news-20261108", "status": "briefed", "note": " in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 292, in build\n    segs = make_voice(ep, proj)\n   "}
 {"at": "2026-11-08T16:48:17.207432+00:00", "action": "produce.run", "made": 0}
+{"at": "2026-11-08T17:56:11.255867+00:00", "action": "status", "id": "g20261027-10", "status": "qa_passed", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-11-08T17:56:11.255981+00:00", "action": "slot.error", "id": "g20261027-10", "note": "HTTP 400 code=200: API access blocked.", "alert": true}
