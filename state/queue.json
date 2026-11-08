@@ -1536,7 +1536,7 @@
    "created": "2026-11-08T16:17:29.815872+00:00",
    "news_date": "2026-11-08",
    "status": "briefed",
-   "retries": 1,
+   "retries": 2,
    "format": "gdai_news",
    "style": null,
    "series": "Tech News with G. Dai",
@@ -1549,6 +1549,11 @@
     },
     {
      "at": "2026-11-08T16:18:39.305769+00:00",
+     "status": "briefed",
+     "note": " in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 292, in build\n    segs = make_voice(ep, proj)\n   "
+    },
+    {
+     "at": "2026-11-08T16:48:17.205144+00:00",
      "status": "briefed",
      "note": " in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 292, in build\n    segs = make_voice(ep, proj)\n   "
     }
