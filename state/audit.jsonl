@@ -318,3 +318,6 @@
 {"at": "2026-11-08T08:59:17.002792+00:00", "action": "slot.error", "id": "g20261027-09", "note": "HTTP 400 code=200: API access blocked.", "alert": true}
 {"at": "2026-11-08T13:53:31.189608+00:00", "action": "status", "id": "g20261027-10", "status": "qa_passed", "note": "HTTP 400 code=200: API access blocked."}
 {"at": "2026-11-08T13:53:31.189775+00:00", "action": "slot.error", "id": "g20261027-10", "note": "HTTP 400 code=200: API access blocked.", "alert": true}
+{"at": "2026-11-08T16:17:29.815927+00:00", "action": "status", "id": "news-20261108", "status": "briefed"}
+{"at": "2026-11-08T16:18:39.305867+00:00", "action": "status", "id": "news-20261108", "status": "briefed", "note": " in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 292, in build\n    segs = make_voice(ep, proj)\n   "}
+{"at": "2026-11-08T16:18:39.309815+00:00", "action": "produce.run", "made": 0}

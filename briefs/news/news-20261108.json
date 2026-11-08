@@ -1,0 +1,61 @@
+{
+ "id": "news-20261108",
+ "episode": 12,
+ "date": "2026-11-08",
+ "title": "Tech News with G. Dai — Episode 12",
+ "intro": "Namaste! Welcome to episode twelve of Tech News with G. Dai. Five stories you need to know today. And the last one has a price twist!",
+ "stories": [
+  {
+   "tag": "Nepal pride",
+   "region": "NEPAL",
+   "headline": "Nepal wins first astronomy Olympiad gold",
+   "kit": "space",
+   "stat": {"value": 1, "prefix": "", "suffix": " gold", "label": "Nepal's first at IOAA-Junior"},
+   "vo": "Proud moment for Nepal! Shahwaz Alam won Nepal's first ever gold medal at the Junior International Astronomy Olympiad in Thailand. Nepal also took one bronze. Our students can compete with the world.",
+   "source": "Onlinekhabar English",
+   "urls": ["https://english.onlinekhabar.com/nepal-wins-first-ever-gold-medal-at-junior-international-astronomy-olympiad.html"]
+  },
+  {
+   "tag": "Internet",
+   "region": "NEPAL",
+   "headline": "NTC adds 11,764 fiber users in 18 days",
+   "kit": "globe",
+   "stat": {"value": 11764, "prefix": "", "suffix": "", "label": "new NTC fiber users in 18 days"},
+   "vo": "Cheap fiber is working! Nepal Telecom added eleven thousand seven hundred sixty four fiber users in eighteen days with its Rs four thousand nine hundred ninety nine yearly plan. Last year's whole month: under three thousand.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/11/nepal-telecom-gains-11764-new-fiber-internet-users-in-18-days.html"]
+  },
+  {
+   "tag": "AI money",
+   "region": "WORLD",
+   "headline": "Claude can now analyze your spending",
+   "kit": "ai",
+   "stat": {"value": 2, "prefix": "", "suffix": " years", "label": "of transaction history visible"},
+   "vo": "This is huge for A-I! Claude can now read your bank and card data, read-only, and sort your spending and flag duplicate charges. It sees up to two years of history in a paid U-S beta.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"]
+  },
+  {
+   "tag": "Gaming laptops",
+   "region": "NEPAL",
+   "headline": "ASUS opens first exclusive store in Nepal",
+   "kit": "chip",
+   "vo": "Gamers, listen! A-S-U-S opened its first exclusive store in Nepal, in Putalisadak, Kathmandu. It brings new R-O-G laptops with the R-T-X fifty ninety G-P-U. ASUS calls Nepal an important and growing market.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/2026/11/asus-opens-first-exclusive-brand-store-in-nepal-new-rog-tuf-gaming-laptops.html"]
+  },
+  {
+   "tag": "Gadgets",
+   "region": "WORLD",
+   "headline": "New basic Kindle: sharper, but pricier",
+   "kit": "phone",
+   "stat": {"value": 300, "prefix": "", "suffix": " ppi", "label": "screen sharpness, up from 167"},
+   "vo": "Wait for this one! Amazon's new basic Kindle has a sharper three hundred P-P-I screen, is lighter and opens books thirty percent faster. But the price rose forty to fifty dollars, blamed on the memory chip shortage.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/07/amazons-new-basic-kindle-proves-you-dont-need-all-the-bells-and-whistles/"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Would you pay more for a sharper screen? Tell me in the comments, and follow G. Robotics so you never miss tomorrow's brief.",
+ "caption": "Nepal just won its FIRST gold at the Junior Astronomy Olympiad 🇳🇵 Today's tech brief 👇\n\n1️⃣ 🔭 Nepal wins first astronomy Olympiad gold\n2️⃣ 🌐 NTC adds 11,764 fiber users in 18 days\n3️⃣ 🤖 Claude can now analyze your spending\n4️⃣ 💻 ASUS opens first exclusive store in Nepal\n5️⃣ 📖 New basic Kindle: sharper, but pricier\n\nWhich story surprised you? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: Onlinekhabar English, NepaliTelecom, TechCrunch",
+ "hashtags": ["#TechNews", "#NepalTech", "#GDai", "#GRobotics", "#Astronomy", "#AI", "#Kindle", "#Nepal"]
+}
