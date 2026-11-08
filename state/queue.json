@@ -505,8 +505,8 @@
    "brief": "briefs/g20261027-09-single-motor-drone.json",
    "created": "2026-10-27T16:09:02.022530+00:00",
    "news_date": "2026-10-20",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "notebook",
    "series": "Drone Engineering in 30 Seconds",
@@ -531,6 +531,11 @@
     {
      "at": "2026-11-07T13:35:01.393581+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-08T08:59:17.002546+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
