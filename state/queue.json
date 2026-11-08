@@ -560,8 +560,8 @@
    "brief": "briefs/g20261027-10-perseverance-driving-record.json",
    "created": "2026-10-28T06:04:40.005528+00:00",
    "news_date": "2026-10-11",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "blueprint",
    "series": "Inside Autonomous Systems",
@@ -586,6 +586,11 @@
     {
      "at": "2026-11-08T17:56:11.255774+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-08T19:39:26.135853+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
