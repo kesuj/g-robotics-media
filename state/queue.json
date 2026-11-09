@@ -1545,7 +1545,7 @@
    "brief": "briefs/news/news-20261108.json",
    "created": "2026-11-08T16:17:29.815872+00:00",
    "news_date": "2026-11-08",
-   "status": "briefed",
+   "status": "qa_passed",
    "retries": 2,
    "format": "gdai_news",
    "style": null,
@@ -1566,8 +1566,29 @@
      "at": "2026-11-08T16:48:17.205144+00:00",
      "status": "briefed",
      "note": " in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 386, in <module>\n    build(sys.argv[1], render=\"--no-render\" not in sys.argv)\n  File \"/home/runner/work/g-robotics-media/g-robotics-media/gr/produce/newsroom/build_news.py\", line 292, in build\n    segs = make_voice(ep, proj)\n   "
+    },
+    {
+     "at": "2026-11-09T07:11:49.250377+00:00",
+     "status": "rendered"
+    },
+    {
+     "at": "2026-11-09T07:11:54.182780+00:00",
+     "status": "qa_passed"
     }
-   ]
+   ],
+   "video_file": "renders/news-20261108.mp4",
+   "caption_file": "state/captions/news-20261108.txt",
+   "qa": {
+    "duration": 89.17,
+    "size_mb": 33.6,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "lufs": -14.0
+   },
+   "video_url": "https://github.com/kesuj/g-robotics-media/releases/download/reel-queue/news-20261108.mp4"
   }
  }
 }
