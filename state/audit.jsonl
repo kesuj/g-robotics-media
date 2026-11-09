@@ -344,3 +344,5 @@
 {"at": "2026-11-09T20:12:53.301953+00:00", "action": "status", "id": "news-20261110", "status": "rendered"}
 {"at": "2026-11-09T20:12:56.748008+00:00", "action": "status", "id": "news-20261110", "status": "qa_passed"}
 {"at": "2026-11-09T20:12:56.753598+00:00", "action": "produce.run", "made": 1}
+{"at": "2026-11-09T20:59:53.153816+00:00", "action": "research.collect", "new": 188, "feed_errors": []}
+{"at": "2026-11-09T20:59:53.666349+00:00", "action": "produce.run", "made": 0}
