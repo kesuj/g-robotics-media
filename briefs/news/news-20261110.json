@@ -1,0 +1,61 @@
+{
+ "id": "news-20261110",
+ "episode": 13,
+ "date": "2026-11-10",
+ "title": "Tech News with G. Dai — Episode 13",
+ "intro": "Namaste! Welcome to episode thirteen of Tech News with G. Dai. Five stories you need to know today. And the last one is about your next phone!",
+ "stories": [
+  {
+   "tag": "Scam fight",
+   "region": "NEPAL",
+   "headline": "Nepal's anti-scam centre freezes cash fast",
+   "kit": "cyber",
+   "stat": {"value": 15, "prefix": "", "suffix": " min", "label": "to freeze transfers across nine bank layers"},
+   "vo": "Scam alert! Nepal's new Integrated Anti-Scam Centre froze scam transfers across nine bank layers in just fifteen minutes. Twenty banks, plus eSewa and Khalti, sit together there. Report scams on one two four seven.",
+   "source": "Onlinekhabar English",
+   "urls": ["https://english.onlinekhabar.com/anti-scam-centre-freezes-freezes-scam.html"]
+  },
+  {
+   "tag": "AI models",
+   "region": "WORLD",
+   "headline": "Anthropic launches Fable 5.2, Mythos 5.2",
+   "kit": "ai",
+   "stat": {"value": 30, "prefix": "", "suffix": "%", "label": "faster responses with Fable 5.2"},
+   "vo": "This is huge for A-I! Anthropic released Fable five point two and Mythos five point two. Fable is about thirty percent faster, and its input price drops from ten dollars to eight dollars per million tokens.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"]
+  },
+  {
+   "tag": "Young coders",
+   "region": "NEPAL",
+   "headline": "Birgunj youths build apps with AI tools",
+   "kit": "app",
+   "stat": {"value": 25, "prefix": "", "suffix": " youths", "label": "built and deployed real apps"},
+   "vo": "Good news for young developers! In Birgunj, twenty five youths built and deployed real apps using A-I tools in a Leapfrog Connect bootcamp, backed by the E-U. The next one is in Pokhara next month.",
+   "source": "Onlinekhabar English",
+   "urls": ["https://english.onlinekhabar.com/ai-assisted-software-engineering.html"]
+  },
+  {
+   "tag": "Social media",
+   "region": "WORLD",
+   "headline": "Instagram's AI will guess your age",
+   "kit": "app",
+   "vo": "Instagram is changing! Meta is rolling out A-I age checks worldwide. If it thinks you are a teen, it moves you to a Teen Account, even if you entered an adult birthday.",
+   "source": "TechCrunch",
+   "urls": ["https://techcrunch.com/2026/11/09/meta-expands-instagrams-ai-age-guessing-tech-globally/"]
+  },
+  {
+   "tag": "Phones",
+   "region": "WORLD",
+   "headline": "Honor Magic9 Pro Max: two 200MP cameras",
+   "kit": "phone",
+   "stat": {"value": 200, "prefix": "", "suffix": " MP", "label": "main and telephoto cameras"},
+   "vo": "Wait for this one! Honor's Magic nine Pro Max has two two-hundred megapixel cameras, a Snapdragon chip and an eight thousand milliamp-hour battery. Hong Kong sales start November nineteenth. No Nepal date yet.",
+   "source": "NepaliTelecom",
+   "urls": ["https://www.nepalitelecom.com/honor-magic9-pro-max-price-in-nepal"]
+  }
+ ],
+ "outro": "That's your tech brief for today. Would you buy a phone just for its camera? Tell me in the comments, and follow G. Robotics so you never miss tomorrow's brief.",
+ "caption": "Nepal froze scam money across 9 bank layers in 15 minutes 🇳🇵 Today's tech brief 👇\n\n1️⃣ 🛡️ Nepal's anti-scam centre freezes cash fast\n2️⃣ 🤖 Anthropic launches Fable 5.2, Mythos 5.2\n3️⃣ 💻 Birgunj youths build apps with AI tools\n4️⃣ 📱 Instagram's AI will guess your age\n5️⃣ 📸 Honor Magic9 Pro Max: two 200MP cameras\n\nWould you buy a phone just for its camera? Tell us in the comments!\n\nG. Dai is an AI-generated presenter.\nSources: Onlinekhabar English, TechCrunch, NepaliTelecom",
+ "hashtags": ["#TechNews", "#NepalTech", "#GDai", "#GRobotics", "#AI", "#Instagram", "#CyberSecurity", "#Nepal"]
+}
