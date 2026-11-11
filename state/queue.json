@@ -1068,7 +1068,7 @@
    "created": "2026-11-03T07:14:18.630820+00:00",
    "news_date": "2026-10-23",
    "status": "qa_passed",
-   "retries": 0,
+   "retries": 1,
    "format": "people",
    "style": "classic",
    "series": "Drone Engineering in 30 Seconds",
@@ -1084,6 +1084,11 @@
     {
      "at": "2026-11-03T07:16:47.999358+00:00",
      "status": "qa_passed"
+    },
+    {
+     "at": "2026-11-11T19:37:24.369239+00:00",
+     "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
     }
    ],
    "video_file": "renders/g20261103-01.mp4",
