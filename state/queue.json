@@ -671,7 +671,7 @@
    "created": "2026-10-28T06:07:53.284876+00:00",
    "news_date": "2026-09-29",
    "status": "qa_passed",
-   "retries": 1,
+   "retries": 2,
    "format": "clip",
    "style": "chalkboard",
    "series": "This Week in Drones and AI",
@@ -690,6 +690,11 @@
     },
     {
      "at": "2026-11-10T09:49:37.889402+00:00",
+     "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-11T09:25:46.941550+00:00",
      "status": "qa_passed",
      "note": "HTTP 400 code=200: API access blocked."
     }
