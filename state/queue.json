@@ -1157,8 +1157,8 @@
    "brief": "briefs/g20261103-03-eth-robot-hand-walks.json",
    "created": "2026-11-03T07:16:48.084406+00:00",
    "news_date": "2026-10-08",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "notebook",
    "series": "Robots Doing Incredible Things",
@@ -1183,6 +1183,11 @@
     {
      "at": "2026-11-12T19:55:15.699421+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-12T21:50:21.742899+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
