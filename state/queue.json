@@ -1158,7 +1158,7 @@
    "created": "2026-11-03T07:16:48.084406+00:00",
    "news_date": "2026-10-08",
    "status": "qa_passed",
-   "retries": 1,
+   "retries": 2,
    "format": "clip",
    "style": "notebook",
    "series": "Robots Doing Incredible Things",
@@ -1177,6 +1177,11 @@
     },
     {
      "at": "2026-11-12T15:37:46.879517+00:00",
+     "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-12T19:55:15.699421+00:00",
      "status": "qa_passed",
      "note": "HTTP 400 code=200: API access blocked."
     }
