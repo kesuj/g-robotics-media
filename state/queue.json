@@ -1067,8 +1067,8 @@
    "brief": "briefs/g20261103-01-drone-detector-motor-magnetism.json",
    "created": "2026-11-03T07:14:18.630820+00:00",
    "news_date": "2026-10-23",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "people",
    "style": "classic",
    "series": "Drone Engineering in 30 Seconds",
@@ -1093,6 +1093,11 @@
     {
      "at": "2026-11-11T21:55:07.583166+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-12T09:50:05.409778+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
