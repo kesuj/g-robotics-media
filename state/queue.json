@@ -1327,8 +1327,8 @@
    "brief": "briefs/g20261105-01-dji-dock-4-25-second-swap.json",
    "created": "2026-11-05T18:16:58.690489+00:00",
    "news_date": "2026-10-14",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "neon",
    "series": "This Week in Drones and AI",
@@ -1353,6 +1353,11 @@
     {
      "at": "2026-11-13T14:55:31.575012+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-13T19:43:11.847917+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
