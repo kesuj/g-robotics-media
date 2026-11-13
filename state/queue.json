@@ -1384,7 +1384,7 @@
    "created": "2026-11-05T18:19:09.034322+00:00",
    "news_date": "2026-10-29",
    "status": "qa_passed",
-   "retries": 0,
+   "retries": 1,
    "format": "clip",
    "style": "blueprint",
    "series": "Inside Autonomous Systems",
@@ -1400,6 +1400,11 @@
     {
      "at": "2026-11-05T18:21:07.304605+00:00",
      "status": "qa_passed"
+    },
+    {
+     "at": "2026-11-13T21:25:24.587469+00:00",
+     "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
     }
    ],
    "video_file": "renders/g20261105-02.mp4",
