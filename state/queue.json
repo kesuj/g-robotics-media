@@ -1328,7 +1328,7 @@
    "created": "2026-11-05T18:16:58.690489+00:00",
    "news_date": "2026-10-14",
    "status": "qa_passed",
-   "retries": 0,
+   "retries": 1,
    "format": "clip",
    "style": "neon",
    "series": "This Week in Drones and AI",
@@ -1344,6 +1344,11 @@
     {
      "at": "2026-11-05T18:19:09.034049+00:00",
      "status": "qa_passed"
+    },
+    {
+     "at": "2026-11-13T09:31:40.834660+00:00",
+     "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
     }
    ],
    "video_file": "renders/g20261105-01.mp4",
