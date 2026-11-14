@@ -1440,7 +1440,7 @@
    "created": "2026-11-05T18:21:07.304910+00:00",
    "news_date": "2026-10-30",
    "status": "qa_passed",
-   "retries": 0,
+   "retries": 1,
    "format": "clip",
    "style": "chalkboard",
    "series": "The Science Behind the Machine",
@@ -1456,6 +1456,11 @@
     {
      "at": "2026-11-05T18:22:52.994340+00:00",
      "status": "qa_passed"
+    },
+    {
+     "at": "2026-11-14T18:03:23.186340+00:00",
+     "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
     }
    ],
    "video_file": "renders/g20261105-03.mp4",
