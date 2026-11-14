@@ -412,3 +412,5 @@
 {"at": "2026-11-13T23:12:33.671911+00:00", "action": "analytics.error", "id": "g20261027-02", "note": "HTTP 400 code=200: API access blocked."}
 {"at": "2026-11-13T23:12:33.672154+00:00", "action": "analytics.pull", "items": 0}
 {"at": "2026-11-14T06:53:10.576745+00:00", "action": "research.collect", "new": 96, "feed_errors": []}
+{"at": "2026-11-14T08:58:11.567599+00:00", "action": "status", "id": "g20261105-02", "status": "qa_passed", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-11-14T08:58:11.567728+00:00", "action": "slot.error", "id": "g20261105-02", "note": "HTTP 400 code=200: API access blocked.", "alert": true}
