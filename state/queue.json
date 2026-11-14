@@ -1383,8 +1383,8 @@
    "brief": "briefs/g20261105-02-fcc-opens-cell-band-drones.json",
    "created": "2026-11-05T18:19:09.034322+00:00",
    "news_date": "2026-10-29",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "blueprint",
    "series": "Inside Autonomous Systems",
@@ -1409,6 +1409,11 @@
     {
      "at": "2026-11-14T08:58:11.567474+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-14T13:49:10.029881+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
