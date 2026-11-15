@@ -1439,8 +1439,8 @@
    "brief": "briefs/g20261105-03-google-space-data-center-satellite.json",
    "created": "2026-11-05T18:21:07.304910+00:00",
    "news_date": "2026-10-30",
-   "status": "qa_passed",
-   "retries": 2,
+   "status": "failed",
+   "retries": 3,
    "format": "clip",
    "style": "chalkboard",
    "series": "The Science Behind the Machine",
@@ -1465,6 +1465,11 @@
     {
      "at": "2026-11-14T19:55:09.386813+00:00",
      "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
+    },
+    {
+     "at": "2026-11-15T09:25:54.907197+00:00",
+     "status": "failed",
      "note": "HTTP 400 code=200: API access blocked."
     }
    ],
