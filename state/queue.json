@@ -1496,7 +1496,7 @@
    "created": "2026-11-05T18:22:52.994632+00:00",
    "news_date": "2026-10-29",
    "status": "qa_passed",
-   "retries": 0,
+   "retries": 1,
    "format": "clip",
    "style": "sunset",
    "series": "Engineering Myths Busted",
@@ -1512,6 +1512,11 @@
     {
      "at": "2026-11-05T18:24:35.101392+00:00",
      "status": "qa_passed"
+    },
+    {
+     "at": "2026-11-15T14:19:55.301821+00:00",
+     "status": "qa_passed",
+     "note": "HTTP 400 code=200: API access blocked."
     }
    ],
    "video_file": "renders/g20261105-04.mp4",
