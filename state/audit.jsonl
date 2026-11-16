@@ -442,3 +442,4 @@
 {"at": "2026-11-16T07:02:34.026804+00:00", "action": "research.collect", "new": 219, "feed_errors": []}
 {"at": "2026-11-16T09:43:06.245848+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
 {"at": "2026-11-16T16:27:54.347654+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
+{"at": "2026-11-16T20:39:50.380819+00:00", "action": "research.collect", "new": 146, "feed_errors": ["Google News: humanoid robot", "Google News: drone technology", "Google News: Nepal technology"]}
