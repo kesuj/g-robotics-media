@@ -445,3 +445,7 @@
 {"at": "2026-11-16T20:39:50.380819+00:00", "action": "research.collect", "new": 146, "feed_errors": ["Google News: humanoid robot", "Google News: drone technology", "Google News: Nepal technology"]}
 {"at": "2026-11-16T22:03:40.054040+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
 {"at": "2026-11-16T23:44:24.727549+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
+{"at": "2026-11-17T01:31:03.765917+00:00", "action": "analytics.error", "id": "g20261027-01", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-11-17T01:31:04.027769+00:00", "action": "analytics.error", "id": "news-20261027", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-11-17T01:31:04.258486+00:00", "action": "analytics.error", "id": "g20261027-02", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-11-17T01:31:04.258771+00:00", "action": "analytics.pull", "items": 0}
