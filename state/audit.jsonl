@@ -450,3 +450,4 @@
 {"at": "2026-11-17T01:31:04.258486+00:00", "action": "analytics.error", "id": "g20261027-02", "note": "HTTP 400 code=200: API access blocked."}
 {"at": "2026-11-17T01:31:04.258771+00:00", "action": "analytics.pull", "items": 0}
 {"at": "2026-11-17T08:17:48.173341+00:00", "action": "research.collect", "new": 142, "feed_errors": []}
+{"at": "2026-11-17T10:43:47.087469+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
