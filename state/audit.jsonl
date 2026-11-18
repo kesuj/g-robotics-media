@@ -459,3 +459,4 @@
 {"at": "2026-11-18T00:28:42.521035+00:00", "action": "analytics.error", "id": "news-20261027", "note": "HTTP 400 code=200: API access blocked."}
 {"at": "2026-11-18T00:28:42.654177+00:00", "action": "analytics.error", "id": "g20261027-02", "note": "HTTP 400 code=200: API access blocked."}
 {"at": "2026-11-18T00:28:42.654470+00:00", "action": "analytics.pull", "items": 0}
+{"at": "2026-11-18T07:50:43.676708+00:00", "action": "research.collect", "new": 272, "feed_errors": []}
