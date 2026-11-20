@@ -474,3 +474,7 @@
 {"at": "2026-11-19T19:07:18.761307+00:00", "action": "research.collect", "new": 157, "feed_errors": []}
 {"at": "2026-11-19T20:38:21.100992+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
 {"at": "2026-11-19T22:39:35.016105+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
+{"at": "2026-11-20T00:15:22.316019+00:00", "action": "analytics.error", "id": "g20261027-01", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-11-20T00:15:22.541100+00:00", "action": "analytics.error", "id": "news-20261027", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-11-20T00:15:22.784605+00:00", "action": "analytics.error", "id": "g20261027-02", "note": "HTTP 400 code=200: API access blocked."}
+{"at": "2026-11-20T00:15:22.784840+00:00", "action": "analytics.pull", "items": 0}
