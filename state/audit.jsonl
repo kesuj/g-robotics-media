@@ -481,3 +481,4 @@
 {"at": "2026-11-20T07:39:12.014387+00:00", "action": "research.collect", "new": 247, "feed_errors": []}
 {"at": "2026-11-20T10:01:30.469648+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
 {"at": "2026-11-20T15:46:55.161262+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
+{"at": "2026-11-20T18:44:56.322074+00:00", "action": "research.collect", "new": 139, "feed_errors": []}
