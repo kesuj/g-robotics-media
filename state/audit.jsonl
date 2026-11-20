@@ -484,3 +484,7 @@
 {"at": "2026-11-20T18:44:56.322074+00:00", "action": "research.collect", "new": 139, "feed_errors": []}
 {"at": "2026-11-20T20:21:58.477713+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
 {"at": "2026-11-20T22:14:54.608507+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
+{"at": "2026-11-20T23:39:08.113787+00:00", "action": "analytics.error", "id": "g20261027-01", "note": "TOKEN_EXPIRED_OR_INVALID: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons."}
+{"at": "2026-11-20T23:39:08.185552+00:00", "action": "analytics.error", "id": "news-20261027", "note": "TOKEN_EXPIRED_OR_INVALID: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons."}
+{"at": "2026-11-20T23:39:08.250435+00:00", "action": "analytics.error", "id": "g20261027-02", "note": "TOKEN_EXPIRED_OR_INVALID: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons."}
+{"at": "2026-11-20T23:39:08.250725+00:00", "action": "analytics.pull", "items": 0}
