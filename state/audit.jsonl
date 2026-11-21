@@ -490,3 +490,4 @@
 {"at": "2026-11-20T23:39:08.250725+00:00", "action": "analytics.pull", "items": 0}
 {"at": "2026-11-21T07:35:01.367866+00:00", "action": "research.collect", "new": 97, "feed_errors": []}
 {"at": "2026-11-21T09:50:18.875373+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
+{"at": "2026-11-21T14:56:34.982171+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
