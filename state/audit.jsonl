@@ -501,3 +501,4 @@
 {"at": "2026-11-22T07:16:21.556165+00:00", "action": "research.collect", "new": 70, "feed_errors": []}
 {"at": "2026-11-22T09:46:53.925752+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
 {"at": "2026-11-22T14:55:35.219819+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
+{"at": "2026-11-22T17:59:50.246729+00:00", "action": "research.collect", "new": 80, "feed_errors": []}
