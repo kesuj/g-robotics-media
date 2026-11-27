@@ -551,3 +551,4 @@
 {"at": "2026-11-27T10:51:22.261644+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
 {"at": "2026-11-27T16:59:52.439777+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
 {"at": "2026-11-27T19:37:56.073310+00:00", "action": "research.collect", "new": 158, "feed_errors": ["The Verge"]}
+{"at": "2026-11-27T21:17:31.188101+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
