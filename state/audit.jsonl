@@ -548,3 +548,4 @@
 {"at": "2026-11-27T01:27:38.926856+00:00", "action": "analytics.error", "id": "news-20261027", "note": "TOKEN_EXPIRED_OR_INVALID: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons."}
 {"at": "2026-11-27T01:27:39.136533+00:00", "action": "analytics.error", "id": "g20261027-02", "note": "TOKEN_EXPIRED_OR_INVALID: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons."}
 {"at": "2026-11-27T01:27:39.136839+00:00", "action": "analytics.pull", "items": 0}
+{"at": "2026-11-27T10:51:22.261644+00:00", "action": "slot.empty", "note": "no approved Reel ready — slot skipped rather than posting filler"}
